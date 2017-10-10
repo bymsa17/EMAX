@@ -1,2 +1,2 @@
 # EMAX
-Videojuego plataforma 2D de scroll lateral
+Platform 2D videogame. A polygonal world created by a scientific
