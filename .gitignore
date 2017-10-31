@@ -33,4 +33,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-*.UnityPackageManager
+/UnityPackageManager
