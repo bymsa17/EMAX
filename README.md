@@ -5,21 +5,21 @@
 
 ## Social Network
 ### Xabi Llobera
-
+Concept artist (Main Character)
 
 * **GitHub:** https://github.com/Xabillobera
 * **ArtStation:** https://www.artstation.com/xabillobera
 ***
 
 ### Marta Segura
-Principal programmer
+Principal programmer and Concept artist (props)
 
 * **GitHub:** https://github.com/bymsa17
 * **ArtStation:** https://www.artstation.com/bymsa17
 ***
 
 ### Evgeniia Dron
-
+Concept artist (props)
 
 * **GitHub:** https://github.com/EvgeniiaD
 * **ArtStation:** https://www.artstation.com/evgeniia
