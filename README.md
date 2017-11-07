@@ -6,7 +6,7 @@
 
 ***
 
-**Project Features**
+## Project Features
 
 You will have to solve some simple puzzles with objects of the environment to be able to continue your way, using your special hability. 
 The difficulty? The world which Dr. Matirius has created is not stable. The awful and darkest gloom lurks in this laboratory and our companion Gex.
@@ -48,6 +48,6 @@ Concept artist (Scientific) and GDD-Wiki creator
 * **Youtube:** https://www.youtube.com/user/FokusAlbert
 ***
 
-### Licence
+## Licence
 
 MIT Licence. See more information in [**Licence**](https://github.com/bymsa17/EMAX/blob/master/LICENSE)
