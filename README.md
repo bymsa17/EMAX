@@ -29,7 +29,7 @@ Principal programmer and Concept artist (props)
 
 * **GitHub:** https://github.com/bymsa17
 * **ArtStation:** https://www.artstation.com/bymsa17
-###
+***
 
 ### Evgeniia Dron
 Concept artist (props)
