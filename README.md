@@ -17,6 +17,15 @@ The ultimate goal of the game is to be able to build the portal that will take y
 ***
 
 ## Social Network
+
+### Team contact:
+
+***
+* **Mail** emaxvideogames@gmail.com
+***
+
+### Team personal emails:
+
 ### Xabi Llobera
 Concept artist (Main Character)
 
