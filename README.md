@@ -37,3 +37,7 @@ Concept artist (Scientific) and GDD-Wiki creator
 * **Instagram:** https://www.instagram.com/fokusini/
 * **Youtube:** https://www.youtube.com/user/FokusAlbert
 ***
+
+### Licence
+
+MIT Licence. See more information in [Go to **Licence**] (https://github.com/bymsa17/EMAX/blob/master/LICENSE)
