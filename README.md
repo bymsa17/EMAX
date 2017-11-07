@@ -8,7 +8,7 @@
 
 ## Project Features
 
-You will have to solve some simple puzzles with objects of the environment to be able to continue your way, using your special hability. 
+You will have to solve some simple puzzles with objects of the environment to be able to continue your way, using your special ability. 
 The difficulty? The world which Dr. Matirius has created is not stable. The awful and darkest gloom lurks in this laboratory and our companion Gex.
 To be able to return and report what happened, you must find a way out. Can you help him find the parts of the portal back without falling eclipsed by the black fog?
 
