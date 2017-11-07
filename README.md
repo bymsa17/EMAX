@@ -5,6 +5,37 @@
 **GEOMEX** is a platform 2D videogame. In this game you are a robot, which has been put in another world by a scientist through a portal. Your objective is to escape from this world by collecting the pieces of the portal distributed in the different levels, unlocking the path and avoiding the dark fog that haunts you.
 
 
+#### DESCRIPTION
+Video game of platforms and puzzles 2D of PC, with possible port to mobile, of lateral scroll. 
+Simple mechanics with a unique special ability. 
+With a system of levels with incremental and consecutive difficulty.
+
+The launch is scheduled for 2018.
+
+***
+
+
+#### SYNOPSIS
+The story begins in the Doctor's laboratory Matirius who, in his scientific outburst of creating his secret and perfect workplace, opens a portal to a somewhat curious world. To avoid being exposed to dangers he decides to send his henchman Gex, which experiences a change when landing on the other side.
+
+***
+
+
+
+#### GAMEPLAY
+It is a platform game where you will have to solve some simple puzzles with objects of the environment to be able to continue your way. 
+The difficulty? The world which Dr. Matirius has created is not stable. The awful and darkest gloom lurks in this laboratory and our companion Gex.
+To be able to return and report what happened, you must find a way out. Can you help him find the parts of the portal back without falling eclipsed by the black fog?
+
+***
+
+
+#### GOAL
+The ultimate goal of the game is to be able to build the portal that will take you back home. For this you must collect the different pieces of this that are distributed by the different levels of the game.
+
+***
+
+
 
 ## Social Network
 ### Xabi Llobera
