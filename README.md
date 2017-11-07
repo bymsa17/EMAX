@@ -20,8 +20,7 @@ The ultimate goal of the game is to be able to build the portal that will take y
 
 ### Team contact:
 
-***
-* **Mail** emaxvideogames@gmail.com
+* **Contact Mail** emaxvideogames@gmail.com
 ***
 
 ### Team personal emails:
