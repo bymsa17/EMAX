@@ -40,4 +40,4 @@ Concept artist (Scientific) and GDD-Wiki creator
 
 ### Licence
 
-MIT Licence. See more information in [Go to **Licence**] (https://github.com/bymsa17/EMAX/blob/master/LICENSE)
+MIT Licence. See more information in [**Licence**](https://github.com/bymsa17/EMAX/blob/master/LICENSE)
