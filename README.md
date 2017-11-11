@@ -28,32 +28,33 @@ The ultimate goal of the game is to be able to build the portal that will take y
 ### Xabi Llobera
 Concept artist (Main Character)
 
-* **GitHub:** https://github.com/Xabillobera
-* **ArtStation:** https://www.artstation.com/xabillobera
+* [**GitHub**](https://github.com/Xabillobera)
+* [**ArtStation**](https://www.artstation.com/xabillobera)
 ***
 
 ### Marta Segura
 Principal programmer and Concept artist (props)
 
-* **GitHub:** https://github.com/bymsa17
-* **ArtStation:** https://www.artstation.com/bymsa17
+* [**GitHub**](https://github.com/bymsa17)
+* [**ArtStation**](https://www.artstation.com/bymsa17)
 ***
 
 ### Evgeniia Dron
 Concept artist (props)
 
-* **GitHub:** https://github.com/EvgeniiaD
-* **ArtStation:** https://www.artstation.com/evgeniia
+* [**GitHub**](https://github.com/EvgeniiaD)
+* [**ArtStation**](https://www.artstation.com/evgeniia)
 ***
 
 ### Albert C. Boixet
 Concept artist (Scientific) and GDD-Wiki creator
 
-* **GitHub:** https://github.com/Fokusini
-* **ArtStation:** https://www.artstation.com/fokus
-* **Twitter:** https://twitter.com/AlbertFokus
-* **Instagram:** https://www.instagram.com/fokusini/
-* **Youtube:** https://www.youtube.com/user/FokusAlbert
+* [**GitHub**](https://github.com/Fokusini)
+* [**ArtStation**](https://www.artstation.com/fokus)
+* [**Twitter**](https://twitter.com/AlbertFokus)
+
+
+To see more contacts: [Credits](https://github.com/bymsa17/EMAX/wiki/Credits)
 ***
 
 ## Licence
