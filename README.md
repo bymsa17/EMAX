@@ -25,28 +25,28 @@ The ultimate goal of the game is to be able to build the portal that will take y
 
 ### Team personal emails:
 
-### Xabi Llobera
+#### Xabi Llobera
 Concept artist (Main Character)
 
 * [**GitHub**](https://github.com/Xabillobera)
 * [**ArtStation**](https://www.artstation.com/xabillobera)
 ***
 
-### Marta Segura
+#### Marta Segura
 Principal programmer and Concept artist (props)
 
 * [**GitHub**](https://github.com/bymsa17)
 * [**ArtStation**](https://www.artstation.com/bymsa17)
 ***
 
-### Evgeniia Dron
+#### Evgeniia Dron
 Concept artist (props)
 
 * [**GitHub**](https://github.com/EvgeniiaD)
 * [**ArtStation**](https://www.artstation.com/evgeniia)
 ***
 
-### Albert C. Boixet
+#### Albert C. Boixet
 Concept artist (Scientific) and GDD-Wiki creator
 
 * [**GitHub**](https://github.com/Fokusini)
