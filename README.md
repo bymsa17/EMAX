@@ -1,4 +1,4 @@
-![](https://github.com/bymsa17/EMAX/blob/master/WikiResources/logo_emax_02.png)
+![](https://github.com/bymsa17/EMAX/blob/master/WikiResources/logo_emax.png)
 
 
 # GEOMEX
