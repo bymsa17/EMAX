@@ -13,3 +13,5 @@
 ![](https://github.com/bymsa17/EMAX/blob/master/Mockups/mockup_gameplay_screen_03.png)
 
 ![](https://github.com/bymsa17/EMAX/blob/master/Mockups/mockup_gameplay_screen_04.png)
+
+![](https://github.com/bymsa17/EMAX/blob/master/Mockups/mockup_gameplay_screen_01.png)
