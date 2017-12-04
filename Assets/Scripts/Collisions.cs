@@ -4,72 +4,87 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour {
 
+    #region Variables
+    [Header("Physics")]
+    private Rigidbody2D rb;
+    private Collider2D coll;
+    //private float gravityMagnitude = 1.50f;
+    [Header("Permissions")]
+    public bool checkGround = true;
+    public bool checkCeiling = true;
+    public bool checkWall = true;
     [Header("State")]
     public bool isGrounded;
-    public bool wasGroundedLastFrame;
-    public bool justGrounded;
-    public bool justNOTGrounded;
+    public bool isTouchingCeiling;
+    public bool isTouchingWall;
     public bool isFalling;
-
-    [Header("Boxes")]
-    public Vector2 groundBoxPos;
-    public Vector2 groundBoxSize;
-
-    [Header("Properties")]
-    public int maxHits = 1;
-    public bool detectGround = true;
-    public ContactFilter2D filter;
+    public bool wasGroundedLastFrame;
+    public bool wasTouchingCeilingLastFrame;
+    public bool WasTpuchingWallLastFrame;
+    public bool justGotGrounded;
+    public bool justNotGrounded;
+    public bool justTouchWall;
+    public bool justTpuchCeiling;
+    [Header("Ground Filter")]
+    public ContactFilter2D groundFilter;
+    public ContactFilter2D wallFilter;
+    public int maxGroundHits;
+    //private LayerMask _groundMaskSave;
+    [Header("Ground Box")]
+    public Vector2 bottomBoxSize;
+    public Vector2 bottomBoxPos;
+    [Header("Ceiling Box")]
+    public Vector2 topBoxSize;
+    public Vector2 topBoxPos;
+    [Header("Wall Box")]
+    public Vector2 sideBoxSize;
+    public Vector2 sideBoxPos;
+    #endregion
 
     public void MyStart()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<Collider2D>();
     }
 
     public void MyFixedUpdate()
     {
         ResetState();
-        DetectGround();
+
+        if(checkGround) GroundCollision();
+        //if(checkCeiling) CeilingCollision();
+        //if(checkWall) WallCollision();
     }
 
-    void ResetState()
+    private void ResetState()
     {
         wasGroundedLastFrame = isGrounded;
         isGrounded = false;
-        justNOTGrounded = false;
-        justGrounded = false;
+        justNotGrounded = false;
+        justGotGrounded = false;
         isFalling = true;
     }
 
-    void DetectGround()
+    private void GroundCollision()
     {
-        if (!detectGround) return;
+        Collider2D[] results = new Collider2D[maxGroundHits];
+        Vector2 pos = this.transform.position;
+        int hits = Physics2D.OverlapBox(pos + bottomBoxPos, bottomBoxSize, 0, groundFilter, results);
 
-        Collider2D[] results = new Collider2D[maxHits];
-        Vector3 newPos = (Vector3)groundBoxPos + transform.position;
-        int numHits = Physics2D.OverlapBox(newPos, groundBoxSize, 0, filter, results);
-
-        if (numHits > 0)
+        if (hits > 0)
         {
             isGrounded = true;
         }
-        isFalling = !isGrounded;
 
-        if (!wasGroundedLastFrame && isGrounded)
-        {
-            Debug.Log("JUST GROUNDED");
-            justGrounded = true;
-        }
-        if (wasGroundedLastFrame && !isGrounded)
-        {
-            Debug.Log("JUST NOT GROUNDED");
-            justNOTGrounded = true;
-        }
+        if(isGrounded) isFalling = false;
+        if(!wasGroundedLastFrame && isGrounded) justGotGrounded = true;
+        if(wasGroundedLastFrame && !isGrounded) justNotGrounded = true;
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.blue;
-        Vector3 newPos = (Vector3)groundBoxPos + transform.position;
-        Gizmos.DrawWireCube(newPos, groundBoxSize);
+        Gizmos.color = Color.red;
+        Vector2 pos = this.transform.position;
+        Gizmos.DrawWireCube(pos + bottomBoxPos, bottomBoxSize);
     }
 }

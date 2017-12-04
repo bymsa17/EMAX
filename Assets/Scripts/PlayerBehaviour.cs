@@ -5,47 +5,38 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour {
 
     public enum State { Default, Dead, God };
-    public State state;
+    public State state = State.Default;
 
     [Header("State")]
     public bool canMove = true;
     public bool canJump = true;
-    public bool running = false;
-    public bool isFacingRight = false;
+    public bool isFacingRight = true;
     public bool isJumping = false;
-
+    public bool isRunning = false;
     [Header("Physics")]
     public Rigidbody2D rb;
     public Collisions collisions;
-
-    [Header("Speeed properties")]
-    public float walkSpeed = 2;
-    public float runSpeed = 3;
+    [Header("Speed")]
+    public float walkSpeed;
+    public float runSpeed;
     public float movementSpeed;
-
-    [Header("Force properties")]
+    public float horizontalSpeed;
+    public Vector2 axis;
+    [Header("Forces")]
     public float jumpWalkForce;
     public float jumpRunForce;
     public float jumpForce;
-
-    [Header("Movement")]
-    public Vector2 axis;
-    public float horizontalSpeed;
-
-    //[Header("Transforms")]
-    //public Transform flipTransform;
-
     [Header("Graphics")]
     public SpriteRenderer rend;
+    //[Header("Transforms")]
+    //public Transform flipTransform;
 
     void Start()
     {
         collisions = GetComponent<Collisions>();
         rb = GetComponent<Rigidbody2D>();
 
-        collisions.MyStart();
-
-        isFacingRight = true;
+        //collisions.MyStart();
     }
 
     // Update is called once per frame
@@ -57,19 +48,14 @@ public class PlayerBehaviour : MonoBehaviour {
                 DefaultUpdate();
                 break;
             case State.Dead:
+                // TODO: DeadUpdate();
                 break;
             case State.God:
+                // TODO: GodUpdate();
                 break;
             default:
                 break;
         }
-    }
-
-    void DefaultUpdate()
-    {
-        //Calcula el movimiento en horizontal
-        HorizontalMovement();
-        //Saltar
     }
 
     private void FixedUpdate()
@@ -86,20 +72,21 @@ public class PlayerBehaviour : MonoBehaviour {
         rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
     }
 
+    protected virtual void DefaultUpdate()
+    {
+        //Calcula el movimiento en horizontal
+        HorizontalMovement();
+        //Saltar
+    }
+
     void HorizontalMovement()
     {
-        if (!canMove)
-        {
-            horizontalSpeed = 0;
-            return;
-        }
-
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        if (-0.1f < axis.x && axis.x < 0.1f)
+        if (!canMove || (-0.1f < axis.x && axis.x < 0.1f))
         {
-            horizontalSpeed = 0;
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            horizontalSpeed = 0;
             return;
         }
 
@@ -115,10 +102,10 @@ public class PlayerBehaviour : MonoBehaviour {
         if (isFacingRight && axis.x < -0.1f) Flip();
         if (!isFacingRight && axis.x > 0.1f) Flip();
         */
-        if (running) movementSpeed = runSpeed;
+        if (isRunning) movementSpeed = runSpeed;
         else movementSpeed = walkSpeed;
 
-        horizontalSpeed = axis.x * movementSpeed;
+        horizontalSpeed = movementSpeed * axis.x;
     }
 
     void VerticalMovement()
@@ -130,9 +117,8 @@ public class PlayerBehaviour : MonoBehaviour {
          */
     }
 
-    void Jump(float force)
+    void Jump()
     {
-        jumpForce = force;
         isJumping = true;
     }
 
@@ -156,8 +142,9 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             if (collisions.isGrounded)
             {
-                if (running) Jump(jumpRunForce);
-                else Jump(jumpWalkForce);
+                if (isRunning) jumpForce = jumpRunForce;
+                else jumpForce = jumpWalkForce;
+                Jump();
             }
         }
 

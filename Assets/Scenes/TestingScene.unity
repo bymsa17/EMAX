@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 273187720}
   - component: {fileID: 273187721}
   m_Layer: 8
-  m_Name: Player Sprite
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 950843655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8.23, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983852389}
   m_RootOrder: 0
@@ -330,7 +330,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9b681ccebeae49b429be3d9708c3e159, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8014706, g: 0.6836885, b: 0.4302011, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -397,19 +397,19 @@ MonoBehaviour:
   state: 0
   canMove: 1
   canJump: 1
-  running: 0
-  isFacingRight: 0
+  isFacingRight: 1
   isJumping: 0
+  isRunning: 0
   rb: {fileID: 0}
   collisions: {fileID: 0}
-  walkSpeed: 2
-  runSpeed: 3
+  walkSpeed: 5
+  runSpeed: 7
   movementSpeed: 0
-  jumpWalkForce: 0
-  jumpRunForce: 0
-  jumpForce: 0
-  axis: {x: 0, y: 0}
   horizontalSpeed: 0
+  axis: {x: 0, y: 0}
+  jumpWalkForce: 5
+  jumpRunForce: 6
+  jumpForce: 0
   rend: {fileID: 0}
 --- !u!50 &1918838489
 Rigidbody2D:
@@ -429,8 +429,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &1918838490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -481,16 +481,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b4e336f1fe27448a7193edd514414d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkGround: 1
+  checkCeiling: 1
+  checkWall: 1
   isGrounded: 0
-  wasGroundedLastFrame: 0
-  justGrounded: 0
-  justNOTGrounded: 0
+  isTouchingCeiling: 0
+  isTouchingWall: 0
   isFalling: 0
-  groundBoxPos: {x: 0, y: -0.5}
-  groundBoxSize: {x: 1.05, y: -0.05}
-  maxHits: 1
-  detectGround: 1
-  filter:
+  wasGroundedLastFrame: 0
+  wasTouchingCeilingLastFrame: 0
+  WasTpuchingWallLastFrame: 0
+  justGotGrounded: 0
+  justNotGrounded: 0
+  justTouchWall: 0
+  justTpuchCeiling: 0
+  groundFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  wallFilter:
     useTriggers: 0
     useLayerMask: 0
     useDepth: 0
@@ -504,6 +523,13 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  maxGroundHits: 2
+  bottomBoxSize: {x: 1, y: 0.1}
+  bottomBoxPos: {x: 0, y: -0.5}
+  topBoxSize: {x: 0, y: 0}
+  topBoxPos: {x: 0, y: 0}
+  sideBoxSize: {x: 0, y: 0}
+  sideBoxPos: {x: 0, y: 0}
 --- !u!1 &1983852386
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,20 +566,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 950843658}
     m_ColliderPaths:
-    - - X: 5000000
+    - - X: 41149996
         Y: 5000000
-      - X: -5000000
+      - X: -41149996
         Y: 5000000
-      - X: -5000000
+      - X: -41149996
         Y: -5000000
-      - X: 5000000
+      - X: 41149996
         Y: -5000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.5, y: 0.5}
-      - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
+    - - {x: 4.115, y: 0.5}
+      - {x: -4.115, y: 0.5}
+      - {x: -4.115, y: -0.5}
+      - {x: 4.115, y: -0.5}
   m_VertexDistance: 0.0005
 --- !u!50 &1983852388
 Rigidbody2D:
