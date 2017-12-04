@@ -44,4 +44,4 @@ public class SettingsButtons : MonoBehaviour
         Screen.fullScreen = !Screen.fullScreen;
     }
 }
-}
+
