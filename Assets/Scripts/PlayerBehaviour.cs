@@ -90,7 +90,7 @@ public class PlayerBehaviour : MonoBehaviour {
             return;
         }
 
-        /*if (collisions.isTouchingWall)
+        if (collisions.isTouchingWall)
         {
             if ((isFacingRight && axis.x > 0.1f) || (!isFacingRight && axis.x < -0.1f))
             {
@@ -99,9 +99,9 @@ public class PlayerBehaviour : MonoBehaviour {
             }
         }
 
-        if (isFacingRight && axis.x < -0.1f) Flip();
-        if (!isFacingRight && axis.x > 0.1f) Flip();
-        */
+        //if (isFacingRight && axis.x < -0.1f) Flip();
+        //if (!isFacingRight && axis.x > 0.1f) Flip();
+        
         if (isRunning) movementSpeed = runSpeed;
         else movementSpeed = walkSpeed;
 
@@ -126,7 +126,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         rend.flipX = !rend.flipX;
         isFacingRight = !isFacingRight;
-        collisions.Flip(isFacingRight);
+        collisions.Flip();
     }*/
 
     #region Public functions
