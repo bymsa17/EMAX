@@ -99,8 +99,8 @@ public class PlayerBehaviour : MonoBehaviour {
             }
         }
 
-        //if (isFacingRight && axis.x < -0.1f) Flip();
-        //if (!isFacingRight && axis.x > 0.1f) Flip();
+        if (isFacingRight && axis.x < -0.1f) Flip();
+        if (!isFacingRight && axis.x > 0.1f) Flip();
         
         if (isRunning) movementSpeed = runSpeed;
         else movementSpeed = walkSpeed;
@@ -122,12 +122,12 @@ public class PlayerBehaviour : MonoBehaviour {
         isJumping = true;
     }
 
-    /*void Flip()
+    void Flip()
     {
         rend.flipX = !rend.flipX;
         isFacingRight = !isFacingRight;
         collisions.Flip();
-    }*/
+    }
 
     #region Public functions
     public void SetAxis(Vector2 inputAxis)
