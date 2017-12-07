@@ -16,6 +16,7 @@ public class InputManager : MonoBehaviour
         InputAxis();
         InputJump();
         InputRun();
+        //InputAbility();
         InputPause();
     }
 
@@ -51,6 +52,14 @@ public class InputManager : MonoBehaviour
             player.isRunning = false;
         }
     }
+    /*void InputAbility()
+    {
+        if(Input.GetButton("Ability"))
+        {
+            Debug.Log("Ability");
+            player.Ability();
+        }
+    }*/
     void InputPause()
     {
         if(Input.GetButtonDown("Pause"))

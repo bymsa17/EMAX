@@ -26,6 +26,11 @@ public class PlayerBehaviour : MonoBehaviour {
     public float jumpWalkForce;
     public float jumpRunForce;
     public float jumpForce;
+    /*[Header("Ability")]
+    public Transform boxTransform;
+    public Vector2 boxPos;
+    public Vector2 distance;
+    public float speed;*/
     [Header("Graphics")]
     public SpriteRenderer rend;
     //[Header("Transforms")]
@@ -149,6 +154,26 @@ public class PlayerBehaviour : MonoBehaviour {
         }
 
     }
+
+    /*public void Ability(Collider other)
+    {
+        if(other.tag == "MetalBox")
+        {
+            if((transform.position.x + 5 >= boxTransform.position.x) && (transform.position.x < boxTransform.position.x))
+            {
+                boxPos.x = boxTransform.position.x + (distance.x * speed * Time.deltaTime);
+            }
+            else if((transform.position.x - 5 <= boxTransform.position.x) && (transform.position.x > boxTransform.position.x))
+            {
+                boxPos.x = boxTransform.position.x - (distance.x * speed * Time.deltaTime);
+            }
+            else if (player.transform.position.x == boxTransform.position.x)
+            {
+                
+            }
+        }
+    }*/
+
     public void Damage(int hit)
     {
 
