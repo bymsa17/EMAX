@@ -4670,8 +4670,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 313.5, y: 176.5, z: 0}
-  m_LocalScale: {x: 0.48984376, y: 0.48984376, z: 0.48984376}
+  m_LocalPosition: {x: 330.5, y: 186, z: 0}
+  m_LocalScale: {x: 0.51640624, y: 0.51640624, z: 0.51640624}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1559064669}
@@ -5373,7 +5373,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -5384,7 +5384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: BEST
+  m_Text: FANTASTIC
 --- !u!222 &1520729373
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5547,7 +5547,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557471647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237.5, y: 452.5, z: 0}
+  m_LocalPosition: {x: 194, y: 452.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 941344970}
@@ -6837,7 +6837,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 465330945}
-        m_MethodName: ChangeQualityBest
+        m_MethodName: ChangeQualityFantastic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
