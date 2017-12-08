@@ -85,6 +85,11 @@ public class PlayerBehaviour : MonoBehaviour {
         //Saltar
     }
 
+    protected virtual void DeadUpdate()
+    {
+        //Animation dead player
+    }
+
     void HorizontalMovement()
     {
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
