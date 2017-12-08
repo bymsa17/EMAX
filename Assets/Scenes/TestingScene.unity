@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 93071346}
   - component: {fileID: 93071345}
   - component: {fileID: 93071344}
+  - component: {fileID: 93071347}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -205,12 +206,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 93071343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 0.09, z: 0}
+  m_LocalPosition: {x: 2.76, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &93071347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93071343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc30ddb6eac79174c8b56ef75c13aa3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &273187719
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +307,7 @@ GameObject:
   - component: {fileID: 349280182}
   - component: {fileID: 349280181}
   - component: {fileID: 349280180}
+  - component: {fileID: 349280184}
   - component: {fileID: 349280179}
   - component: {fileID: 349280183}
   m_Layer: 10
@@ -412,6 +425,31 @@ MonoBehaviour:
   speed: 2
   timePatrol: 1
   timeCounter: 0
+--- !u!61 &349280184
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349280178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.08, y: 0.85}
+    newSize: {x: 1.08, y: 0.85}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.08, y: 0.9}
+  m_EdgeRadius: 0
 --- !u!1 &520354515
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,12 +657,12 @@ GameObject:
   - component: {fileID: 1414392854}
   - component: {fileID: 1414392857}
   m_Layer: 10
-  m_Name: MetalBox
+  m_Name: PruebaMetalBox
   m_TagString: MetalBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1414392854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -701,7 +739,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414392853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.856413, y: 0.278, z: 0}
+  m_LocalPosition: {x: 7.856413, y: 2.469, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -805,9 +843,10 @@ GameObject:
   - component: {fileID: 1596967250}
   - component: {fileID: 1596967249}
   - component: {fileID: 1596967248}
-  m_Layer: 0
+  - component: {fileID: 1596967251}
+  m_Layer: 10
   m_Name: caja_metal
-  m_TagString: Untagged
+  m_TagString: MetalBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,6 +933,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596967251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1596967247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdefaa368a0e0cb4b8ff44e542d9eec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxTransform: {fileID: 1596967250}
+  boxPos: {x: 0, y: 0}
+  distance: {x: 5, y: 0}
+  speed: 3
 --- !u!1 &1862311764
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  life: 3
   canMove: 1
   canJump: 1
   isFacingRight: 1
@@ -1099,7 +1154,7 @@ MonoBehaviour:
   bottomBoxPos: {x: 0, y: -0.5}
   topBoxSize: {x: 1, y: 0.1}
   topBoxPos: {x: 0, y: 0.5}
-  sideBoxSize: {x: 0.1, y: 1}
+  sideBoxSize: {x: 0.1, y: 0.85}
   sideBoxPos: {x: 0.5, y: 0}
 --- !u!1 &1983852386
 GameObject:

@@ -18,24 +18,20 @@ public class BoxBehaviour : MonoBehaviour
         boxPos = boxTransform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Ability()
     {
-        if(Input.GetButton("Ability"))
+        if((player.transform.position.x + 5 >= boxTransform.position.x) && (player.transform.position.x < boxTransform.position.x))
         {
-            if((player.transform.position.x + 5 >= boxTransform.position.x) && (player.transform.position.x < boxTransform.position.x))
-            {
-                boxPos.x = boxTransform.position.x + (distance.x * speed * Time.deltaTime);
-            }
-            else if((player.transform.position.x - 5 <= boxTransform.position.x) && (player.transform.position.x > boxTransform.position.x))
-            {
-                boxPos.x = boxTransform.position.x - (distance.x * speed * Time.deltaTime);
-            }
-            /*else if (player.transform.position.x == boxTransform.position.x)
-            {
-                
-            }*/
+            boxPos.x = boxTransform.position.x + (distance.x * speed * Time.deltaTime);
         }
+        else if((player.transform.position.x - 5 <= boxTransform.position.x) && (player.transform.position.x > boxTransform.position.x))
+        {
+            boxPos.x = boxTransform.position.x - (distance.x * speed * Time.deltaTime);
+        }
+        /*else if (player.transform.position.x == boxTransform.position.x)
+        {
+            
+        }*/
         boxTransform.position = boxPos;
     }
 }

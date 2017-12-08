@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public enum State { Default, Dead, God };
     public State state = State.Default;
 
+    public int life;
     [Header("State")]
     public bool canMove = true;
     public bool canJump = true;
@@ -174,9 +175,14 @@ public class PlayerBehaviour : MonoBehaviour {
         }
     }*/
 
-    public void Damage(int hit)
+    public void ReceiveDamage(int damge)
     {
-
+        life -= damge;
+        if(life <= 0)
+        {
+            life = 0;
+            state = State.Dead;
+        }
     }
     #endregion
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformTrigger : MonoBehaviour {
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
@@ -12,7 +12,7 @@ public class PlatformTrigger : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
