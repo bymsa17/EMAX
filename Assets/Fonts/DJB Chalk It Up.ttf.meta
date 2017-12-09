@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3a4e2540266bde24f991bbe3028771b3
+timeCreated: 1512850478
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DJB Chalk It Up
+  fontNames:
+  - DJB Chalk It Up
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
