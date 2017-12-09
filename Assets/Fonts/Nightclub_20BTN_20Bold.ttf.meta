@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ff17bc255191f784f92c8fc46379fd59
+timeCreated: 1512851310
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nightclub BTN
+  fontNames:
+  - Nightclub BTN
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
