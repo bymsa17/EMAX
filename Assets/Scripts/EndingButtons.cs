@@ -20,6 +20,7 @@ public class EndingButtons : MonoBehaviour
     public void ReloadLevel(int buildIndex)
     {
         SceneManager.LoadScene(buildIndex);
+        //player.Reset();
     }
     public void NextLevel(int buildIndex)
     {

@@ -205,5 +205,15 @@ public class PlayerBehaviour : MonoBehaviour {
         runSpeed = runSpeed/2;
     }
 
+    public void Reset()
+    {
+        life = 3;
+        canMove = true;
+        canJump = true;
+        isFacingRight = true;
+        isJumping = false;
+        isRunning = false;
+}
+
     #endregion
 }

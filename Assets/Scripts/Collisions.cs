@@ -29,7 +29,7 @@ public class Collisions : MonoBehaviour {
     public ContactFilter2D groundFilter;
     public ContactFilter2D wallFilter;
     public int maxGroundHits;
-    private LayerMask _groundMaskSave;
+    //private LayerMask _groundMaskSave;
     [Header("Ground Box")]
     public Vector2 bottomBoxSize;
     public Vector2 bottomBoxPos;
@@ -43,7 +43,7 @@ public class Collisions : MonoBehaviour {
 
     public void MyStart()
     {
-        _groundMaskSave = groundFilter.layerMask;
+        //_groundMaskSave = groundFilter.layerMask;
 
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - MetalBox
+  - WoodBox
   layers:
   - Default
   - TransparentFX

@@ -5,12 +5,14 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private PlayerBehaviour player;
-    private BoxBehaviour box;
+    private BoxBehaviour metalBox;
+    private BoxBehaviour woodBox;
 
     void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
-        box = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
+        metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
+        woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();
     }
 	
 	void Update ()
@@ -59,7 +61,8 @@ public class InputManager : MonoBehaviour
         if(Input.GetButton("Ability"))
         {
             Debug.Log("Ability");
-            box.Ability();
+            metalBox.Ability();
+            woodBox.Ability();
         }
     }
     void InputPause()
