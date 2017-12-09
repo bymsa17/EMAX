@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public enum State { Default, Dead, God };
     public State state = State.Default;
 
+    public int life;
     [Header("State")]
     public bool canMove = true;
     public bool canJump = true;
@@ -26,6 +27,11 @@ public class PlayerBehaviour : MonoBehaviour {
     public float jumpWalkForce;
     public float jumpRunForce;
     public float jumpForce;
+    /*[Header("Ability")]
+    public Transform boxTransform;
+    public Vector2 boxPos;
+    public Vector2 distance;
+    public float speed;*/
     [Header("Graphics")]
     public SpriteRenderer rend;
     //[Header("Transforms")]
@@ -77,6 +83,11 @@ public class PlayerBehaviour : MonoBehaviour {
         //Calcula el movimiento en horizontal
         HorizontalMovement();
         //Saltar
+    }
+
+    protected virtual void DeadUpdate()
+    {
+        //Animation dead player
     }
 
     void HorizontalMovement()
@@ -149,9 +160,34 @@ public class PlayerBehaviour : MonoBehaviour {
         }
 
     }
-    public void Damage(int hit)
-    {
 
+    /*public void Ability(Collider other)
+    {
+        if(other.tag == "MetalBox")
+        {
+            if((transform.position.x + 5 >= boxTransform.position.x) && (transform.position.x < boxTransform.position.x))
+            {
+                boxPos.x = boxTransform.position.x + (distance.x * speed * Time.deltaTime);
+            }
+            else if((transform.position.x - 5 <= boxTransform.position.x) && (transform.position.x > boxTransform.position.x))
+            {
+                boxPos.x = boxTransform.position.x - (distance.x * speed * Time.deltaTime);
+            }
+            else if (player.transform.position.x == boxTransform.position.x)
+            {
+                
+            }
+        }
+    }*/
+
+    public void ReceiveDamage(int damge)
+    {
+        life -= damge;
+        if(life <= 0)
+        {
+            life = 0;
+            state = State.Dead;
+        }
     }
     #endregion
 }

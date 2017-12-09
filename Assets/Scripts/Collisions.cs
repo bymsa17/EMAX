@@ -54,8 +54,8 @@ public class Collisions : MonoBehaviour {
         ResetState();
 
         if(checkGround) GroundCollision();
-        //if(checkCeiling) CeilingCollision();
-        //if(checkWall) WallCollision();
+        if(checkCeiling) CeilingCollision();
+        if(checkWall) WallCollision();
     }
 
     private void ResetState()

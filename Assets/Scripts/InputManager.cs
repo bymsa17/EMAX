@@ -5,10 +5,12 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private PlayerBehaviour player;
+    private BoxBehaviour box;
 
-	void Start ()
+    void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
+        box = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
     }
 	
 	void Update ()
@@ -16,6 +18,7 @@ public class InputManager : MonoBehaviour
         InputAxis();
         InputJump();
         InputRun();
+        InputAbility();
         InputPause();
     }
 
@@ -49,6 +52,14 @@ public class InputManager : MonoBehaviour
             Debug.Log("Walk");
             // TODO: darle la orden al player de caminar
             player.isRunning = false;
+        }
+    }
+    void InputAbility()
+    {
+        if(Input.GetButton("Ability"))
+        {
+            Debug.Log("Ability");
+            box.Ability();
         }
     }
     void InputPause()

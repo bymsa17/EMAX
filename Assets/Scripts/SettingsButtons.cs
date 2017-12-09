@@ -9,14 +9,14 @@ public class SettingsButtons : MonoBehaviour
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
     }
 
+    public void ChangeResolution800x600()
+    {
+        Screen.SetResolution(1600, 1200, Screen.fullScreen);
+    }
+
     public void ChangeResolution1280x720()
     {
         Screen.SetResolution(1280, 720, Screen.fullScreen);
-    }
-
-    public void ChangeResolution800x600()
-    {
-        Screen.SetResolution(800, 600, Screen.fullScreen);
     }
 
     public void ChangeQualityFast()
@@ -29,7 +29,7 @@ public class SettingsButtons : MonoBehaviour
         QualitySettings.SetQualityLevel(1, true);
     }
 
-    public void ChangeQualityBest()
+    public void ChangeQualityFantastic()
     {
         QualitySettings.SetQualityLevel(2, true);
     }
