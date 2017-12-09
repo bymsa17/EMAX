@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public enum State { Default, Dead, God };
     public State state = State.Default;
 
+    //private Transform player;
     public int life;
     [Header("State")]
     public bool canMove = true;
@@ -41,6 +42,8 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         collisions = GetComponent<Collisions>();
         rb = GetComponent<Rigidbody2D>();
+
+        //player = this.transform;
 
         //collisions.MyStart();
     }
@@ -189,5 +192,18 @@ public class PlayerBehaviour : MonoBehaviour {
             state = State.Dead;
         }
     }
+
+    public void LiquidPositive()
+    {
+        walkSpeed = walkSpeed * 2;
+        runSpeed = runSpeed * 2;
+    }
+
+    public void LiquidNegative()
+    {
+        walkSpeed = walkSpeed/2;
+        runSpeed = runSpeed/2;
+    }
+
     #endregion
 }
