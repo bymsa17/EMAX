@@ -29,62 +29,62 @@ public class DataManager : MonoBehaviour
     }
 
     public static class GameData
-{
-
-}
-
-public static class TextData
-{
-    public static Dictionary<string, string> textData;
-    /* Dictionary<TKey, TValue>
-     * TValue: es el tipo de variable que almacena.
-     * TKey: es el identificador con el que guardo el value.
-     */
-
-    public static void Initialize()
     {
-        textData = new Dictionary<string, string>();
-        //Leyendo el texto entero
-        string textFromFile = Data.LoadTextFromResources("Data/TextFile");
-        //Separando el texto en lineas
-        List<string> allLines = Data.ReadAllLinesFromString(textFromFile);
-        //Separando las columnas de cada linea
-        for(int line = 1; line < allLines.Count; line++)
-        {
-            string[] colText = allLines[line].Split('\t');
 
-            if(Language.language == Language.Lang.esES) textData.Add(colText[0], colText[1]);
-            else textData.Add(colText[0], colText[2]);
-            //Si hay mas idiomas, añadir aquí un if por cada uno de ellos.
+    }
+
+    public static class TextData
+    {
+        public static Dictionary<string, string> textData;
+        /* Dictionary<TKey, TValue>
+         * TValue: es el tipo de variable que almacena.
+         * TKey: es el identificador con el que guardo el value.
+         */
+
+        public static void Initialize()
+        {
+            textData = new Dictionary<string, string>();
+            //Leyendo el texto entero
+            string textFromFile = Data.LoadTextFromResources("Data/TextFile");
+            //Separando el texto en lineas
+            List<string> allLines = Data.ReadAllLinesFromString(textFromFile);
+            //Separando las columnas de cada linea
+            for(int line = 1; line < allLines.Count; line++)
+            {
+                string[] colText = allLines[line].Split('\t');
+
+                if(Language.language == Language.Lang.esES) textData.Add(colText[0], colText[1]);
+                else textData.Add(colText[0], colText[2]);
+                //Si hay mas idiomas, añadir aquí un if por cada uno de ellos.
+            }
+
+            UpdateUIText();
+            UpdateDialogText();
         }
 
-        UpdateUIText();
-        UpdateDialogText();
-    }
+        public static string GetText(string key)
+        {
+            string value = "";
+            textData.TryGetValue(key, out value);
+            return value;
+        }
 
-    public static string GetText(string key)
-    {
-        string value = "";
-        textData.TryGetValue(key, out value);
-        return value;
-    }
-
-    //UI TEXT
-    public static List<LoadUIText> uiText;
-    public static void AddUIText(LoadUIText ui)
-    {
-        if(uiText == null) uiText = new List<LoadUIText>();
-        uiText.Add(ui);
-        ui.LoadText();
-    }
-    public static void UpdateUIText()
-    {
-        if(uiText == null) return;
+        //UI TEXT
+        /*public static List<LoadUIText> uiText;
+        public static void AddUIText(LoadUIText ui)
+        {
+            if(uiText == null) uiText = new List<LoadUIText>();
+            uiText.Add(ui);
+            ui.LoadText();
+        }*/
+        /*public static void UpdateUIText()
+        {
+            if(uiText == null) return;*/
         /*foreach(LoadUIText ui in uiText)
         {
             ui.LoadText();
         }*/
-        for(int i = 0; i < uiText.Count; i++)
+        /*for(int i = 0; i < uiText.Count; i++)
         {
             uiText[i].LoadText();
         }
@@ -138,4 +138,5 @@ public static class Language
     {
         TextData.Initialize();
     }
-}
+}*/
+
