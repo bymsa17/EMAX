@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public int currentScene;
     public int nextScene;
     public int managerScene = 0;
+    //public int logoScene = 1;
     public int titleScene = 1;
     public int sceneCountInBuildSettings;
     [Header("Load parameters")]
