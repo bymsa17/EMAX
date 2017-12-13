@@ -8,3 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Manager.unity
     guid: 200cbdf43238aa34abc9ac3b20620626
+  - enabled: 1
+    path: Assets/Scenes/LogoScene.unity
+    guid: 6b93fc98e6129754a9d14dc1679ab23b
+  - enabled: 1
+    path: Assets/Scenes/Interface.unity
+    guid: 6fef06bcdf85e08499afc0f3f5b2fff3
+  - enabled: 1
+    path: Assets/Scenes/Level_01.unity
+    guid: 7705d1d8b6b67394f81b61583bf54513

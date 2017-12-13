@@ -37,6 +37,13 @@ public class PlayerBehaviour : MonoBehaviour {
     public SpriteRenderer rend;
     //[Header("Transforms")]
     //public Transform flipTransform;
+    [Header("Ability")]
+    public Collider2D abilityCollider;
+    public ContactFilter2D filter;
+    public Collider2D[] results;
+    public int maxColliders = 2;
+    public int numResults = 0;
+    public float abilityForce = 5;
 
     void Start()
     {
@@ -70,6 +77,9 @@ public class PlayerBehaviour : MonoBehaviour {
     private void FixedUpdate()
     {
         collisions.MyFixedUpdate();
+
+        results = new Collider2D[maxColliders];
+        numResults = Physics2D.OverlapCollider(abilityCollider, filter, results);
 
         if (isJumping)
         {
@@ -182,6 +192,29 @@ public class PlayerBehaviour : MonoBehaviour {
             }
         }
     }*/
+    public void Ability()
+    {
+        //if(doAbility) return;
+
+        //doAbility = true;
+        if(numResults > 0)
+        {
+            Debug.Log("Ability");
+            for(int i = 0; i < numResults; i++)
+            {
+                if(results[i].gameObject.tag == "MetalBox")
+                {
+                    Vector2 dir = results[i].transform.position - this.transform.position;
+                    dir.Normalize();
+                    results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
+                }
+                else if(results[i].gameObject.tag == "WoodBox")
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+        }
+    }
 
     public void ReceiveDamage(int damge)
     {

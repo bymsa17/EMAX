@@ -11,8 +11,8 @@ public class InputManager : MonoBehaviour
     void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
-        metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
-        woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();
+        //metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
+        //woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();
     }
 	
 	void Update ()
@@ -58,11 +58,12 @@ public class InputManager : MonoBehaviour
     }
     void InputAbility()
     {
-        if(Input.GetButton("Ability"))
+        if(Input.GetButtonDown("Ability"))
         {
-            Debug.Log("Ability");
-            metalBox.Ability();
-            woodBox.Ability();
+            player.Ability();
+            
+            //metalBox.Ability();
+            //woodBox.Ability();
         }
     }
     void InputPause()
