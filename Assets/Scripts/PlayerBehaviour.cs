@@ -239,14 +239,19 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LostSpeed()
     {
-        walkSpeed -= 0.05f;
+        walkSpeed -= 0.25f;
+        runSpeed -= 0.5f;
 
         if (walkSpeed <= 5)
         {
             walkSpeed = 5;
             lostSpeed = false;
         }
-        
+        if(runSpeed <= 7)
+        {
+            runSpeed = 7;
+            lostSpeed = false;
+        }
     }
 
     public void LiquidNegative()

@@ -5,8 +5,6 @@ using UnityEngine;
 public class OilTrigger : MonoBehaviour
 {
     private PlayerBehaviour player;
-    //public float lostSpeed;
-    public float counterTime;
 
     void Start ()
     {
