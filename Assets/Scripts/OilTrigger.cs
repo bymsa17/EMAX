@@ -5,6 +5,8 @@ using UnityEngine;
 public class OilTrigger : MonoBehaviour
 {
     private PlayerBehaviour player;
+    //public float lostSpeed;
+    public float counterTime;
 
     void Start ()
     {
@@ -25,8 +27,17 @@ public class OilTrigger : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("ExitPositivePlayer");
-            player.walkSpeed = 5;
-            player.runSpeed = 7;
+
+            player.lostSpeed = true;
+
+            /*if (player.walkSpeed <= 5)
+            {
+                player.walkSpeed = 5;
+            }
+            if (player.walkSpeed <= 7)
+            {
+                player.runSpeed = 7;
+            }*/
         }
     }
 }

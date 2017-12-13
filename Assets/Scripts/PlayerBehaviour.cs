@@ -44,6 +44,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int maxColliders = 2;
     public int numResults = 0;
     public float abilityForce = 5;
+    public bool lostSpeed = false;
 
     void Start()
     {
@@ -58,6 +59,8 @@ public class PlayerBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (lostSpeed == true) LostSpeed();
+
         switch (state)
         {
             case State.Default:
@@ -210,7 +213,9 @@ public class PlayerBehaviour : MonoBehaviour {
                 }
                 else if(results[i].gameObject.tag == "WoodBox")
                 {
-                    gameObject.SetActive(false);
+                    Vector2 dir = results[i].transform.position - this.transform.position;
+                    dir.Normalize();
+                    results[i].gameObject.SetActive(false);
                 }
             }
         }
@@ -230,6 +235,18 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         walkSpeed = walkSpeed * 2;
         runSpeed = runSpeed * 2;
+    }
+
+    public void LostSpeed()
+    {
+        walkSpeed -= 0.05f;
+
+        if (walkSpeed <= 5)
+        {
+            walkSpeed = 5;
+            lostSpeed = false;
+        }
+        
     }
 
     public void LiquidNegative()
