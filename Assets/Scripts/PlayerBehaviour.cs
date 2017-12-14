@@ -45,6 +45,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int numResults = 0;
     public float abilityForce = 5;
     public bool lostSpeed = false;
+    //public bool doAbility = false;
 
     void Start()
     {
@@ -59,12 +60,11 @@ public class PlayerBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (lostSpeed == true) LostSpeed();
-
         switch (state)
         {
             case State.Default:
                 DefaultUpdate();
+                if (lostSpeed == true) LostSpeed();
                 break;
             case State.Dead:
                 // TODO: DeadUpdate();
