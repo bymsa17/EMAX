@@ -233,22 +233,18 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LiquidPositive()
     {
-        walkSpeed = walkSpeed * 2;
-        runSpeed = runSpeed * 2;
+        walkSpeed = 10;
+        runSpeed = 14;
     }
 
     public void LostSpeed()
     {
-        walkSpeed -= 0.25f;
-        runSpeed -= 0.5f;
+        walkSpeed -= 0.1f;
+        runSpeed -= 0.14f;
 
-        if (walkSpeed <= 5)
+        if ((walkSpeed <= 5) || (runSpeed <= 7))
         {
             walkSpeed = 5;
-            lostSpeed = false;
-        }
-        if(runSpeed <= 7)
-        {
             runSpeed = 7;
             lostSpeed = false;
         }

@@ -27,8 +27,8 @@ public class OilTrigger : MonoBehaviour
             Debug.Log("ExitPositivePlayer");
 
             player.lostSpeed = true;
-
-            /*if (player.walkSpeed <= 5)
+            /*
+            if (player.walkSpeed <= 5)
             {
                 player.walkSpeed = 5;
             }
