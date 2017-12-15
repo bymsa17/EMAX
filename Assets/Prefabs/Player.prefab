@@ -11,6 +11,22 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1725140846427106}
   m_IsPrefabParent: 1
+--- !u!1 &1060029746627636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4967513928155546}
+  - component: {fileID: 58400851481928348}
+  m_Layer: 0
+  m_Name: AbilityArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1710584546701914
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,12 +82,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1725140846427106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.78, y: 1.36, z: 0.073971815}
+  m_LocalPosition: {x: 32.342865, y: 0.78, z: 0.073971815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4495445719774278}
+  - {fileID: 4967513928155546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4967513928155546
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060029746627636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4732193860617876}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50044983564179808
 Rigidbody2D:
@@ -93,6 +123,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!58 &58400851481928348
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060029746627636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5
 --- !u!61 &61889164294847172
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -152,7 +197,7 @@ MonoBehaviour:
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 3072
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
@@ -166,7 +211,7 @@ MonoBehaviour:
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 3072
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
@@ -203,10 +248,30 @@ MonoBehaviour:
   movementSpeed: 0
   horizontalSpeed: 0
   axis: {x: 0, y: 0}
-  jumpWalkForce: 7
-  jumpRunForce: 8
+  jumpWalkForce: 5
+  jumpRunForce: 6
   jumpForce: 0
   rend: {fileID: 212405687098329452}
+  abilityCollider: {fileID: 58400851481928348}
+  filter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  results: []
+  maxColliders: 10
+  numResults: 0
+  abilityForce: 30
+  lostSpeed: 0
 --- !u!212 &212405687098329452
 SpriteRenderer:
   m_ObjectHideFlags: 1

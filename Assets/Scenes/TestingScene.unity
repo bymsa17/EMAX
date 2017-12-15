@@ -112,50 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &146628422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 146628423}
-  - component: {fileID: 146628424}
-  m_Layer: 0
-  m_Name: AbilityArea
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &146628423
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 146628422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1029144589}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &146628424
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 146628422}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5
 --- !u!1001 &339819992
 Prefab:
   m_ObjectHideFlags: 0
@@ -982,51 +938,6 @@ Prefab:
     - target: {fileID: 1725140846427106, guid: ce094aacdec40e64fbabe2648abf343f, type: 2}
       propertyPath: m_Name
       value: Player (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: jumpWalkForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: jumpRunForce
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114162668663248234, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: groundFilter.layerMask.m_Bits
-      value: 3072
-      objectReference: {fileID: 0}
-    - target: {fileID: 114162668663248234, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: wallFilter.layerMask.m_Bits
-      value: 3072
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: filter.layerMask.m_Bits
-      value: 2048
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: filter.useLayerMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: abilityCollider
-      value: 
-      objectReference: {fileID: 146628424}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: maxColliders
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440158584245208, guid: ce094aacdec40e64fbabe2648abf343f,
-        type: 2}
-      propertyPath: abilityForce
-      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce094aacdec40e64fbabe2648abf343f, type: 2}
