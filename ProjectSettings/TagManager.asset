@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - MetalBox
   - WoodBox
+  - Bubble
   layers:
   - Default
   - TransparentFX
