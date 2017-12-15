@@ -139,7 +139,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 507497298}
-  - {fileID: 490436672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -158,7 +157,8 @@ MonoBehaviour:
   currentScene: 0
   nextScene: 0
   managerScene: 0
-  titleScene: 1
+  logoScene: 1
+  titleScene: 2
   sceneCountInBuildSettings: 0
   blackScreen: {fileID: 723597679}
 --- !u!1 &490436671
@@ -185,10 +185,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 490436671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 144.01865, y: 161.32452, z: 0.9200321}
+  m_LocalPosition: {x: 156.5, y: 184, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 285287113}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &490436673
@@ -248,8 +248,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507497297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 499.51865, y: 361.32452, z: 0.9200321}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: 290.51865, y: 147.82452, z: 0.9200321}
+  m_LocalScale: {x: 0.4734375, y: 0.4734375, z: 0.4734375}
   m_Children:
   - {fileID: 723597681}
   m_Father: {fileID: 285287113}
@@ -380,8 +380,8 @@ RectTransform:
   m_Father: {fileID: 507497298}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
