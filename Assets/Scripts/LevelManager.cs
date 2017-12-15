@@ -11,8 +11,8 @@ public class LevelManager : MonoBehaviour
     public int currentScene;
     public int nextScene;
     public int managerScene = 0;
-    //public int logoScene = 1;
-    public int titleScene = 1;
+    public int logoScene = 1;
+    public int titleScene = 2;
     public int sceneCountInBuildSettings;
     [Header("Load parameters")]
     AsyncOperation loadAsync = null;
@@ -53,6 +53,7 @@ public class LevelManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.N)) LoadNext();
             if(Input.GetKeyDown(KeyCode.B)) StartLoad(backScene);
+            if(Input.GetKeyDown(KeyCode.L)) StartLoad(logoScene);
             if(Input.GetKeyDown(KeyCode.M)) StartLoad(titleScene);
             if(Input.GetKeyDown(KeyCode.R)) StartLoad(currentScene);
         }
