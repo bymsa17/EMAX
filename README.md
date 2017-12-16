@@ -1,4 +1,4 @@
-![](https://github.com/bymsa17/EMAX/blob/master/ArtSources/banner_geomex_01.png)
+![](https://github.com/bymsa17/EMAX/blob/master/ArtSources/TitleGeomex.png)
 
 
 **GEOMEX** is a platform 2D videogame. In this game you are a robot, which has been put in another world by a scientist through a portal. Your objective is to escape from this world by collecting the pieces of the portal distributed in the different levels, unlocking the path and avoiding the dark fog that haunts you. 
