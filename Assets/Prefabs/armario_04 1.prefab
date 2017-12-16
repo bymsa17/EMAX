@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4959283252364404}
   - component: {fileID: 212293035855538598}
   - component: {fileID: 61735518785797694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: armario_04 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
