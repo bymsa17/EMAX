@@ -1155,12 +1155,12 @@ Prefab:
     - target: {fileID: 114631331652759452, guid: ce094aacdec40e64fbabe2648abf343f,
         type: 2}
       propertyPath: maxColliders
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114631331652759452, guid: ce094aacdec40e64fbabe2648abf343f,
         type: 2}
       propertyPath: abilityForce
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce094aacdec40e64fbabe2648abf343f, type: 2}
@@ -20241,8 +20241,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 214.04123, y: 39.127213, z: 3.25}
-  m_LocalScale: {x: 0.34921876, y: 0.34921876, z: 0.34921876}
+  m_LocalPosition: {x: 245.54123, y: 57.127213, z: 3.25}
+  m_LocalScale: {x: 0.3984375, y: 0.3984375, z: 0.3984375}
   m_Children:
   - {fileID: 1057452364}
   - {fileID: 1785396072}
