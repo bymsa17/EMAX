@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 690941228}
   - component: {fileID: 690941227}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ALGO
+  m_Text: test
 --- !u!222 &963319690
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 1015384771}
   - component: {fileID: 1015384770}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ALGO
+  m_Text: test
 --- !u!222 &1814761508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ALGO
+  m_Text: test
 --- !u!222 &1999748684
 CanvasRenderer:
   m_ObjectHideFlags: 0
