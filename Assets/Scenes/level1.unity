@@ -1150,7 +1150,7 @@ Prefab:
     - target: {fileID: 50327640618597746, guid: ce094aacdec40e64fbabe2648abf343f,
         type: 2}
       propertyPath: m_Mass
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114631331652759452, guid: ce094aacdec40e64fbabe2648abf343f,
         type: 2}
@@ -1161,6 +1161,11 @@ Prefab:
         type: 2}
       propertyPath: abilityForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50327640618597746, guid: ce094aacdec40e64fbabe2648abf343f,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce094aacdec40e64fbabe2648abf343f, type: 2}
@@ -20241,8 +20246,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 224.54123, y: 45.127213, z: 3.25}
-  m_LocalScale: {x: 0.365625, y: 0.365625, z: 0.365625}
+  m_LocalPosition: {x: 147.54123, y: 2.1271973, z: 3.25}
+  m_LocalScale: {x: 0.24531251, y: 0.24531251, z: 0.24531251}
   m_Children:
   - {fileID: 1057452364}
   - {fileID: 1785396072}
