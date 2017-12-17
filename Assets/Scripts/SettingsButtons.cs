@@ -9,7 +9,7 @@ public class SettingsButtons : MonoBehaviour
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
     }
 
-    public void ChangeResolution800x600()
+    public void ChangeResolution1600x1200()
     {
         Screen.SetResolution(1600, 1200, Screen.fullScreen);
     }
