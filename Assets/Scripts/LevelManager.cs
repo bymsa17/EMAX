@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour
         blackScreen.color = Color.black;
         FadeIn();
 
-        if(SceneManager.sceneCount >= 2) SceneManager.SetActiveScene(SceneManager.GetSceneAt(1));
+        //if(SceneManager.sceneCount >= 2) SceneManager.SetActiveScene(SceneManager.GetSceneAt(1));
 
         UpdateSceneState();
     }
@@ -38,13 +38,13 @@ public class LevelManager : MonoBehaviour
         sceneCountInBuildSettings = SceneManager.sceneCountInBuildSettings;
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
-
+        
         if(currentScene - 1 <= managerScene) backScene = sceneCountInBuildSettings - 1;
         else backScene = currentScene - 1;
 
         if(currentScene + 1 >= sceneCountInBuildSettings) nextScene = managerScene + 1;
         else nextScene = currentScene + 1;
-
+        
     }
 
     private void Update()
