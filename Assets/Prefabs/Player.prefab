@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470377076013250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.342865, y: 0.78, z: 0.073971815}
+  m_LocalPosition: {x: 34.47, y: 0.78, z: 0.073971815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4278684668418676}
@@ -210,7 +210,7 @@ MonoBehaviour:
   results: []
   maxColliders: 10
   numResults: 0
-  abilityForce: 30
+  abilityForce: 500
   lostSpeed: 0
 --- !u!114 &114729275441259888
 MonoBehaviour:
