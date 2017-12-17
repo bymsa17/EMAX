@@ -19082,6 +19082,16 @@ Prefab:
       propertyPath: m_Name
       value: MetalBox (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 50115776719599270, guid: 256b018bb6144b14a8ff768932c62db8,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 50115776719599270, guid: 256b018bb6144b14a8ff768932c62db8,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 256b018bb6144b14a8ff768932c62db8, type: 2}
   m_IsPrefabParent: 0
@@ -20246,8 +20256,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 147.54123, y: 2.1271973, z: 3.25}
-  m_LocalScale: {x: 0.24531251, y: 0.24531251, z: 0.24531251}
+  m_LocalPosition: {x: 245.04123, y: 56.627213, z: 3.25}
+  m_LocalScale: {x: 0.39765626, y: 0.39765626, z: 0.39765626}
   m_Children:
   - {fileID: 1057452364}
   - {fileID: 1785396072}
