@@ -509,6 +509,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114876445301289750, guid: ff79b438385637345bdd8a8188454027,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868827084787272, guid: ff79b438385637345bdd8a8188454027, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff79b438385637345bdd8a8188454027, type: 2}
   m_IsPrefabParent: 0
@@ -3860,8 +3869,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 312, y: 175.5, z: 0}
-  m_LocalScale: {x: 0.4875, y: 0.4875, z: 0.4875}
+  m_LocalPosition: {x: 186.5, y: 105, z: 0}
+  m_LocalScale: {x: 0.29140624, y: 0.29140624, z: 0.29140624}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1559064669}
