@@ -18,6 +18,8 @@
 
 ![](https://github.com/bymsa17/EMAX/blob/master/ConceptArt/props_boxes_01.png )
 
+![](https://github.com/bymsa17/EMAX/blob/master/ConceptArt/concept_propsInteractuables_finales.png )
+
 ![](https://github.com/bymsa17/EMAX/blob/master/ConceptArt/Sketch_Cientifico_1.png )
 
 ![](https://github.com/bymsa17/EMAX/blob/master/ConceptArt/Sketch_Cientifico_2.png  )
