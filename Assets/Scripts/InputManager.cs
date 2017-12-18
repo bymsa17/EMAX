@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     private PlayerBehaviour player;
     private BoxBehaviour metalBox;
     private BoxBehaviour woodBox;
+    public Transform canvasPause;
 
     void Start ()
     {
@@ -72,6 +73,16 @@ public class InputManager : MonoBehaviour
         {
             Debug.Log("Pause");
             // Pausar el juego
+            if(canvasPause.gameObject.activeInHierarchy == false)
+            {
+                canvasPause.gameObject.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                canvasPause.gameObject.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
     }
 }
