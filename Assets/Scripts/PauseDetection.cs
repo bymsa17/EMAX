@@ -9,12 +9,12 @@ public class PauseDetection : MonoBehaviour
 
     public void LoadScene(int buildIndex)
     {
-        SceneManager.LoadScene(buildIndex);
         if(Time.timeScale == 0)
         {
             Time.timeScale = 1;
             canvasGameplay.SetActive(true);
         }
         else canvasGameplay.SetActive(true);
+        SceneManager.LoadScene(buildIndex);
     }
 }
