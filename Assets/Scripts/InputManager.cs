@@ -23,6 +23,7 @@ public class InputManager : MonoBehaviour
         InputRun();
         InputAbility();
         InputPause();
+        InputGod();
     }
 
     void InputAxis()
@@ -83,6 +84,14 @@ public class InputManager : MonoBehaviour
                 canvasPause.gameObject.SetActive(false);
                 Time.timeScale = 1;
             }
+        }
+    }
+    void InputGod()
+    {
+        if(Input.GetKeyDown(KeyCode.F10))
+        {
+            Debug.Log("GOD");
+            player.SetGod();
         }
     }
 }

@@ -267,4 +267,14 @@ public class PlayerBehaviour : MonoBehaviour {
 }
 
     #endregion
+    #region Sets
+    public void SetGod()
+    {
+
+
+
+        state = State.God;
+    }
+    #endregion
+
 }
