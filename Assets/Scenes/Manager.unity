@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 285287113}
   - component: {fileID: 285287114}
+  - component: {fileID: 285287115}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -161,6 +162,17 @@ MonoBehaviour:
   titleScene: 4
   sceneCountInBuildSettings: 0
   blackScreen: {fileID: 723597679}
+--- !u!114 &285287115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285287112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6fa5bef7128ea4cbd1ad27b154ae82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &490436671
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,8 +260,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507497297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 488, y: 274.5, z: 0}
-  m_LocalScale: {x: 0.7625, y: 0.7625, z: 0.7625}
+  m_LocalPosition: {x: 133, y: 75, z: 0}
+  m_LocalScale: {x: 0.2078125, y: 0.2078125, z: 0.2078125}
   m_Children:
   - {fileID: 723597681}
   m_Father: {fileID: 285287113}
