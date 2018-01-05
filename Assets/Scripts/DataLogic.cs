@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DataLogic : MonoBehaviour
 {
-	// Use this for initialization
+    public Dropdown dropdown;
+
 	void Awake ()
     {      
         Language.Initialize();        
@@ -19,6 +21,18 @@ public class DataLogic : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha2))
         {
             Language.SetLanguage(Language.Lang.enUS);
+        }
+    }
+
+    public void SetLanguage()
+    {
+        if(dropdown.options.ToString() == "English")
+        {
+            Language.SetLanguage(Language.Lang.enUS);
+        }
+        else if(dropdown.options.ToString() == "Castellano")
+        {
+            Language.SetLanguage(Language.Lang.esES);
         }
     }
 }
