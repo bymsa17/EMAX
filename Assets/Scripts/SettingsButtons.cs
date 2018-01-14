@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsButtons : MonoBehaviour
 {
+    public Slider volumeSlider;
+
     public void ChangeResolution1920x1080()
     {
         Screen.SetResolution(1920, 1080, Screen.fullScreen);
@@ -42,6 +45,11 @@ public class SettingsButtons : MonoBehaviour
     public void SetFullScreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    public void OnValueChanged()
+    {
+        AudioListener.volume = volumeSlider.value;
     }
 }
 
