@@ -6,14 +6,11 @@ using UnityEngine.UI;
 public class DataLogic : MonoBehaviour
 {
     public Dropdown dropdown;
-    /*public string languageSelect;
-    public Text text;
-    public int dropdownValue;*/
 
     public void Start()
     {
-        dropdown = GetComponent<Dropdown>();
-        //Debug.Log("Starting Dropdown Value : " + dropdown.value);
+        dropdown = GetComponentInChildren<Dropdown>();
+        Language.SetLanguage(Language.Lang.enUS);
     }
 
     void Awake ()
@@ -23,10 +20,6 @@ public class DataLogic : MonoBehaviour
 
     private void Update()
     {
-        /*dropdownValue = dropdown.value;
-        languageSelect = dropdown.options[dropdownValue].text;
-        text.text = languageSelect;*/
-
         /*
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
