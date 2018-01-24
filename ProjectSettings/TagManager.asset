@@ -8,6 +8,7 @@ TagManager:
   - MetalBox
   - WoodBox
   - Bubble
+  - Ladder
   layers:
   - Default
   - TransparentFX

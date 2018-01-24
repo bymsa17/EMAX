@@ -15,9 +15,13 @@ public class PlayerBehaviour : MonoBehaviour {
     public bool isFacingRight = true;
     public bool isJumping = false;
     public bool isRunning = false;
+    public bool isLaddering = false;
+    public bool isLookingUp = false;
+    public bool isLookingDown = false;
     [Header("Physics")]
     public Rigidbody2D rb;
     public Collisions collisions;
+    private float gravity;
     [Header("Speed")]
     public float walkSpeed;
     public float runSpeed;
@@ -51,6 +55,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         collisions = GetComponent<Collisions>();
         rb = GetComponent<Rigidbody2D>();
+        gravity = rb.gravityScale;
 
         //player = this.transform;
 
@@ -99,6 +104,12 @@ public class PlayerBehaviour : MonoBehaviour {
         //Calcula el movimiento en horizontal
         HorizontalMovement();
         //Saltar
+
+        //Escalerindando
+        if (isLaddering)
+        {
+            VerticalMovement();
+        }
     }
 
     protected virtual void DeadUpdate()
@@ -137,11 +148,10 @@ public class PlayerBehaviour : MonoBehaviour {
 
     void VerticalMovement()
     {
-        /*
-         * bool lookingUp
-         * bool lookingDown
-         * bool crouch
-         */
+        if ((axis.y > 0.1f) || (axis.y < 0.1f))
+         {
+            this.transform.position += new Vector3(0, axis.y * 0.05f, 0);
+         }
     }
 
     void Jump()
@@ -154,6 +164,26 @@ public class PlayerBehaviour : MonoBehaviour {
         rend.flipX = !rend.flipX;
         isFacingRight = !isFacingRight;
         collisions.Flip();
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        rb.gravityScale = 0;
+        rb.velocity = Vector2.zero;
+        if (other.tag == "Ladder")
+        {
+            isLaddering = true;
+            canJump = false;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        rb.gravityScale = gravity;
+        if (other.tag == "Ladder")
+        {
+            isLaddering = false;
+            canJump = true;
+        }
     }
 
     #region Public functions
