@@ -9,6 +9,8 @@ TagManager:
   - WoodBox
   - Bubble
   - Ladder
+  - Base1
+  - Base2
   layers:
   - Default
   - TransparentFX
