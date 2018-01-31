@@ -54,4 +54,4 @@ public class BoxBehaviour : MonoBehaviour
         }*/
         boxTransform.position = boxPos;
     }
-    }
+}
