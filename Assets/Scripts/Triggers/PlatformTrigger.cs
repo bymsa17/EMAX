@@ -6,7 +6,7 @@ public class PlatformTrigger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if((other.tag == "Player") || (other.tag == "MetalBox") || (other.tag == "WoodBox"))
         {
             other.transform.SetParent(this.transform);
         }
@@ -14,7 +14,7 @@ public class PlatformTrigger : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if((other.tag == "Player") || (other.tag == "MetalBox") || (other.tag == "WoodBox"))
         {
             other.transform.SetParent(null);
         }
