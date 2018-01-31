@@ -11,6 +11,7 @@ TagManager:
   - Ladder
   - Base1
   - Base2
+  - Trunk
   layers:
   - Default
   - TransparentFX
