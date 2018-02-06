@@ -9,7 +9,7 @@ public class TrunkBehaviour : MonoBehaviour
     public float maxDistance;
     public bool active;
     public float startDelay;
-
+    public int repeat;
     public Vector3 iniPos;
     public Vector3 finalPos;
     public float currentTime;
@@ -19,7 +19,7 @@ public class TrunkBehaviour : MonoBehaviour
     {
         active = false;
         //maxDistance = this.transform.localPosition.y + maxDistance;
-
+        repeat = 2;
         iniPos = transform.localPosition;
         finalPos = new Vector3 (transform.localPosition.x, iniPos.y + maxDistance, transform.localPosition.z);
     }
@@ -39,31 +39,35 @@ public class TrunkBehaviour : MonoBehaviour
 
     public void UpTrunk()
     {
-        if(currentTime <= timeDuration)
+        if(repeat > 0)
         {
-            float value = BackEaseOut(currentTime, iniPos.y, finalPos.y - iniPos.y, timeDuration);
-
-            currentTime += Time.deltaTime;
-
-            transform.localPosition = new Vector3(transform.localPosition.x, value, transform.localPosition.z);
-
-            if(currentTime >= timeDuration)
+            if(currentTime <= timeDuration)
             {
-                transform.localPosition = new Vector3(transform.localPosition.x, finalPos.y, transform.localPosition.z);
+                float value = BackEaseOut(currentTime, iniPos.y, finalPos.y - iniPos.y, timeDuration);
+
+                currentTime += Time.deltaTime;
+
+                transform.localPosition = new Vector3(transform.localPosition.x, value, transform.localPosition.z);
+
+                if(currentTime >= timeDuration)
+                {
+                    transform.localPosition = new Vector3(transform.localPosition.x, finalPos.y, transform.localPosition.z);
+                }
             }
-        }
 
-        if(transform.localPosition.y == finalPos.y)
-        {
-            startDelay -= Time.deltaTime;
-
-            if(startDelay < 0)
+            if(transform.localPosition.y == finalPos.y)
             {
-                startDelay = 0;
-                currentTime = 0;
-                Vector3 ini = iniPos;
-                iniPos = finalPos;
-                finalPos = ini;
+                startDelay -= Time.deltaTime;
+
+                if(startDelay < 0)
+                {
+                    repeat--;
+                    startDelay = 0;
+                    currentTime = 0;
+                    Vector3 ini = iniPos;
+                    iniPos = finalPos;
+                    finalPos = ini;
+                }
             }
         }
     }
