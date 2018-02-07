@@ -168,19 +168,19 @@ public class PlayerBehaviour : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        rb.gravityScale = 0;
-        rb.velocity = Vector2.zero;
         if (other.tag == "Ladder")
         {
+            rb.gravityScale = 0;
+            rb.velocity = Vector2.zero;
             isLaddering = true;
             canJump = false;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        rb.gravityScale = gravity;
         if (other.tag == "Ladder")
         {
+            rb.gravityScale = gravity;
             isLaddering = false;
             canJump = true;
         }
