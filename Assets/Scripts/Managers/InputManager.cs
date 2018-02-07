@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class InputManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class InputManager : MonoBehaviour
     void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
+
+        AudioManager.Initialize();
+
         //metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
         //woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();
     }
