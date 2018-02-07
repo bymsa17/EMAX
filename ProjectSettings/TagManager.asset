@@ -12,6 +12,7 @@ TagManager:
   - Base1
   - Base2
   - Trunk
+  - Liquid
   layers:
   - Default
   - TransparentFX
