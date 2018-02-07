@@ -123,6 +123,8 @@ public class Collisions : MonoBehaviour {
     public void Flip()
     {
         sideBoxPos.x *= -1;
+        topBoxPos.x *= -1;
+        bottomBoxPos.x *= -1;
     }
 
     private void OnDrawGizmosSelected()
