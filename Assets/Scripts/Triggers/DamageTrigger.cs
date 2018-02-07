@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageTrigger : MonoBehaviour
 {
     private PlayerBehaviour player;
+    public int damage;
 
     // Use this for initialization
     void Start ()
@@ -17,7 +18,7 @@ public class DamageTrigger : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("DamagePlayer");
-            player.ReceiveDamage(1);
+            player.ReceiveDamage(damage);
             //Application.LoadLevel(Application.loadedLevelName);
         }
     }
