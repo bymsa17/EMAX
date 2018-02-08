@@ -7,6 +7,9 @@ public class PlayerBehaviour : MonoBehaviour {
     public enum State { Default, Dead, God };
     public State state = State.Default;
 
+    public bool isGod = false;
+    public BoxCollider2D boxCollider;
+
     //private Transform player;
     public int life;
     [Header("State")]
@@ -57,6 +60,7 @@ public class PlayerBehaviour : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         gravity = rb.gravityScale;
 
+        boxCollider = GetComponent<BoxCollider2D>();
         //player = this.transform;
 
         //collisions.MyStart();
@@ -75,7 +79,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 // TODO: DeadUpdate();
                 break;
             case State.God:
-                // TODO: GodUpdate();
+                GodUpdate();
                 break;
             default:
                 break;
@@ -115,6 +119,13 @@ public class PlayerBehaviour : MonoBehaviour {
     protected virtual void DeadUpdate()
     {
         //Animation dead player
+    }
+
+    protected virtual void GodUpdate()
+    {
+        //Input get axis x 
+        //Input get axis y
+        this.transform.position += new Vector3(axis.x * 0.1f, axis.y * 0.1f, 0);
     }
 
     void HorizontalMovement()
@@ -300,10 +311,23 @@ public class PlayerBehaviour : MonoBehaviour {
     #region Sets
     public void SetGod()
     {
+        isGod = !isGod;
 
-
-
-        state = State.God;
+        if (isGod)
+        {
+            state = State.God;
+            rb.gravityScale = 0;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            boxCollider.enabled = false;
+            rb.velocity *= 0;
+        }
+        else
+        {
+            state = State.Default;
+            rb.gravityScale = gravity;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            boxCollider.enabled = true;
+        }
     }
     #endregion
 
