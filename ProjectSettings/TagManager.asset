@@ -50,6 +50,9 @@ TagManager:
   - name: fondo
     uniqueID: 1483905581
     locked: 0
+  - name: fondosotano
+    uniqueID: 2501591339
+    locked: 0
   - name: Ground
     uniqueID: 3507950147
     locked: 0
