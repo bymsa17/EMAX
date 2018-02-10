@@ -25542,8 +25542,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 442.92123, y: 154.62721, z: 3.25}
-  m_LocalScale: {x: 0.66875, y: 0.66875, z: 0.66875}
+  m_LocalPosition: {x: 177.92123, y: 44.127213, z: 3.25}
+  m_LocalScale: {x: 0.2546875, y: 0.2546875, z: 0.2546875}
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
@@ -31300,6 +31300,23 @@ GameObject:
   m_PrefabParentObject: {fileID: 1470377076013250, guid: ce094aacdec40e64fbabe2648abf343f,
     type: 2}
   m_PrefabInternal: {fileID: 76772496}
+--- !u!95 &1690600621
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690600620}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 871faa72fe673c04d82562a05752f54d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1691558805 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4172527672698390, guid: 256b018bb6144b14a8ff768932c62db8,
