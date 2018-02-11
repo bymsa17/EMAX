@@ -51,7 +51,7 @@ public class SettingsButtons : MonoBehaviour
     public void OnValueChanged()
     {
         AudioManager.SetMusicVolume(musicSlider.value);
-        AudioManager.SetMusicVolume(sfxSlider.value);
+        AudioManager.SetSFXVolume(sfxSlider.value);
     }
 }
 

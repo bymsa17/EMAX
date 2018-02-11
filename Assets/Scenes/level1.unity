@@ -25458,8 +25458,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 374.42123, y: 201.12723, z: 3.25}
-  m_LocalScale: {x: 0.56171876, y: 0.56171876, z: 0.56171876}
+  m_LocalPosition: {x: 299.92123, y: 141.62721, z: 3.25}
+  m_LocalScale: {x: 0.4453125, y: 0.4453125, z: 0.4453125}
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
@@ -36618,15 +36618,15 @@ MonoBehaviour:
   m_FillRect: {fileID: 1146683508}
   m_HandleRect: {fileID: 219765588}
   m_Direction: 2
-  m_MinValue: 0
-  m_MaxValue: 100
+  m_MinValue: -40
+  m_MaxValue: 40
   m_WholeNumbers: 1
-  m_Value: 75
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1020869956}
-        m_MethodName: OnValueChange
+        m_MethodName: OnValueChanged
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36932,15 +36932,15 @@ MonoBehaviour:
   m_FillRect: {fileID: 1261577110}
   m_HandleRect: {fileID: 346196513}
   m_Direction: 2
-  m_MinValue: 0
-  m_MaxValue: 100
+  m_MinValue: -40
+  m_MaxValue: 40
   m_WholeNumbers: 1
-  m_Value: 75
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1020869956}
-        m_MethodName: OnValueChange
+        m_MethodName: OnValueChanged
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
