@@ -25458,8 +25458,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 299.92123, y: 141.62721, z: 3.25}
-  m_LocalScale: {x: 0.4453125, y: 0.4453125, z: 0.4453125}
+  m_LocalPosition: {x: 269.42123, y: 117.12721, z: 3.25}
+  m_LocalScale: {x: 0.39765626, y: 0.39765626, z: 0.39765626}
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
@@ -31244,7 +31244,7 @@ GameObject:
   - component: {fileID: 1665734471}
   - component: {fileID: 1665734470}
   - component: {fileID: 1665734469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boton_amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
