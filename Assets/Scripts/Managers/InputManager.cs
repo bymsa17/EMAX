@@ -12,9 +12,9 @@ public class InputManager : MonoBehaviour
 
     void Start ()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
-
         AudioManager.Initialize();
+
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
 
         //metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
         //woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();

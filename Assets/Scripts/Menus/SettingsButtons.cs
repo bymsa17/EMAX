@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SettingsButtons : MonoBehaviour
 {
-    public Slider volumeSlider;
+    public Slider musicSlider;
+    public Slider sfxSlider;
 
     public void ChangeResolution1920x1080()
     {
@@ -49,7 +50,8 @@ public class SettingsButtons : MonoBehaviour
 
     public void OnValueChanged()
     {
-        AudioListener.volume = volumeSlider.value;
+        AudioManager.SetMusicVolume(musicSlider.value);
+        AudioManager.SetMusicVolume(sfxSlider.value);
     }
 }
 
