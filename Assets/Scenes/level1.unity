@@ -4755,7 +4755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &301631682
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4766,12 +4766,16 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e4f69b1... Revert "Correct script PlayerBehaviour"
   m_LocalPosition: {x: 273.42126, y: 202.62723, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
 =======
   m_LocalPosition: {x: 169.42123, y: 0.6272278, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
 >>>>>>> parent of 5189be0... Fix botton reset
+<<<<<<< HEAD
 =======
   m_LocalPosition: {x: 169.42123, y: 0.62719727, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
@@ -4780,6 +4784,8 @@ RectTransform:
   m_LocalPosition: {x: 273.42126, y: 202.62723, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
 >>>>>>> parent of a417b21... Revert "Fix botton reset"
+=======
+>>>>>>> parent of e4f69b1... Revert "Correct script PlayerBehaviour"
   m_Children:
   - {fileID: 1704640571}
   - {fileID: 1677944296}
@@ -25636,12 +25642,16 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e4f69b1... Revert "Correct script PlayerBehaviour"
   m_LocalPosition: {x: 330.92123, y: 91.62721, z: 3.25}
   m_LocalScale: {x: 0.49375, y: 0.49375, z: 0.49375}
 =======
   m_LocalPosition: {x: 169.42123, y: 0.6272278, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
 >>>>>>> parent of 5189be0... Fix botton reset
+<<<<<<< HEAD
 =======
   m_LocalPosition: {x: 169.42123, y: 0.62719727, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
@@ -25650,6 +25660,8 @@ RectTransform:
   m_LocalPosition: {x: 330.92123, y: 91.62721, z: 3.25}
   m_LocalScale: {x: 0.49375, y: 0.49375, z: 0.49375}
 >>>>>>> parent of a417b21... Revert "Fix botton reset"
+=======
+>>>>>>> parent of e4f69b1... Revert "Correct script PlayerBehaviour"
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
