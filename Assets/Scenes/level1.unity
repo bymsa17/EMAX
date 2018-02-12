@@ -4765,6 +4765,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 273.42126, y: 202.62723, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
 =======
@@ -4775,6 +4776,10 @@ RectTransform:
   m_LocalPosition: {x: 169.42123, y: 0.62719727, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
 >>>>>>> parent of 4d963b6... Correct script PlayerBehaviour
+=======
+  m_LocalPosition: {x: 273.42126, y: 202.62723, z: 3.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> parent of a417b21... Revert "Fix botton reset"
   m_Children:
   - {fileID: 1704640571}
   - {fileID: 1677944296}
@@ -6770,7 +6775,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0f0205b790e7c8843bddcb361dddf094, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b1cb68ed36177a47bbd77f6eb2c411f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25630,6 +25635,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 330.92123, y: 91.62721, z: 3.25}
   m_LocalScale: {x: 0.49375, y: 0.49375, z: 0.49375}
 =======
@@ -25640,6 +25646,10 @@ RectTransform:
   m_LocalPosition: {x: 169.42123, y: 0.62719727, z: 3.25}
   m_LocalScale: {x: 0.24140625, y: 0.24140625, z: 0.24140625}
 >>>>>>> parent of 4d963b6... Correct script PlayerBehaviour
+=======
+  m_LocalPosition: {x: 330.92123, y: 91.62721, z: 3.25}
+  m_LocalScale: {x: 0.49375, y: 0.49375, z: 0.49375}
+>>>>>>> parent of a417b21... Revert "Fix botton reset"
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
