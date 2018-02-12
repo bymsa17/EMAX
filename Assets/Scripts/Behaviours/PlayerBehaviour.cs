@@ -316,6 +316,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if (isGod)
         {
             state = State.God;
+            horizontalSpeed = 0;
             rb.gravityScale = 0;
             rb.bodyType = RigidbodyType2D.Kinematic;
             boxCollider.enabled = false;
