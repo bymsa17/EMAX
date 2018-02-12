@@ -1978,7 +1978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ba64564cbad1c489f18f2a0d4570d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
+  musicSlider: {fileID: 286251731}
+  sfxSlider: {fileID: 451978413}
 --- !u!1 &544056606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,8 +4240,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 345.5, y: 194.5, z: 0}
-  m_LocalScale: {x: 0.53984374, y: 0.53984374, z: 0.53984374}
+  m_LocalPosition: {x: 220, y: 176, z: 0}
+  m_LocalScale: {x: 0.34375, y: 0.34375, z: 0.34375}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1559064669}
