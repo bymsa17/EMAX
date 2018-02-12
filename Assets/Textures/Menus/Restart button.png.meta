@@ -1,11 +1,16 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 1b1cb68ed36177a47bbd77f6eb2c411f
 timeCreated: 1518466298
 =======
 guid: 0f0205b790e7c8843bddcb361dddf094
 timeCreated: 1518460496
 >>>>>>> parent of 62706ab... Merge remote-tracking branch 'origin/master'
+=======
+guid: f3a102af0faf3484c9100ff1153a4af5
+timeCreated: 1518460338
+>>>>>>> parent of 5189be0... Fix botton reset
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
