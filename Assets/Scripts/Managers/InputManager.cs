@@ -5,11 +5,18 @@ using UnityEngine.Audio;
 
 public class InputManager : MonoBehaviour
 {
+    //private LevelManager manager;
     private PlayerBehaviour player;
     private BoxBehaviour metalBox;
     private BoxBehaviour woodBox;
     public Transform canvasPause;
-
+    /*
+    public int backScene;
+    public int currentScene;
+    public int nextScene;
+    public int logoScene = 1;
+    public int titleScene = 2;
+    */
     void Start ()
     {
         AudioManager.Initialize();
@@ -28,6 +35,7 @@ public class InputManager : MonoBehaviour
         InputAbility();
         InputPause();
         InputGod();
+        //InputLevelManager();
     }
 
     void InputAxis()
@@ -96,6 +104,19 @@ public class InputManager : MonoBehaviour
         {
             Debug.Log("GOD");
             player.SetGod();
+            //manager.Update();
+            //InputLevelManager();
         }
     }
+    /*void InputLevelManager()
+    {
+        if(Input.GetKey(KeyCode.AltGr))
+        {
+            if(Input.GetKeyDown(KeyCode.N)) manager.LoadNext();
+            if(Input.GetKeyDown(KeyCode.B)) manager.StartLoad(backScene);
+            if(Input.GetKeyDown(KeyCode.L)) manager.StartLoad(logoScene);
+            if(Input.GetKeyDown(KeyCode.M)) manager.StartLoad(titleScene);
+            if(Input.GetKeyDown(KeyCode.R)) manager.StartLoad(currentScene);
+        }
+    }*/
 }
