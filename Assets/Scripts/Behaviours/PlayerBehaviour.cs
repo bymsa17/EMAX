@@ -10,7 +10,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public bool isGod = false;
     public BoxCollider2D boxCollider;
 
-   
+    public Animator anim;
 
     //private Transform player;
     public int life;
@@ -100,6 +100,7 @@ public class PlayerBehaviour : MonoBehaviour {
             isJumping = false;
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            anim.SetBool("jump", false);
         }
         //Aplicaremos el movimiento
         rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
@@ -152,8 +153,12 @@ public class PlayerBehaviour : MonoBehaviour {
 
         if (isFacingRight && axis.x < -0.1f) Flip();
         if (!isFacingRight && axis.x > 0.1f) Flip();
-        
-        if (isRunning) movementSpeed = runSpeed;
+
+        if (isRunning)
+        {
+            movementSpeed = runSpeed;
+            anim.SetBool("run", true);
+        }
         else movementSpeed = walkSpeed;
 
         horizontalSpeed = movementSpeed * axis.x;
@@ -170,6 +175,7 @@ public class PlayerBehaviour : MonoBehaviour {
     void Jump()
     {
         isJumping = true;
+        anim.SetBool("jump", true);
         
     }
 
@@ -268,6 +274,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public void ReceiveDamage(int damge)
     {
         life -= damge;
+        anim.SetBool("damage", true);
         if(life <= 0)
         {
             life = 0;
