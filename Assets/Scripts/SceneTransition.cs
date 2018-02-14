@@ -25,7 +25,7 @@ public class SceneTransition : MonoBehaviour
 
         currentTime += Time.deltaTime;
 
-        if(currentTime >= fadeTime)
+        if(currentTime >= fadeTime+.1f)
         {
             SceneManager.LoadScene(sceneToLoad);
         }
@@ -42,7 +42,7 @@ public class SceneTransition : MonoBehaviour
     }
     void FadeOut()
     {
-        blackScreen.CrossFadeAlpha(1, fadeTime, true);
+        blackScreen.CrossFadeAlpha(1, fadeTime/4, true);
         fadeOut = true;
         //StartCoroutine(WaitForFade());
     }

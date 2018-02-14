@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &601533813 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114074355804042068, guid: 36adb7c9d15a4da488b3eb5b73238f60,
+    type: 2}
+  m_PrefabInternal: {fileID: 1236060007}
+  m_Script: {fileID: 11500000, guid: 0d7862bce0fed314ebc353b89afef72b, type: 3}
 --- !u!1 &866498370
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +237,7 @@ GameObject:
   - component: {fileID: 1223408570}
   - component: {fileID: 1223408569}
   - component: {fileID: 1223408568}
+  - component: {fileID: 1223408572}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -302,8 +309,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1223408567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 329.5, y: 185.5, z: 0}
-  m_LocalScale: {x: 0.51484376, y: 0.51484376, z: 0.51484376}
+  m_LocalPosition: {x: 356, y: 200.5, z: 0}
+  m_LocalScale: {x: 0.55625, y: 0.55625, z: 0.55625}
   m_Children:
   - {fileID: 976911033}
   - {fileID: 1291093378}
@@ -315,6 +322,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1223408572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223408567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55edd58682f1a784a8fd67c67ec29e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 601533813}
 --- !u!1001 &1236060007
 Prefab:
   m_ObjectHideFlags: 0
@@ -325,12 +344,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 329.5
+      value: 356
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 185.5
+      value: 200.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
