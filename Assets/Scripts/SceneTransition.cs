@@ -52,6 +52,4 @@ public class SceneTransition : MonoBehaviour
         sceneToLoad = n;
         FadeOut();
     }
-
-
 }
