@@ -10,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour {
     public bool isGod = false;
     public BoxCollider2D boxCollider;
 
+    public Animator anim;
+
     //private Transform player;
     public int life;
     [Header("State")]
@@ -168,6 +170,7 @@ public class PlayerBehaviour : MonoBehaviour {
     void Jump()
     {
         isJumping = true;
+        anim.SetBool("walk", true);
     }
 
     void Flip()
