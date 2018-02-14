@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class SceneTransition : MonoBehaviour
 {
     float currentTime;
-    float timeDuration = 5;
     float fadeTime = 2.0f;
-
+    int sceneToLoad = 0;
     public Image blackScreen;
+
+    bool fadeOut = false;
 
     void Start ()
     {
@@ -20,14 +21,14 @@ public class SceneTransition : MonoBehaviour
 	
 	void Update ()
     {
+        if(!fadeOut) return;
+
         currentTime += Time.deltaTime;
 
-        if(currentTime >= timeDuration)
+        if(currentTime >= fadeTime)
         {
-            FadeOut();
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(sceneToLoad);
         }
-
     }
 
     public void LoadScene(string title)
@@ -42,6 +43,15 @@ public class SceneTransition : MonoBehaviour
     void FadeOut()
     {
         blackScreen.CrossFadeAlpha(1, fadeTime, true);
+        fadeOut = true;
         //StartCoroutine(WaitForFade());
     }
+
+    public void LoadScene(int n)
+    {
+        sceneToLoad = n;
+        FadeOut();
+    }
+
+
 }
