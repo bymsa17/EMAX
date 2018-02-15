@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4172527672698390}
   - component: {fileID: 212916224384376618}
   - component: {fileID: 61729766851351372}
-  - component: {fileID: 114813478333394450}
   - component: {fileID: 50115776719599270}
   m_Layer: 11
   m_Name: MetalBox (1)
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974386437055920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.26295, y: 0.8614282, z: 0}
+  m_LocalPosition: {x: 12.370913, y: 2.341081, z: -0.10366827}
   m_LocalScale: {x: 0.29, y: 0.29, z: 0.29}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,21 +87,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 2.5}
   m_EdgeRadius: 0
---- !u!114 &114813478333394450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1974386437055920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdefaa368a0e0cb4b8ff44e542d9eec4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxTransform: {fileID: 4172527672698390}
-  boxPos: {x: 0, y: 0}
-  distance: {x: 5, y: 0}
-  speed: 3
 --- !u!212 &212916224384376618
 SpriteRenderer:
   m_ObjectHideFlags: 1

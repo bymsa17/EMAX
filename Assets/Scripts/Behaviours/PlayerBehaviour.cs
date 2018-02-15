@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public BoxCollider2D boxCollider;
 
     public Animator anim;
+    private AudioPlayer audioPlayer;
 
     //private Transform player;
     public int life;
@@ -63,6 +64,9 @@ public class PlayerBehaviour : MonoBehaviour {
         gravity = rb.gravityScale;
 
         boxCollider = GetComponent<BoxCollider2D>();
+
+        audioPlayer = GetComponentInChildren<AudioPlayer>();
+
         //player = this.transform;
 
         //collisions.MyStart();
@@ -173,7 +177,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if ((axis.y > 0.1f) || (axis.y < 0.1f))
          {
             this.transform.position += new Vector3(0, axis.y * 0.05f, 0);
-         }
+        }
     }
 
     void Jump()
@@ -196,6 +200,8 @@ public class PlayerBehaviour : MonoBehaviour {
             rb.velocity = Vector2.zero;
             isLaddering = true;
             canJump = false;
+            anim.SetBool("isGrounded", collisions.isGrounded);
+            //audioPlayer.PlaySFX(1, 1, Random.Range(0.9f, 1.1f));
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -268,6 +274,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     Vector2 dir = results[i].transform.position - this.transform.position;
                     dir.Normalize();
                     results[i].gameObject.SetActive(false);
+                    audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
                 }
             }
         }
