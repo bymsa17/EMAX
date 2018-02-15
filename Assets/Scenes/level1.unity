@@ -214,7 +214,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7139755}
   - component: {fileID: 7139754}
-  - component: {fileID: 7139753}
   m_Layer: 10
   m_Name: Ground Sprite (21)
   m_TagString: Untagged
@@ -222,32 +221,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &7139753
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 7139752}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &7139754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1068,7 +1041,6 @@ GameObject:
   m_Component:
   - component: {fileID: 57569493}
   - component: {fileID: 57569492}
-  - component: {fileID: 57569491}
   m_Layer: 10
   m_Name: Ground Sprite (66)
   m_TagString: Untagged
@@ -1076,32 +1048,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &57569491
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 57569490}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &57569492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6082,7 +6028,6 @@ GameObject:
   m_Component:
   - component: {fileID: 346020537}
   - component: {fileID: 346020539}
-  - component: {fileID: 346020538}
   m_Layer: 10
   m_Name: Ground Sprite (76)
   m_TagString: Untagged
@@ -6104,32 +6049,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &346020538
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 346020536}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &346020539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7466,7 +7385,6 @@ GameObject:
   m_Component:
   - component: {fileID: 424392701}
   - component: {fileID: 424392700}
-  - component: {fileID: 424392699}
   m_Layer: 10
   m_Name: Ground Sprite (44)
   m_TagString: Untagged
@@ -7474,32 +7392,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &424392699
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 424392698}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &424392700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9275,7 +9167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 524022492}
   - component: {fileID: 524022491}
-  - component: {fileID: 524022490}
   m_Layer: 10
   m_Name: Ground Sprite (54)
   m_TagString: Untagged
@@ -9283,32 +9174,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &524022490
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 524022489}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &524022491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10531,7 +10396,6 @@ GameObject:
   m_Component:
   - component: {fileID: 613513419}
   - component: {fileID: 613513421}
-  - component: {fileID: 613513420}
   m_Layer: 10
   m_Name: Ground Sprite (71)
   m_TagString: Untagged
@@ -10553,32 +10417,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &613513420
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 613513418}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &613513421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11061,7 +10899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4905746379074630, guid: 9607ba2648b421349b5106d14933cc30, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.2936602
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 4905746379074630, guid: 9607ba2648b421349b5106d14933cc30, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11584,7 +11422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711373662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 898.3, y: -11.26, z: 0}
+  m_LocalPosition: {x: 898.12, y: -11.26, z: 0}
   m_LocalScale: {x: -233.2, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 151963003}
@@ -12910,7 +12748,6 @@ GameObject:
   m_Component:
   - component: {fileID: 772192004}
   - component: {fileID: 772192006}
-  - component: {fileID: 772192005}
   m_Layer: 10
   m_Name: Ground Sprite (77)
   m_TagString: Untagged
@@ -12932,32 +12769,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &772192005
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 772192003}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &772192006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14878,7 +14689,6 @@ GameObject:
   m_Component:
   - component: {fileID: 876901383}
   - component: {fileID: 876901382}
-  - component: {fileID: 876901381}
   m_Layer: 10
   m_Name: Ground Sprite (59)
   m_TagString: Untagged
@@ -14886,32 +14696,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &876901381
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876901380}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &876901382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16191,7 +15975,6 @@ GameObject:
   m_Component:
   - component: {fileID: 942218264}
   - component: {fileID: 942218266}
-  - component: {fileID: 942218265}
   m_Layer: 10
   m_Name: Ground Sprite (78)
   m_TagString: Untagged
@@ -16213,32 +15996,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &942218265
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 942218263}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &942218266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17406,7 +17163,6 @@ GameObject:
   m_Component:
   - component: {fileID: 999667077}
   - component: {fileID: 999667079}
-  - component: {fileID: 999667078}
   m_Layer: 10
   m_Name: Ground Sprite (84)
   m_TagString: Untagged
@@ -17428,32 +17184,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &999667078
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999667076}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &999667079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27400,7 +27130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1312456880}
   - component: {fileID: 1312456879}
-  - component: {fileID: 1312456878}
   m_Layer: 10
   m_Name: Ground Sprite (19)
   m_TagString: Untagged
@@ -27408,32 +27137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1312456878
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312456877}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1312456879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27841,7 +27544,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1334643395}
   - component: {fileID: 1334643397}
-  - component: {fileID: 1334643396}
   m_Layer: 10
   m_Name: Ground Sprite (68)
   m_TagString: Untagged
@@ -27863,32 +27565,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1334643396
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1334643394}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1334643397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29024,7 +28700,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1411912172}
   - component: {fileID: 1411912174}
-  - component: {fileID: 1411912173}
   m_Layer: 10
   m_Name: Ground Sprite (69)
   m_TagString: Untagged
@@ -29046,32 +28721,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1411912173
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411912171}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1411912174
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30657,7 +30306,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1504064307}
   - component: {fileID: 1504064306}
-  - component: {fileID: 1504064305}
   m_Layer: 10
   m_Name: Ground Sprite (36)
   m_TagString: Untagged
@@ -30665,32 +30313,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1504064305
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504064304}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1504064306
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31748,7 +31370,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1553198610}
   - component: {fileID: 1553198609}
-  - component: {fileID: 1553198608}
   m_Layer: 10
   m_Name: Ground Sprite (18)
   m_TagString: Untagged
@@ -31756,32 +31377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1553198608
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1553198607}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1553198609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32948,106 +32543,6 @@ CompositeCollider2D:
         Y: -81541560
       - X: 3161920256
         Y: -81541560
-  - m_Collider: {fileID: 1553198608}
-    m_ColliderPaths:
-    - - X: 1472522880
-        Y: 2300000
-      - X: 1408705408
-        Y: 2300000
-      - X: 1408705408
-        Y: -4699999
-      - X: 1472522880
-        Y: -4699999
-  - m_Collider: {fileID: 876901381}
-    m_ColliderPaths:
-    - - X: 1522490240
-        Y: -44900004
-      - X: 1458672768
-        Y: -44900004
-      - X: 1458672768
-        Y: -51900000
-      - X: 1522490240
-        Y: -51900000
-  - m_Collider: {fileID: 1886710168}
-    m_ColliderPaths:
-    - - X: 1502882944
-        Y: -24300000
-      - X: 1439065600
-        Y: -24300000
-      - X: 1439065600
-        Y: -31299998
-      - X: 1502882944
-        Y: -31299998
-  - m_Collider: {fileID: 7139753}
-    m_ColliderPaths:
-    - - X: 1488910336
-        Y: -10599998
-      - X: 1425092864
-        Y: -10599998
-      - X: 1425092864
-        Y: -17599998
-      - X: 1488910336
-        Y: -17599998
-  - m_Collider: {fileID: 1504064305}
-    m_ColliderPaths:
-    - - X: 1496155392
-        Y: -17599998
-      - X: 1432337920
-        Y: -17599998
-      - X: 1432337920
-        Y: -24599998
-      - X: 1496155392
-        Y: -24599998
-  - m_Collider: {fileID: 424392699}
-    m_ColliderPaths:
-    - - X: 1509322624
-        Y: -31300002
-      - X: 1445505280
-        Y: -31300002
-      - X: 1445505280
-        Y: -38300000
-      - X: 1509322624
-        Y: -38300000
-  - m_Collider: {fileID: 57569491}
-    m_ColliderPaths:
-    - - X: 1530281472
-        Y: -51900000
-      - X: 1466464128
-        Y: -51900000
-      - X: 1466464128
-        Y: -58900000
-      - X: 1530281472
-        Y: -58900000
-  - m_Collider: {fileID: 2051308263}
-    m_ColliderPaths:
-    - - X: 1538331392
-        Y: -58900000
-      - X: 1474514048
-        Y: -58900000
-      - X: 1474514048
-        Y: -65899996
-      - X: 1538331392
-        Y: -65899996
-  - m_Collider: {fileID: 524022490}
-    m_ColliderPaths:
-    - - X: 1516296960
-        Y: -38236252
-      - X: 1444940160
-        Y: -38236252
-      - X: 1444940160
-        Y: -67163752
-      - X: 1516296960
-        Y: -67163752
-  - m_Collider: {fileID: 1312456878}
-    m_ColliderPaths:
-    - - X: 1480860416
-        Y: -3899998
-      - X: 1417042944
-        Y: -3899998
-      - X: 1417042944
-        Y: -10899998
-      - X: 1480860416
-        Y: -10899998
   m_CompositePaths:
     m_Paths:
     - - {x: 316.20303, y: -8.023218}
@@ -33102,46 +32597,18 @@ CompositeCollider2D:
       - {x: -34.547825, y: 10.612235}
       - {x: -34.547825, y: 6.987766}
       - {x: 72.80815, y: 6.987766}
-    - - {x: 153.02815, y: -5.89}
-      - {x: 153.02815, y: -5.19}
-      - {x: 152.24902, y: -5.19}
-      - {x: 152.24902, y: -4.4900002}
-      - {x: 151.6297, y: -4.4900002}
-      - {x: 151.6297, y: -3.8236253}
-      - {x: 150.93228, y: -3.8236253}
-      - {x: 150.93228, y: -3.57}
-      - {x: 150.93227, y: -3.57}
-      - {x: 150.93227, y: -3.1300004}
-      - {x: 150.2883, y: -3.1300004}
-      - {x: 150.2883, y: -2.43}
-      - {x: 149.61554, y: -2.43}
-      - {x: 149.61554, y: -1.7599999}
-      - {x: 148.89104, y: -1.7599999}
-      - {x: 148.89104, y: -1.0599998}
-      - {x: 148.08604, y: -1.0599998}
-      - {x: 148.08604, y: -0.3899998}
-      - {x: 147.25229, y: -0.3899998}
-      - {x: 147.25229, y: 0.23}
-      - {x: 140.87054, y: 0.23}
+    - - {x: 148.89104, y: -1.4999999}
+      - {x: 148.08604, y: -1.4999999}
+      - {x: 148.08604, y: -0.8299998}
+      - {x: 147.25229, y: -0.8299998}
+      - {x: 147.25229, y: -0.21000001}
+      - {x: 140.87054, y: -0.21000001}
       - {x: 140.87054, y: -0.91}
       - {x: 141.7043, y: -0.91}
       - {x: 141.7043, y: -1.53}
       - {x: 142.5093, y: -1.53}
       - {x: 142.5093, y: -2.1999998}
-      - {x: 143.2338, y: -2.1999998}
-      - {x: 143.2338, y: -2.8999999}
-      - {x: 143.90656, y: -2.8999999}
-      - {x: 143.90656, y: -3.57}
-      - {x: 144.55054, y: -3.57}
-      - {x: 144.55054, y: -3.8236253}
-      - {x: 144.49402, y: -3.8236253}
-      - {x: 144.49402, y: -7.156376}
-      - {x: 145.10594, y: -7.156376}
-      - {x: 145.10594, y: -15.614355}
-      - {x: 161.16957, y: -15.614355}
-      - {x: 161.16957, y: -7.0256443}
-      - {x: 153.83315, y: -7.0256443}
-      - {x: 153.83315, y: -5.89}
+      - {x: 148.89104, y: -2.1999998}
     - - {x: 225.54282, y: -15.651013}
       - {x: 291.7578, y: -15.651013}
       - {x: 291.7578, y: -15.63}
@@ -33162,6 +32629,32 @@ CompositeCollider2D:
       - {x: 167.90234, y: -6.9460807}
       - {x: 167.90234, y: -15.65392}
       - {x: 225.54282, y: -15.65392}
+    - - {x: 144.55054, y: -4.2636237}
+      - {x: 144.49402, y: -4.2636237}
+      - {x: 144.49402, y: -7.156376}
+      - {x: 145.10594, y: -7.156376}
+      - {x: 145.10594, y: -15.614355}
+      - {x: 161.16957, y: -15.614355}
+      - {x: 161.16957, y: -7.0256443}
+      - {x: 153.83315, y: -7.0256443}
+      - {x: 153.83315, y: -6.33}
+      - {x: 153.02815, y: -6.33}
+      - {x: 153.02815, y: -5.63}
+      - {x: 152.24902, y: -5.63}
+      - {x: 152.24902, y: -4.9300003}
+      - {x: 151.6297, y: -4.9300003}
+      - {x: 151.6297, y: -4.2636237}
+      - {x: 150.93228, y: -4.2636237}
+      - {x: 150.93228, y: -3.57}
+      - {x: 150.2883, y: -3.57}
+      - {x: 150.2883, y: -2.8700001}
+      - {x: 149.61554, y: -2.8700001}
+      - {x: 149.61554, y: -2.2}
+      - {x: 143.2338, y: -2.2}
+      - {x: 143.2338, y: -2.8999999}
+      - {x: 143.90656, y: -2.8999999}
+      - {x: 143.90656, y: -3.57}
+      - {x: 144.55054, y: -3.57}
   m_VertexDistance: 0.0005
 --- !u!50 &1609884551
 Rigidbody2D:
@@ -38020,7 +37513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1819986737}
   - component: {fileID: 1819986739}
-  - component: {fileID: 1819986738}
   m_Layer: 10
   m_Name: Ground Sprite (82)
   m_TagString: Untagged
@@ -38042,32 +37534,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1819986738
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1819986736}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1819986739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39461,7 +38927,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1886710170}
   - component: {fileID: 1886710169}
-  - component: {fileID: 1886710168}
   m_Layer: 10
   m_Name: Ground Sprite (38)
   m_TagString: Untagged
@@ -39469,32 +38934,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1886710168
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1886710167}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1886710169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42779,7 +42218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2051308265}
   - component: {fileID: 2051308264}
-  - component: {fileID: 2051308263}
   m_Layer: 10
   m_Name: Ground Sprite (67)
   m_TagString: Untagged
@@ -42787,32 +42225,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &2051308263
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051308262}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &2051308264
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43138,7 +42550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2064217840}
   - component: {fileID: 2064217842}
-  - component: {fileID: 2064217841}
   m_Layer: 10
   m_Name: Ground Sprite (79)
   m_TagString: Untagged
@@ -43160,32 +42571,6 @@ Transform:
   m_Father: {fileID: 151963003}
   m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2064217841
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61366474465934846, guid: 41bfc1b168c13284590b99b7523a62a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064217839}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &2064217842
 SpriteRenderer:
   m_ObjectHideFlags: 0
