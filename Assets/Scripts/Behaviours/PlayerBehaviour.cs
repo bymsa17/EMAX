@@ -15,6 +15,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     //private Transform player;
     public int life;
+    public int damage = 1;
 
     [Header("State")]
     public bool canMove = true;
@@ -83,7 +84,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 if (lostSpeed == true) LostSpeed();
                 break;
             case State.Dead:
-                // TODO: DeadUpdate();
+                DeadUpdate();
                 break;
             case State.God:
                 GodUpdate();
@@ -130,6 +131,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     protected virtual void DeadUpdate()
     {
+        Time.timeScale = 0;
         //Animation dead player
     }
 
@@ -217,10 +219,10 @@ public class PlayerBehaviour : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*if(collision)
+        if(collision.gameObject.tag == "Hazard")
         {
-            ReceiveDamage(1);
-        }*/
+            ReceiveDamage();
+        }
     }
 
     #region Public functions
@@ -289,7 +291,7 @@ public class PlayerBehaviour : MonoBehaviour {
         }
     }
 
-    public void ReceiveDamage(int damage)
+    public void ReceiveDamage()
     {
         life -= damage;
         anim.SetBool("damage", true);
