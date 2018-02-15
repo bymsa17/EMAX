@@ -16,6 +16,6 @@ public class MouseDetection : MonoBehaviour
     public void MouseExit()
     {
         Debug.Log("MouseExit");
-        easing.repeat = 2;
+        easing.repeat = 2; 
     }
 }

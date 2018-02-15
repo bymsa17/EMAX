@@ -15,6 +15,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     //private Transform player;
     public int life;
+
     [Header("State")]
     public bool canMove = true;
     public bool canJump = true;
@@ -214,6 +215,14 @@ public class PlayerBehaviour : MonoBehaviour {
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        /*if(collision)
+        {
+            ReceiveDamage(1);
+        }*/
+    }
+
     #region Public functions
     public void SetAxis(Vector2 inputAxis)
     {
@@ -280,9 +289,9 @@ public class PlayerBehaviour : MonoBehaviour {
         }
     }
 
-    public void ReceiveDamage(int damge)
+    public void ReceiveDamage(int damage)
     {
-        life -= damge;
+        life -= damage;
         anim.SetBool("damage", true);
         if(life <= 0)
         {

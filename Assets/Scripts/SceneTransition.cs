@@ -44,7 +44,6 @@ public class SceneTransition : MonoBehaviour
     {
         blackScreen.CrossFadeAlpha(1, fadeTime/4, true);
         fadeOut = true;
-        //StartCoroutine(WaitForFade());
     }
 
     public void LoadScene(int n)

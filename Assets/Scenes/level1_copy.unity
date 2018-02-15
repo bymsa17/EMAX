@@ -12885,7 +12885,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1483905581
   m_SortingLayer: -4
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: b8a700d5fb8886747adad432b8727f10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21880,52 +21880,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4172527672698390, guid: 256b018bb6144b14a8ff768932c62db8,
     type: 2}
   m_PrefabInternal: {fileID: 1192400822}
---- !u!1001 &1193495877
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1027716092}
-    m_Modifications:
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.2140045
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.0130001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.19352183
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_RootOrder
-      value: 47
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013453373134746, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-      propertyPath: m_Name
-      value: baril_toxico
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1203517040 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4684176541195118, guid: 64cb0d480460d2b429d8d1be573f4ca1,
@@ -28019,8 +27973,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351913496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 535.92126, y: 206.62723, z: 3.25}
-  m_LocalScale: {x: 0.8140625, y: 0.8140625, z: 0.8140625}
+  m_LocalPosition: {x: 177.92123, y: 5.127228, z: 3.25}
+  m_LocalScale: {x: 0.2546875, y: 0.2546875, z: 0.2546875}
   m_Children:
   - {fileID: 1785396072}
   m_Father: {fileID: 42664976}
@@ -29008,6 +28962,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1414805585
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1027716092}
+    m_Modifications:
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.2140045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.0130001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.19352183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013453373134746, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+      propertyPath: m_Name
+      value: baril_toxico
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 17cef32bd426f9c4eb47513d0017be5f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1418600343 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4959283252364404, guid: 44900e6c7c7f32e46aa8a05a8b03135a,
@@ -43095,7 +43095,7 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 4644066765078082, guid: 17cef32bd426f9c4eb47513d0017be5f,
     type: 2}
-  m_PrefabInternal: {fileID: 1193495877}
+  m_PrefabInternal: {fileID: 1414805585}
 --- !u!1001 &2071826301
 Prefab:
   m_ObjectHideFlags: 0
