@@ -65,3 +65,6 @@ TagManager:
   - name: Player
     uniqueID: 4190683827
     locked: 0
+  - name: pareddelante
+    uniqueID: 1556668197
+    locked: 0
