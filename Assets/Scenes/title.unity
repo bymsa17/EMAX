@@ -812,7 +812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGameplay: {fileID: 0}
-  easing: {fileID: 0}
 --- !u!1 &231061525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,7 +3746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGameplay: {fileID: 0}
-  easing: {fileID: 0}
 --- !u!1 &1228943508
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,6 +7173,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2099360451}
+          m_MethodName: MouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -7194,6 +7203,7 @@ MonoBehaviour:
   finalValue: {x: 0.8, y: 0.8, z: 0}
   currentTime: 0
   timeDuration: 0.5
+  repeat: 0
   isActive: 0
 --- !u!114 &2099360451
 MonoBehaviour:

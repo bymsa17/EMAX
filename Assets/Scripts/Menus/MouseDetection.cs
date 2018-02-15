@@ -12,4 +12,10 @@ public class MouseDetection : MonoBehaviour
         easing.isActive = true;
         easing.Update();
     }
+
+    public void MouseExit()
+    {
+        Debug.Log("MouseExit");
+        easing.repeat = 2;
+    }
 }
