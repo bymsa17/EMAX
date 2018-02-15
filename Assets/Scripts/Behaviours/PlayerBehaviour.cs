@@ -217,13 +217,22 @@ public class PlayerBehaviour : MonoBehaviour {
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnParticleCollision(GameObject other)
     {
-        if(collision.gameObject.tag == "Hazard")
+        if(other.gameObject.layer == 13)
         {
+            Debug.Log("CollisionHazard");
             ReceiveDamage();
         }
     }
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 13)
+        {
+            Debug.Log("CollisionHazard");
+            ReceiveDamage();
+        }
+    }*/
 
     #region Public functions
     public void SetAxis(Vector2 inputAxis)
