@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212037177510267056}
   - component: {fileID: 61862419775442044}
   - component: {fileID: 114554432433910808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: liquidopararueda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,8 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1959758229740252}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.57, y: -9.56, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 140.716, y: -8.203699, z: 0.19352183}
   m_LocalScale: {x: 1.4686065, y: 1.1993517, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
