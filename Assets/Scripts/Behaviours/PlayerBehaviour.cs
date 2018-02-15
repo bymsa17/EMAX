@@ -100,7 +100,7 @@ public class PlayerBehaviour : MonoBehaviour {
             isJumping = false;
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            anim.SetBool("jump", false);
+            anim.SetBool("isGrounded", collisions.isGrounded);
         }
         //Aplicaremos el movimiento
         rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
@@ -117,6 +117,10 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             VerticalMovement();
         }
+
+        anim.SetBool("isGrounded", collisions.isGrounded);
+        anim.SetFloat("speedX", Mathf.Abs(rb.velocity.x));
+        anim.SetFloat("speedY", rb.velocity.y);
     }
 
     protected virtual void DeadUpdate()
@@ -157,7 +161,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if (isRunning)
         {
             movementSpeed = runSpeed;
-            anim.SetBool("run", true);
+            //anim.SetBool("run", true);
         }
         else movementSpeed = walkSpeed;
 
@@ -175,8 +179,6 @@ public class PlayerBehaviour : MonoBehaviour {
     void Jump()
     {
         isJumping = true;
-        anim.SetBool("jump", true);
-        
     }
 
     void Flip()
