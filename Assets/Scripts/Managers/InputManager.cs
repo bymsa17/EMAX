@@ -10,6 +10,8 @@ public class InputManager : MonoBehaviour
     private BoxBehaviour metalBox;
     private BoxBehaviour woodBox;
     public Transform canvasPause;
+    public GameObject canvasGameplay;
+
     /*
     public int backScene;
     public int currentScene;
@@ -89,11 +91,13 @@ public class InputManager : MonoBehaviour
             if(canvasPause.gameObject.activeInHierarchy == false)
             {
                 canvasPause.gameObject.SetActive(true);
+                canvasGameplay.SetActive(false);
                 Time.timeScale = 0;
             }
             else
             {
                 canvasPause.gameObject.SetActive(false);
+                canvasGameplay.SetActive(true);
                 Time.timeScale = 1;
             }
         }
