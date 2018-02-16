@@ -2081,7 +2081,7 @@ RectTransform:
   m_GameObject: {fileID: 581177441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -416, y: -199.51376, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children:
   - {fileID: 1813689988}
   m_Father: {fileID: 1134247208}
@@ -4197,7 +4197,7 @@ RectTransform:
   m_GameObject: {fileID: 1312655047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 367.6, y: -207.6, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2147383370}
   m_Father: {fileID: 1134247208}
@@ -4393,8 +4393,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 286.5, y: 229, z: 0}
-  m_LocalScale: {x: 0.4476562, y: 0.4476562, z: 0.4476562}
+  m_LocalPosition: {x: 287.5, y: 161.5, z: 0}
+  m_LocalScale: {x: 0.44921875, y: 0.44921875, z: 0.44921875}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1559064669}
@@ -7235,9 +7235,6 @@ GameObject:
   - component: {fileID: 2099360448}
   - component: {fileID: 2099360447}
   - component: {fileID: 2099360446}
-  - component: {fileID: 2099360450}
-  - component: {fileID: 2099360451}
-  - component: {fileID: 2099360449}
   - component: {fileID: 2099360452}
   m_Layer: 5
   m_Name: StartButton
@@ -7254,7 +7251,7 @@ RectTransform:
   m_GameObject: {fileID: 2099360444}
   m_LocalRotation: {x: 0, y: 0, z: 0.19063763, w: 0.98166054}
   m_LocalPosition: {x: 10.600006, y: -121.780014, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 3}
   m_Children:
   - {fileID: 2118202675}
   m_Father: {fileID: 1134247208}
@@ -7362,77 +7359,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099360444}
---- !u!114 &2099360449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2099360444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2099360451}
-          m_MethodName: OnMouseDetection
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2099360451}
-          m_MethodName: MouseExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
---- !u!114 &2099360450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2099360444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 3
-  iniValue: {x: 1, y: 1, z: 0}
-  finalValue: {x: 0.8, y: 0.8, z: 0}
-  currentTime: 0
-  timeDuration: 0.5
-  repeat: 0
-  isActive: 0
---- !u!114 &2099360451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2099360444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6382041bfe7f52c44a03e18d48f2fd3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  easing: {fileID: 2099360450}
 --- !u!95 &2099360452
 Animator:
   serializedVersion: 3
