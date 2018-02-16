@@ -97,7 +97,7 @@ public class InputManager : MonoBehaviour
                 canvasPause.gameObject.SetActive(true);
                 canvasGameplay.SetActive(false);
                 Time.timeScale = 0;
-                //audioPlayer.StopMusic();
+                audioPlayer.StopMusic();
                 audioPlayer.PlayMusic(1);
             }
             else
