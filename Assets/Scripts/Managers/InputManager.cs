@@ -12,6 +12,8 @@ public class InputManager : MonoBehaviour
     public Transform canvasPause;
     public GameObject canvasGameplay;
 
+    private AudioPlayer audioPlayer;
+
     /*
     public int backScene;
     public int currentScene;
@@ -24,6 +26,8 @@ public class InputManager : MonoBehaviour
         AudioManager.Initialize();
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
+
+        audioPlayer = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<AudioPlayer>();
 
         //metalBox = GameObject.FindGameObjectWithTag("MetalBox").GetComponent<BoxBehaviour>();
         //woodBox = GameObject.FindGameObjectWithTag("WoodBox").GetComponent<BoxBehaviour>();
@@ -93,12 +97,16 @@ public class InputManager : MonoBehaviour
                 canvasPause.gameObject.SetActive(true);
                 canvasGameplay.SetActive(false);
                 Time.timeScale = 0;
+                //audioPlayer.StopMusic();
+                audioPlayer.PlayMusic(1);
             }
             else
             {
                 canvasPause.gameObject.SetActive(false);
                 canvasGameplay.SetActive(true);
                 Time.timeScale = 1;
+                audioPlayer.StopMusic();
+                audioPlayer.PlayMusic(0);
             }
         }
     }

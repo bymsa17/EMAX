@@ -14,7 +14,10 @@ public class ShadowBehaviour : MonoBehaviour
 	
 	void Update ()
     {
-        shadowPos.x += 0.025f;
-        shadowTrans.position = shadowPos;
+        if(Time.timeScale == 1)
+        {
+            shadowPos.x += 0.025f;
+            shadowTrans.position = shadowPos;
+        }
     }
 }
