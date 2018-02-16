@@ -276,9 +276,9 @@ public class PlayerBehaviour : MonoBehaviour {
     public void Ability()
     {
         //if(doAbility) return;
-
+        audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
         //doAbility = true;
-        if(numResults > 0)
+        if (numResults > 0)
         {
             Debug.Log("Ability");
             for(int i = 0; i < numResults; i++)
@@ -288,6 +288,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     Vector2 dir = results[i].transform.position - this.transform.position;
                     dir.Normalize();
                     results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
+                    audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
                 }
                 else if(results[i].gameObject.tag == "WoodBox")
                 {
