@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClickSound : MonoBehaviour {
-
+    /*
     private AudioPlayer audioPlayer;
     // Use this for initialization
     void Start()
@@ -19,5 +19,5 @@ public class ClickSound : MonoBehaviour {
             audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
         }
       
-    }
+    }*/
 }

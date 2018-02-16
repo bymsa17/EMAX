@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DeadTrigger : MonoBehaviour {
-
-    void OnTriggerEnter(Collider other)
+public class DeadTrigger : MonoBehaviour
+{
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             Debug.Log("KillPlayer");
-            SceneManager.LoadScene(3); 
+            SceneManager.LoadScene(5); 
         }
     }
 }
