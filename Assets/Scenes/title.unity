@@ -2805,6 +2805,7 @@ GameObject:
   - component: {fileID: 814264450}
   - component: {fileID: 814264449}
   - component: {fileID: 814264448}
+  - component: {fileID: 814264451}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2848,7 +2849,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.83823526, g: 0.62251294, b: 0.62251294, a: 1}
@@ -2927,6 +2928,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814264446}
+--- !u!95 &814264451
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814264446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05ad03cff78b1ae42ae700f2cb7666f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &898084805
 GameObject:
   m_ObjectHideFlags: 0
