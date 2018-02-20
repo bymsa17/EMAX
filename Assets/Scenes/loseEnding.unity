@@ -209,7 +209,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -262,8 +262,8 @@ Camera:
   m_GameObject: {fileID: 385334702}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.25, g: 0.25, b: 0.25, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -890,8 +890,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521785393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 217.5, y: 122.5, z: 0}
-  m_LocalScale: {x: 0.33984375, y: 0.33984375, z: 0.33984375}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.609375, y: 0.609375, z: 0.609375}
   m_Children:
   - {fileID: 878504089}
   - {fileID: 1464743180}
