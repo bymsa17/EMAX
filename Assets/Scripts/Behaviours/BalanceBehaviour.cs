@@ -15,6 +15,19 @@ public class BalanceBehaviour : MonoBehaviour
 
     public void Update()
     {
+        if (weight == 0)
+        {
+            if (platoIzquierdo.gameObject.transform.localPosition.y > 0.05f)
+            {
+                platoIzquierdo.gameObject.transform.position -= new Vector3(0, 2, 0) * Time.deltaTime / 2;
+            }
+            else if (platoIzquierdo.gameObject.transform.localPosition.y < -0.05f)
+            {
+                platoIzquierdo.gameObject.transform.position += new Vector3(0, 2, 0) * Time.deltaTime / 2;
+            }
+            else platoIzquierdo.gameObject.transform.localPosition = new Vector3(platoIzquierdo.gameObject.transform.localPosition.x, 0, 0);
+        }
+
         weight = platoIzquierdo.weight - platoDerecho.weight;
         if(weight > 3) weight = 3;
         else if(weight < -3) weight = -3;
