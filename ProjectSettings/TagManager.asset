@@ -54,6 +54,9 @@ TagManager:
   - name: fondosotano
     uniqueID: 2501591339
     locked: 0
+  - name: platafroma
+    uniqueID: 30758377
+    locked: 0
   - name: Ground
     uniqueID: 3507950147
     locked: 0
