@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour
 {
     public DoorBehaviour door;
+    public CameraBehaviour mainCamera;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,6 +13,7 @@ public class DoorTrigger : MonoBehaviour
         {
             Debug.Log("DoorTrigger");
             door.active = true;
+            mainCamera.isActive = true;
         }
     }
 }
