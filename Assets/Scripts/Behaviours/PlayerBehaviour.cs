@@ -282,6 +282,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public void Ability()
     {
         //if(doAbility) return;
+        anim.SetBool("ability", true);
         audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
         //doAbility = true;
         if (numResults > 0)
@@ -295,6 +296,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     dir.Normalize();
                     results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
                     audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
+                    
                 }
                 else if(results[i].gameObject.tag == "WoodBox")
                 {
