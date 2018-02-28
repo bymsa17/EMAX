@@ -165,14 +165,20 @@ public class PlayerBehaviour : MonoBehaviour {
         if (isFacingRight && axis.x < -0.1f) Flip();
         if (!isFacingRight && axis.x > 0.1f) Flip();
 
-        if (isRunning)
+        if(isRunning)
         {
             movementSpeed = runSpeed;
-            //anim.SetBool("run", true);
+            anim.SetBool("run", true);
         }
-        else movementSpeed = walkSpeed;
+        else
+        {
+            movementSpeed = walkSpeed;
 
+            anim.SetBool("run", false);
+        }
+       
         horizontalSpeed = movementSpeed * axis.x;
+        
     }
 
     void VerticalMovement()
