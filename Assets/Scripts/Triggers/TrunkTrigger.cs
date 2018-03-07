@@ -16,7 +16,7 @@ public class TrunkTrigger : MonoBehaviour
             Debug.Log("TrunkTrigger");
             trunk01.active = true;
             trunk02.active = true;
-            //anim.SetTrigger("LightTrigger");
+            anim.SetTrigger("LightTrigger");
         }
     }
 }
