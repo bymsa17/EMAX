@@ -6,6 +6,7 @@ public class CameraBehaviour : MonoBehaviour
 {
     public Transform target;
     public float smoothTime;
+    public float smoothOffset;
     private Vector3 velocity = Vector3.zero;
     public Vector3 offset;
     public bool isActive;
@@ -34,8 +35,12 @@ public class CameraBehaviour : MonoBehaviour
 
     public void CameraZoom()
     {
+        smoothTime -= 0.01f;
+        if (smoothTime <= 0.20f) smoothTime = 0.20f;
+        smoothOffset -= 0.01f;
+        if (smoothOffset <= 0) smoothOffset = 0;
         Camera.main.orthographicSize += smoothTime;
-        offset.y = Mathf.Abs(7);
+        offset.y += smoothOffset;
         if (Camera.main.orthographicSize >= 9.5f)
         {
             Camera.main.orthographicSize = 9.5f;
