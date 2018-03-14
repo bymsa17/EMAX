@@ -227,6 +227,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         if(other.gameObject.layer == 13)
         {
+            //other.GetComponent<PlayerBehaviour>().ReceiveDamage();
             Debug.Log("CollisionHazard");
             ReceiveDamage();
         }
