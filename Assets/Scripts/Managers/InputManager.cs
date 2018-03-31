@@ -91,23 +91,7 @@ public class InputManager : MonoBehaviour
         if(Input.GetButtonDown("Pause"))
         {
             Debug.Log("Pause");
-            // Pausar el juego
-            if(canvasPause.gameObject.activeInHierarchy == false)
-            {
-                canvasPause.gameObject.SetActive(true);
-                canvasGameplay.SetActive(false);
-                Time.timeScale = 0;
-                audioPlayer.StopMusic();
-                audioPlayer.PlayMusic(1);
-            }
-            else
-            {
-                canvasPause.gameObject.SetActive(false);
-                canvasGameplay.SetActive(true);
-                Time.timeScale = 1;
-                audioPlayer.StopMusic();
-                audioPlayer.PlayMusic(0);
-            }
+            player.Pause();        
         }
     }
     void InputGod()

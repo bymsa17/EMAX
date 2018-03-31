@@ -12,6 +12,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public Animator anim;
     private AudioPlayer audioPlayer;
+    public float lowVolume;
 
     //private Transform player;
     public int life;
@@ -58,6 +59,9 @@ public class PlayerBehaviour : MonoBehaviour {
     public float abilityForce = 5;
     public bool lostSpeed = false;
     //public bool doAbility = false;
+    [Header("Canvas")]
+    public GameObject canvasPause;
+    public GameObject canvasGameplay;
 
     void Start()
     {
@@ -68,6 +72,7 @@ public class PlayerBehaviour : MonoBehaviour {
         boxCollider = GetComponent<BoxCollider2D>();
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
+        audioPlayer.PlayMusic(0);
 
         //player = this.transform;
 
@@ -199,6 +204,34 @@ public class PlayerBehaviour : MonoBehaviour {
         rend.flipX = !rend.flipX;
         isFacingRight = !isFacingRight;
         collisions.Flip();
+    }
+
+    public void Pause()
+    {
+        if(canvasPause.activeInHierarchy == false)
+        {
+            canvasPause.SetActive(true);
+            canvasGameplay.SetActive(false);
+            //LowVolume();
+            Time.timeScale = 0;
+            //AudioManager.SetMasterVolume(lowVolume);
+            //audioPlayer.StopMusic();
+            audioPlayer.PlayMusic(1);
+        }
+        else
+        {
+            canvasPause.SetActive(false);
+            canvasGameplay.SetActive(true);
+            Time.timeScale = 1;
+            //audioPlayer.StopMusic();
+            audioPlayer.PlayMusic(0);
+        }
+    }
+
+    public void LowVolume()
+    {
+        lowVolume -= 1;
+        if(lowVolume >= -10) lowVolume = -10;
     }
     
     private void OnTriggerEnter2D(Collider2D other)
