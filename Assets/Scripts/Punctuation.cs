@@ -14,7 +14,8 @@ public class Punctuation : MonoBehaviour
 
 	void Start ()
     {
-        score = 0;
+        GameData.LoadGame(1);
+        score = GameData.gameState.score;
         maxScore = 100;
 	}
 	
