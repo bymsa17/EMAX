@@ -14,6 +14,8 @@ public class PlayerBehaviour : MonoBehaviour {
     private AudioPlayer audioPlayer;
     public float lowVolume;
 
+	float DeadCounter = 0;
+
     //private Transform player;
     public int life;
     public int damage = 1;
@@ -350,7 +352,9 @@ public class PlayerBehaviour : MonoBehaviour {
         if(life <= 0)
         {
             life = 0;
-            state = State.Dead;
+			anim.SetBool ("dead", true);
+			DeadCounter++;
+			if (DeadCounter > 7) state = State.Dead;
         }
     }
 
