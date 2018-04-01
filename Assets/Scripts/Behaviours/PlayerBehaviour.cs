@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,7 +17,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
 	float DeadCounter = 0;
 
-    //private Transform player;
+    //private Transform position;
     public int life;
     public int damage = 1;
 
@@ -76,7 +77,8 @@ public class PlayerBehaviour : MonoBehaviour {
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
 
-        //player = this.transform;
+        //GameData.LoadGame(1);
+        //position = GameData.gameState.position;
 
         //collisions.MyStart();
     }
@@ -385,6 +387,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void Reset()
     {
+        //position = GameData.gameState.position;
         life = 3;
         canMove = true;
         canJump = true;

@@ -6,11 +6,13 @@ public class CheckpointBehaviour : MonoBehaviour
 {
     public ParticleSystem particles;
     public bool active;
+    //public Transform pos;
 
     void Start ()
     {
         active = false;
         particles.Pause();
+        //pos = this.transform;
     }
 	
 	void Update ()
@@ -24,5 +26,6 @@ public class CheckpointBehaviour : MonoBehaviour
     public void ActiveCheckpoint()
     {
         particles.Play();
+        //GameData.gameState.position = pos;
     }
 }

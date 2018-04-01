@@ -64,7 +64,7 @@ public static class GameData
     public struct GameState
     {
         public int score;
-        public Vector3 position;
+        public Transform position;
     }
     public static GameState gameState;
 
