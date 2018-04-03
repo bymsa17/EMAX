@@ -17,6 +17,8 @@ public class PlayerBehaviour : MonoBehaviour {
 	float DeadCounter = 0;
 
     //private Transform position;
+    public Vector3 testPos;
+    public int score;
     public int life;
     public int damage = 1;
 
@@ -76,8 +78,11 @@ public class PlayerBehaviour : MonoBehaviour {
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
 
-        //GameData.LoadGame(1);
-        //position = GameData.gameState.position;
+        GameData.LoadGame(1);
+
+        score = GameData.gameState.score;
+        testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
+        transform.position = testPos;
 
         //collisions.MyStart();
     }

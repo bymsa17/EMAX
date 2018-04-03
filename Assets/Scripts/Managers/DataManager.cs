@@ -64,7 +64,9 @@ public static class GameData
     public struct GameState
     {
         public int score;
-        public Transform position;
+        public float posX;
+        public float posY;
+        public float posZ;
     }
     public static GameState gameState;
 
@@ -81,6 +83,8 @@ public static class GameData
         Debug.Log("New game");
 
         gameState.score = 0;
+        gameState.posX = -125;
+        gameState.posY = 0;
 
         SaveGame(slot);
     }
