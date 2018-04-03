@@ -5,6 +5,7 @@ using UnityEngine;
 public class HUDbehaviour : MonoBehaviour {
 
     public bool portal = false;
+    public Animator anim;
 
     void Portal()
     {
