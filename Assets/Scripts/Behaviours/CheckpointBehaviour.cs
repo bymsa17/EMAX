@@ -6,13 +6,13 @@ public class CheckpointBehaviour : MonoBehaviour
 {
     public ParticleSystem particles;
     public bool active;
-    //public Transform pos;
+    public Vector3 pos;
 
     void Start ()
     {
         active = false;
         particles.Pause();
-        //pos = this.transform;
+        pos = new Vector3(61, -7, 0);
     }
 	
 	void Update ()
@@ -26,6 +26,9 @@ public class CheckpointBehaviour : MonoBehaviour
     public void ActiveCheckpoint()
     {
         particles.Play();
-        //GameData.gameState.position = pos;
+        GameData.gameState.posX = pos.x;
+        GameData.gameState.posY = pos.y;
+        GameData.SaveGame(1);
+        Debug.Log("Save Check Position");
     }
 }

@@ -11,11 +11,7 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene(buildIndex);
         if(Time.timeScale == 0) Time.timeScale = 1;
-    }
-
-    public void LoadScene(string nameScene)
-    {
-        SceneManager.LoadScene(nameScene);
+        GameData.NewGame(1);
     }
 
     public void QuitGame()
