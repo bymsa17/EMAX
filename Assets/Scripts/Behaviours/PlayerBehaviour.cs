@@ -146,7 +146,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     protected virtual void DeadUpdate()
     {
-        Time.timeScale = 0;
+        horizontalSpeed = 0;
         //Animation dead player
     }
 
