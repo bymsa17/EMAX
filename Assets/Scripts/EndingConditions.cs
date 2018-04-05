@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class EndingConditions : MonoBehaviour {
 
     public PlayerBehaviour player;
+    public float timeCounter;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
+        timeCounter = 100;
     }
 
     // Update is called once per frame
@@ -18,7 +20,11 @@ public class EndingConditions : MonoBehaviour {
     {
         if(player.life <= 0)
         {
-            ReloadLevel(5);
+            timeCounter--;
+            if(timeCounter <= 0)
+            {
+                ReloadLevel(5);
+            }
         }
     }
 

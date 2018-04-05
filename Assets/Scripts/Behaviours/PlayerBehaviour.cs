@@ -14,8 +14,6 @@ public class PlayerBehaviour : MonoBehaviour {
     private AudioPlayer audioPlayer;
     public float lowVolume;
 
-	float DeadCounter = 0;
-
     //private Transform position;
     public Vector3 testPos;
     public int score;
@@ -367,8 +365,6 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             life = 0;
 			anim.SetBool("dead", true);
-			//DeadCounter++;
-			//if (DeadCounter > 7)
             state = State.Dead;
         }
     }
