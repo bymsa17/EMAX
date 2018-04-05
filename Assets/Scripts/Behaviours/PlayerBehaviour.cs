@@ -41,6 +41,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public float movementSpeed;
     public float horizontalSpeed;
     public Vector2 axis;
+    public bool lostSpeed = false;
     [Header("Forces")]
     public float jumpWalkForce;
     public float jumpRunForce;
@@ -61,7 +62,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int maxColliders = 2;
     public int numResults = 0;
     public float abilityForce = 5;
-    public bool lostSpeed = false;
+    public float timeCounter;
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
@@ -74,6 +75,8 @@ public class PlayerBehaviour : MonoBehaviour {
         gravity = rb.gravityScale;
 
         boxCollider = GetComponent<BoxCollider2D>();
+
+        timeCounter = 500;
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
@@ -95,6 +98,7 @@ public class PlayerBehaviour : MonoBehaviour {
             case State.Default:
                 DefaultUpdate();
                 if (lostSpeed == true) LostSpeed();
+                timeCounter--;
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -323,30 +327,34 @@ public class PlayerBehaviour : MonoBehaviour {
     }*/
     public void Ability()
     {
-        //if(doAbility) return;
-        anim.SetBool("ability", true);
-        audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
-        //doAbility = true;
-        if (numResults > 0)
+        if(timeCounter <= 0)
         {
-            Debug.Log("Ability");
-            for(int i = 0; i < numResults; i++)
+            //if(doAbility) return;
+            anim.SetBool("ability", true);
+            audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
+            //doAbility = true;
+            if(numResults > 0)
             {
-                if(results[i].gameObject.tag == "MetalBox")
+                Debug.Log("Ability");
+                for(int i = 0; i < numResults; i++)
                 {
-                    Vector2 dir = results[i].transform.position - this.transform.position;
-                    dir.Normalize();
-                    results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
-                    audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
-                    
+                    if(results[i].gameObject.tag == "MetalBox")
+                    {
+                        Vector2 dir = results[i].transform.position - this.transform.position;
+                        dir.Normalize();
+                        results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
+                        audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
+
+                    }
+                    else if(results[i].gameObject.tag == "WoodBox")
+                    {
+                        Vector2 dir = results[i].transform.position - this.transform.position;
+                        dir.Normalize();
+                        results[i].gameObject.SetActive(false);
+                        audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
+                    }
                 }
-                else if(results[i].gameObject.tag == "WoodBox")
-                {
-                    Vector2 dir = results[i].transform.position - this.transform.position;
-                    dir.Normalize();
-                    results[i].gameObject.SetActive(false);
-                    audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
-                }
+                timeCounter = 500;
             }
         }
     }
@@ -358,9 +366,10 @@ public class PlayerBehaviour : MonoBehaviour {
         if(life <= 0)
         {
             life = 0;
-			anim.SetBool ("dead", true);
-			DeadCounter++;
-			if (DeadCounter > 7) state = State.Dead;
+			anim.SetBool("dead", true);
+			//DeadCounter++;
+			//if (DeadCounter > 7)
+            state = State.Dead;
         }
     }
 
