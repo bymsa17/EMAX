@@ -6,26 +6,30 @@ public class FinalPuzzleBehaviour : MonoBehaviour
 {
     public DoorBehaviour door;
     public bool active;
-    public bool buttonPressed01;
-    public bool buttonPressed02;
-    public bool buttonPressed03;
-    public bool buttonPressed04;
+    public int counter;
+    public int sequence;
+    public FinalPuzzleTrigger buttonPressed01;
+    public FinalPuzzleTrigger buttonPressed02;
+    public FinalPuzzleTrigger buttonPressed03;
+    public FinalPuzzleTrigger buttonPressed04;
 
     void Start ()
     {
         active = false;
-    }
-	
-	void Update ()
-    {
-        if(active)
-        {
-            door.active = true;
-        }
+        counter = 1;
     }
 
-    void UpDoor()
+    public void TouchedButton(int button)
     {
-        
+        if(button == counter)
+        {
+            if(button == 4)
+            {
+                door.active = true;
+            }
+            else counter++;
+        }
+        else counter = 1;
+
     }
 }
