@@ -81,7 +81,6 @@ public class InputManager : MonoBehaviour
         if(Input.GetButtonDown("Ability"))
         {
             player.Ability();
-            
             //metalBox.Ability();
             //woodBox.Ability();
         }

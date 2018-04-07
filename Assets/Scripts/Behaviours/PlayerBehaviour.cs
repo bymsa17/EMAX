@@ -188,7 +188,6 @@ public class PlayerBehaviour : MonoBehaviour {
         else
         {
             movementSpeed = walkSpeed;
-
             anim.SetBool("run", false);
         }
        
@@ -328,12 +327,12 @@ public class PlayerBehaviour : MonoBehaviour {
         if(timeCounter <= 0)
         {
             //if(doAbility) return;
-            anim.SetBool("ability", true);
-            audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
-            //doAbility = true;
             if(numResults > 0)
             {
                 Debug.Log("Ability");
+                //doAbility = true;
+                anim.SetBool("ability", true);
+                //audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
                 for(int i = 0; i < numResults; i++)
                 {
                     if(results[i].gameObject.tag == "MetalBox")
@@ -354,6 +353,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 }
                 timeCounter = 500;
             }
+            //anim.SetBool("ability", doAbility);
         }
     }
 
