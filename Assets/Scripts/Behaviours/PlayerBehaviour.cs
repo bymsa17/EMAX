@@ -361,7 +361,9 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         life -= damage;
         anim.SetBool("damage", true);
-        if(life <= 0)
+       
+
+        if (life <= 0)
         {
             life = 0;
 			anim.SetBool("dead", true);
