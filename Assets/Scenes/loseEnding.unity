@@ -602,6 +602,7 @@ GameObject:
   - component: {fileID: 878504091}
   - component: {fileID: 878504090}
   - component: {fileID: 878504093}
+  - component: {fileID: 878504094}
   - component: {fileID: 878504092}
   m_Layer: 5
   m_Name: Image
@@ -714,7 +715,7 @@ Animator:
   m_GameObject: {fileID: 878504088}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10ac1667cdd1f3e4f9be2ab737c4f91e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 917ca2ce31509cd49bc331b999764923, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -722,6 +723,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &878504094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878504088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21788ffb8b4bf1f4a97575b42710c01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &882676509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,8 +1090,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521785393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 327, y: 184, z: 0}
-  m_LocalScale: {x: 0.5109375, y: 0.5109375, z: 0.5109375}
+  m_LocalPosition: {x: 307.5, y: 173, z: 0}
+  m_LocalScale: {x: 0.48046875, y: 0.48046875, z: 0.48046875}
   m_Children:
   - {fileID: 878504089}
   - {fileID: 1464743180}
