@@ -11,6 +11,8 @@ public class BoxBehaviour : MonoBehaviour
     public Vector2 distance;
     public float speed;
 
+    
+
     // Use this for initialization
     void Start ()
     {
@@ -30,7 +32,9 @@ public class BoxBehaviour : MonoBehaviour
             }
             else if(this.gameObject.tag == "WoodBox")
             {
+                
                 Debug.Log("DestroyWoodBox");
+                
                 this.gameObject.SetActive(false);
                 //Destroy(this.gameObject,1);
             }
