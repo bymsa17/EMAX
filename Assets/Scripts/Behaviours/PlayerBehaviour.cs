@@ -93,15 +93,13 @@ public class PlayerBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.Euler(0, 0, 0);
-
         switch (state)
         {
             case State.Default:
                 DefaultUpdate();
                 if (lostSpeed == true) LostSpeed();
                 timeCounter--;
-                
+                transform.rotation = Quaternion.Euler(0, 0, 0);
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -142,12 +140,12 @@ public class PlayerBehaviour : MonoBehaviour {
         if (isLaddering)
         {
             VerticalMovement();
+            if(axis.y != 0) anim.SetBool("isClimbing", isLaddering);
         }
 
         anim.SetBool("isGrounded", collisions.isGrounded);
         anim.SetFloat("speedX", Mathf.Abs(rb.velocity.x));
         anim.SetFloat("speedY", rb.velocity.y);
-        
     }
 
     protected virtual void DeadUpdate()
@@ -265,8 +263,6 @@ public class PlayerBehaviour : MonoBehaviour {
             rb.velocity = Vector2.zero;
             isLaddering = true;
             canJump = false;
-            anim.SetBool("isGrounded", collisions.isGrounded);
-            
 
             //audioPlayer.PlaySFX(1, 1, Random.Range(0.9f, 1.1f));
         }
@@ -278,6 +274,7 @@ public class PlayerBehaviour : MonoBehaviour {
             rb.gravityScale = gravity;
             isLaddering = false;
             canJump = true;
+            anim.SetBool("isClimbing", isLaddering);
         }
     }
 
@@ -386,8 +383,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         anim.SetBool("damage", true);
         life -= damage;
-        
-       
+
         if (life <= 0)
         {
             life = 0;
