@@ -101,6 +101,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 DefaultUpdate();
                 if (lostSpeed == true) LostSpeed();
                 timeCounter--;
+                
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -178,10 +179,16 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             if ((isFacingRight && axis.x > 0.1f) || (!isFacingRight && axis.x < -0.1f))
             {
+                
                 horizontalSpeed = 0;
                 return;
             }
         }
+        else
+        {
+            anim.SetBool("climb", false);
+        }
+           
 
         if (isFacingRight && axis.x < -0.1f) Flip();
         if (!isFacingRight && axis.x > 0.1f) Flip();
