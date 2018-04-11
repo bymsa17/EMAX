@@ -10,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour {
     public bool isGod = false;
     public BoxCollider2D boxCollider;
 
+    public int abilityCounter = 0;
+
     public Animator anim;
     private AudioPlayer audioPlayer;
     public float lowVolume;
@@ -144,6 +146,7 @@ public class PlayerBehaviour : MonoBehaviour {
         anim.SetBool("isGrounded", collisions.isGrounded);
         anim.SetFloat("speedX", Mathf.Abs(rb.velocity.x));
         anim.SetFloat("speedY", rb.velocity.y);
+        
     }
 
     protected virtual void DeadUpdate()
@@ -161,6 +164,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     void HorizontalMovement()
     {
+        
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         if (!canMove || (-0.1f < axis.x && axis.x < 0.1f))
@@ -236,6 +240,7 @@ public class PlayerBehaviour : MonoBehaviour {
             Time.timeScale = 1;
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(0);
+            
         }
     }
 
@@ -254,6 +259,8 @@ public class PlayerBehaviour : MonoBehaviour {
             isLaddering = true;
             canJump = false;
             anim.SetBool("isGrounded", collisions.isGrounded);
+            
+
             //audioPlayer.PlaySFX(1, 1, Random.Range(0.9f, 1.1f));
         }
     }
@@ -334,6 +341,13 @@ public class PlayerBehaviour : MonoBehaviour {
                 Debug.Log("Ability");
                 //doAbility = true;
                 anim.SetBool("ability", true);
+                abilityCounter++;
+
+                if(abilityCounter == 15)
+                {
+                    anim.SetBool("ability", false);
+                    abilityCounter = 0;
+                }
                 //audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
                 for(int i = 0; i < numResults; i++)
                 {
@@ -354,23 +368,26 @@ public class PlayerBehaviour : MonoBehaviour {
                     }
                 }
                 timeCounter = 500;
+                
             }
             //anim.SetBool("ability", doAbility);
+            
         }
     }
 
     public void ReceiveDamage()
     {
-        life -= damage;
         anim.SetBool("damage", true);
+        life -= damage;
+        
        
-
         if (life <= 0)
         {
             life = 0;
 			anim.SetBool("dead", true);
             state = State.Dead;
         }
+        
     }
 
     public void LiquidPositive()
