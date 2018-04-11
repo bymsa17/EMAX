@@ -78,19 +78,21 @@ public class PlayerBehaviour : MonoBehaviour {
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
-
+        /*
         GameData.LoadGame(1);
 
         score = GameData.gameState.score;
         testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
         transform.position = testPos;
-
+        */
         //collisions.MyStart();
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+
         switch (state)
         {
             case State.Default:
