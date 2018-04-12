@@ -6,6 +6,8 @@ public class OilTrigger : MonoBehaviour
 {
     private PlayerBehaviour player;
 
+    public Animator anim;
+
     void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
@@ -15,6 +17,7 @@ public class OilTrigger : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            //anim.SetTrigger("lines");
             Debug.Log("EnterPositivePlayer");
             player.LiquidPositive();
         }
