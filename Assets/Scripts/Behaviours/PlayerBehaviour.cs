@@ -75,7 +75,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        timeCounter = 500;
+        timeCounter = 400;
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
@@ -125,6 +125,9 @@ public class PlayerBehaviour : MonoBehaviour {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetBool("isGrounded", collisions.isGrounded);
         }
+
+        //if(timeCounter <= 0) animHUD.SetTrigger("load");
+        if(timeCounter <= 0) animHUD.SetBool("ability1", true);
         //Aplicaremos el movimiento
         rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
     }
@@ -365,7 +368,8 @@ public class PlayerBehaviour : MonoBehaviour {
                         audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
                     }
                 }
-                timeCounter = 500;
+                timeCounter = 400;
+                animHUD.SetBool("ability1", false);
             }
         }
     }
