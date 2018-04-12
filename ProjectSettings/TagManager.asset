@@ -54,6 +54,9 @@ TagManager:
   - name: fondosotano
     uniqueID: 2501591339
     locked: 0
+  - name: fondoEncimaSotano
+    uniqueID: 2088962553
+    locked: 0
   - name: platafroma
     uniqueID: 30758377
     locked: 0
