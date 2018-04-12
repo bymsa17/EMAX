@@ -18,6 +18,5 @@ public class MouseDetection : MonoBehaviour
         Debug.Log("MouseExit");
         easing.isActive = false;
         //easing.transform.localScale = new Vector3(0.5f,0.5f, 1);
-        easing.repeat = 2;
     }
 }

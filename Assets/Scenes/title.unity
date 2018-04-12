@@ -2173,6 +2173,8 @@ GameObject:
   - component: {fileID: 581177445}
   - component: {fileID: 581177444}
   - component: {fileID: 581177443}
+  - component: {fileID: 581177448}
+  - component: {fileID: 581177447}
   - component: {fileID: 581177446}
   m_Layer: 5
   m_Name: SettingsButton
@@ -2297,23 +2299,82 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 581177441}
---- !u!95 &581177446
-Animator:
-  serializedVersion: 3
+--- !u!114 &581177446
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 581177441}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 03d38cd50a44fe04eba53628fab49dc9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 581177447}
+          m_MethodName: OnMouseDetection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 581177447}
+          m_MethodName: MouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &581177447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581177441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6382041bfe7f52c44a03e18d48f2fd3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easing: {fileID: 581177448}
+--- !u!114 &581177448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581177441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  iniValue: {x: 0.5, y: 0.5, z: 0}
+  finalValue: {x: 0.4, y: 0.4, z: 0}
+  currentTime: 0
+  timeDuration: 1
+  isActive: 0
 --- !u!1 &604468827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,6 +4578,8 @@ GameObject:
   - component: {fileID: 1312655051}
   - component: {fileID: 1312655050}
   - component: {fileID: 1312655049}
+  - component: {fileID: 1312655054}
+  - component: {fileID: 1312655053}
   - component: {fileID: 1312655052}
   m_Layer: 5
   m_Name: ExitButton
@@ -4630,23 +4693,82 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312655047}
---- !u!95 &1312655052
-Animator:
-  serializedVersion: 3
+--- !u!114 &1312655052
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312655047}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6e0c262232a082446a339b7fd470e699, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1312655053}
+          m_MethodName: OnMouseDetection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1312655053}
+          m_MethodName: MouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1312655053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312655047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6382041bfe7f52c44a03e18d48f2fd3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easing: {fileID: 1312655054}
+--- !u!114 &1312655054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312655047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  iniValue: {x: 0.5, y: 0.5, z: 0}
+  finalValue: {x: 0.4, y: 0.4, z: 0}
+  currentTime: 0
+  timeDuration: 1
+  isActive: 0
 --- !u!1 &1357147464
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,7 +7719,6 @@ GameObject:
   - component: {fileID: 2099360448}
   - component: {fileID: 2099360447}
   - component: {fileID: 2099360446}
-  - component: {fileID: 2099360452}
   - component: {fileID: 2099360449}
   - component: {fileID: 2099360450}
   - component: {fileID: 2099360451}
@@ -7724,12 +7845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 3
   iniValue: {x: 0.5, y: 0.5, z: 0}
-  finalValue: {x: 0.25, y: 0.25, z: 0}
+  finalValue: {x: 0.4, y: 0.4, z: 0}
   currentTime: 0
   timeDuration: 1
-  repeat: 0
   isActive: 0
 --- !u!114 &2099360450
 MonoBehaviour:
@@ -7790,23 +7910,6 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
---- !u!95 &2099360452
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2099360444}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0615196b136a310438af0acacdbf7374, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2101278293
 GameObject:
   m_ObjectHideFlags: 0
