@@ -17,7 +17,8 @@ public class PetroleumTrigger : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            anim.SetTrigger("petrolwalk");
+            //anim.SetTrigger("petrolwalk");
+            anim.SetBool("petrol", true);
             Debug.Log("EnterNegativePlayer");
             player.LiquidNegative();
             
