@@ -57,6 +57,12 @@ TagManager:
   - name: platafroma
     uniqueID: 30758377
     locked: 0
+  - name: Easing
+    uniqueID: 2061796429
+    locked: 0
+  - name: Liquid
+    uniqueID: 4056267229
+    locked: 0
   - name: Ground
     uniqueID: 3507950147
     locked: 0
