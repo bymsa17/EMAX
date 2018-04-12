@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public BoxCollider2D boxCollider;
 
     public Animator anim;
+    public Animator animHUD;
     private AudioPlayer audioPlayer;
     public float lowVolume;
 
@@ -338,6 +339,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if(timeCounter <= 0)
         {
             anim.SetTrigger("ability");
+            animHUD.SetTrigger("ability");
             //if(doAbility) return;
             if (numResults > 0)
             {
