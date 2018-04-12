@@ -337,12 +337,12 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         if(timeCounter <= 0)
         {
+            anim.SetTrigger("ability");
             //if(doAbility) return;
-            if(numResults > 0)
+            if (numResults > 0)
             {
                 Debug.Log("Ability");
                 //doAbility = true;
-                anim.SetTrigger("ability");
 
                 //audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
                 for(int i = 0; i < numResults; i++)
@@ -370,7 +370,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void ReceiveDamage()
     {
-        anim.SetBool("damage", true);
+        anim.SetTrigger("damage");
         life -= damage;
 
         if (life <= 0)
