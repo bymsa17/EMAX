@@ -23,7 +23,7 @@ public class EndingConditions : MonoBehaviour {
             timeCounter--;
             if(timeCounter <= 0)
             {
-                ReloadLevel(5);
+                ReloadLevel(6);
             }
         }
     }
@@ -33,7 +33,7 @@ public class EndingConditions : MonoBehaviour {
         if(other.tag == "Player")
         {
             Debug.Log("COLLISION");
-            ReloadLevel(4);
+            ReloadLevel(5);
         }
     }
 
