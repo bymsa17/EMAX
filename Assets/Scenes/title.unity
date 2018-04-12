@@ -1518,6 +1518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 1527638603}
+  text: {fileID: 0}
 --- !u!1 &378701052
 GameObject:
   m_ObjectHideFlags: 0
@@ -4728,8 +4729,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 261, y: 147, z: 0}
-  m_LocalScale: {x: 0.4078125, y: 0.4078125, z: 0.4078125}
+  m_LocalPosition: {x: 353.5, y: 199, z: 0}
+  m_LocalScale: {x: 0.5523437, y: 0.5523437, z: 0.5523437}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1428048702}
@@ -7387,12 +7388,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 261
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 147
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
@@ -7491,7 +7492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1086427155736206, guid: 36adb7c9d15a4da488b3eb5b73238f60, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114695855800231744, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
@@ -7597,6 +7598,9 @@ GameObject:
   - component: {fileID: 2099360447}
   - component: {fileID: 2099360446}
   - component: {fileID: 2099360452}
+  - component: {fileID: 2099360449}
+  - component: {fileID: 2099360450}
+  - component: {fileID: 2099360451}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -7709,6 +7713,83 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099360444}
+--- !u!114 &2099360449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099360444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  iniValue: {x: 0.5, y: 0.5, z: 0}
+  finalValue: {x: 0.25, y: 0.25, z: 0}
+  currentTime: 0
+  timeDuration: 1
+  repeat: 0
+  isActive: 0
+--- !u!114 &2099360450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099360444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6382041bfe7f52c44a03e18d48f2fd3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easing: {fileID: 2099360449}
+--- !u!114 &2099360451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099360444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2099360450}
+          m_MethodName: OnMouseDetection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2099360450}
+          m_MethodName: MouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!95 &2099360452
 Animator:
   serializedVersion: 3

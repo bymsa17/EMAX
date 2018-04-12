@@ -23,6 +23,7 @@ public class EasingScale : MonoBehaviour
         deltaValue = finalValue - iniValue;
         isActive = false;
         repeat = 2;
+        transform.localScale = new Vector3(0.5f, 0.5f, 1);
     }
 
     public void Update()
@@ -33,7 +34,10 @@ public class EasingScale : MonoBehaviour
         }
         else if(isActive == false)// && (currentTime <= timeDuration) && (repeat == 2*n +1))
         {
-            //ActiveEasing();
+            transform.localScale = new Vector3(0.5f, 0.5f, 1);
+            iniValue = new Vector3(0.5f, 0.5f, 1);
+            finalValue = new Vector3(0.4f, 0.4f, 1);
+            currentTime = 0;
         }
     }
 
