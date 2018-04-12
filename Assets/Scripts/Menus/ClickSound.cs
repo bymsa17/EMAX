@@ -2,22 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickSound : MonoBehaviour {
-    /*
+public class ClickSound : MonoBehaviour
+{
     private AudioPlayer audioPlayer;
-    // Use this for initialization
+
     void Start()
     {
         audioPlayer = GetComponentInChildren<AudioPlayer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SelectSound()
     {
-        if (Input.GetMouseButton()
-        {
-            audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
-        }
-      
-    }*/
+        audioPlayer.PlaySFX(7, 1, Random.Range(0.9f, 1.1f));
+    }
 }
