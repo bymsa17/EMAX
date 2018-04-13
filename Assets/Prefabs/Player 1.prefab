@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1417119915369432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 207.75, y: -5.77, z: -0.004331827}
+  m_LocalPosition: {x: -125.86, y: -0.07, z: -0.004331827}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4845237643999508}
@@ -324,6 +324,10 @@ MonoBehaviour:
   isGod: 0
   boxCollider: {fileID: 0}
   anim: {fileID: 95870570419933550}
+  animHUD: {fileID: 0}
+  lowVolume: 0
+  testPos: {x: 0, y: 0, z: 0}
+  score: 0
   life: 3
   damage: 1
   canMove: 1
@@ -341,6 +345,7 @@ MonoBehaviour:
   movementSpeed: 0
   horizontalSpeed: 0
   axis: {x: 0, y: 0}
+  lostSpeed: 0
   jumpWalkForce: 5
   jumpRunForce: 6
   jumpForce: 0
@@ -364,7 +369,9 @@ MonoBehaviour:
   maxColliders: 30
   numResults: 0
   abilityForce: 600
-  lostSpeed: 0
+  timeCounter: 0
+  canvasPause: {fileID: 0}
+  canvasGameplay: {fileID: 0}
 --- !u!114 &114386297181838572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -384,7 +391,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a14b4176988b93f43827ef198a04beee, type: 3}
   - {fileID: 8300000, guid: d8e933443065c904e9b8f7d24f470617, type: 3}
   - {fileID: 8300000, guid: 0246da557438973438038dba37601b9e, type: 3}
-  - {fileID: 8300000, guid: a14b4176988b93f43827ef198a04beee, type: 3}
+  - {fileID: 8300000, guid: 309f9851755958f45b97848793a37fb0, type: 3}
+  - {fileID: 8300000, guid: 754214d481b0d5141bf0a63fc5d247ab, type: 3}
   ambientClips:
   - {fileID: 8300000, guid: 6c5147239b3fc1346b2b8f497b75036a, type: 3}
   musicClips:

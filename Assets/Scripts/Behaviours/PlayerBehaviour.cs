@@ -127,7 +127,15 @@ public class PlayerBehaviour : MonoBehaviour {
         }
 
         //if(timeCounter <= 0) animHUD.SetTrigger("load");
-        if(timeCounter <= 0) animHUD.SetBool("ability1", true);
+        if(timeCounter <= 0)
+        {
+            animHUD.SetBool("ability1", true);
+            //audioPlayer.PlaySFX(6, 1, Random.Range(0.9f, 1.1f));
+        }
+        if(timeCounter == 0)
+        {
+            audioPlayer.PlaySFX(6, 1, Random.Range(0.9f, 1.1f));
+        }
         //Aplicaremos el movimiento
         rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
     }
@@ -343,13 +351,12 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             anim.SetTrigger("ability");
             animHUD.SetTrigger("ability");
+            audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
             //if(doAbility) return;
             if (numResults > 0)
             {
                 Debug.Log("Ability");
                 //doAbility = true;
-
-                //audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
                 for(int i = 0; i < numResults; i++)
                 {
                     if(results[i].gameObject.tag == "MetalBox")
