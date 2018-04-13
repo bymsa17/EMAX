@@ -390,13 +390,13 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LiquidPositive()
     {
+        anim.SetTrigger("oilwalk");
         walkSpeed = 10;
         runSpeed = 14;
     }
 
     public void LostSpeed()
     {
-        anim.SetTrigger("petrolwalk");
         walkSpeed -= 0.1f;
         runSpeed -= 0.14f;
 
@@ -410,7 +410,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LiquidNegative()
     {
-        
+        anim.SetTrigger("petrolwalk");
         walkSpeed = walkSpeed/2;
         runSpeed = runSpeed/2;
     }

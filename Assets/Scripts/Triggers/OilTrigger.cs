@@ -17,7 +17,6 @@ public class OilTrigger : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            //anim.SetTrigger("lines");
             Debug.Log("EnterPositivePlayer");
             player.LiquidPositive();
         }
