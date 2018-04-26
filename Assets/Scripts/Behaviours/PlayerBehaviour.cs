@@ -350,7 +350,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if(timeCounter <= 0)
         {
             anim.SetTrigger("ability");
-            animHUD.SetTrigger("ability");
+            animHUD.SetTrigger("ability1");
             audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
             //if(doAbility) return;
             if (numResults > 0)
