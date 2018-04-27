@@ -412,8 +412,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279140555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 164.5, y: 92.5, z: 0}
-  m_LocalScale: {x: 0.25703126, y: 0.25703126, z: 0.25703126}
+  m_LocalPosition: {x: 266.5, y: 150, z: 0}
+  m_LocalScale: {x: 0.41640624, y: 0.41640624, z: 0.41640624}
   m_Children:
   - {fileID: 84784653}
   - {fileID: 1289914678}
@@ -1028,8 +1028,8 @@ Camera:
   m_GameObject: {fileID: 1201787674}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1352,12 +1352,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 164.5
+      value: 266.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 92.5
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}

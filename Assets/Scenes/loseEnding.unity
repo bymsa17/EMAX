@@ -263,7 +263,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.25, g: 0.25, b: 0.25, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -887,12 +887,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 295.5
+      value: 266.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 166
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
@@ -1165,8 +1165,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521785393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 295.5, y: 166, z: 0}
-  m_LocalScale: {x: 0.46171874, y: 0.46171874, z: 0.46171874}
+  m_LocalPosition: {x: 266.5, y: 150, z: 0}
+  m_LocalScale: {x: 0.41640624, y: 0.41640624, z: 0.41640624}
   m_Children:
   - {fileID: 475725354}
   - {fileID: 878504089}
@@ -1240,3 +1240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4f95d18b36acb479712590d023b9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioButton: {fileID: 0}
