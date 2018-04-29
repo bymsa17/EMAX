@@ -14,6 +14,7 @@ TagManager:
   - Trunk
   - Liquid
   - Hazard
+  - CrashedWoodBox
   layers:
   - Default
   - TransparentFX
