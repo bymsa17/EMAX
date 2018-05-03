@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 114524569832397062}
   - component: {fileID: 114282679195325690}
   - component: {fileID: 114082338982318490}
-  - component: {fileID: 95831084785230760}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -51,23 +50,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &95831084785230760
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1993346687386856}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0615196b136a310438af0acacdbf7374, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114082338982318490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,7 +222,6 @@ MonoBehaviour:
   finalValue: {x: 0.8, y: 0.8, z: 0}
   currentTime: 0
   timeDuration: 0.5
-  repeat: 0
   isActive: 0
 --- !u!114 &114905594454757778
 MonoBehaviour:
