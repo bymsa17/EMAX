@@ -255,7 +255,6 @@ public class PlayerBehaviour : MonoBehaviour {
             Time.timeScale = 1;
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(0);
-            
         }
     }
 
