@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Manager.unity
     guid: 200cbdf43238aa34abc9ac3b20620626
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/logo.unity
     guid: 6b93fc98e6129754a9d14dc1679ab23b
   - enabled: 1
@@ -17,12 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cinematic.unity
     guid: 96d01066d0003c447809821d71f28d0c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/level1.unity
     guid: 7705d1d8b6b67394f81b61583bf54513
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/winEnding.unity
     guid: d14e776dab2112048a9b4ce1064f327f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/loseEnding.unity
     guid: 4d4b2fcbf03229d4eadd414c0e8ff94d
