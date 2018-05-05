@@ -365,11 +365,12 @@ public class PlayerBehaviour : MonoBehaviour {
                         results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
                         audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
                     }
-                    /*else if(results[i].gameObject.tag == "WoodBox")
+                    else if(results[i].gameObject.tag == "WoodBox")
                     {
-                        results[i].gameObject.SetActive(false);
-                        audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
-                    }*/
+                        results[i].GetComponent<BoxSwitcher>().Switch();
+                        audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));  
+                    }
+                    /*
                     else if(results[i].gameObject.tag == "CrashedWoodBox")
                     {
                         Vector2 dir = results[i].transform.position - this.transform.position;
@@ -377,6 +378,7 @@ public class PlayerBehaviour : MonoBehaviour {
                         //results[i].gameObject.SetActive(true);
                         results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
                     }
+                    */
                 }
                 timeCounter = 400;
                 animHUD.SetBool("ability1", false);
