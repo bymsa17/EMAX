@@ -80,11 +80,11 @@ public class PlayerBehaviour : MonoBehaviour {
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
 
-        GameData.LoadGame(1);
+        /*GameData.LoadGame(1);
 
         score = GameData.gameState.score;
         testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
-        transform.position = testPos;
+        transform.position = testPos;*/
 
         //collisions.MyStart();
     }
