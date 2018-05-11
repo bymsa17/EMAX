@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class ShadowBehaviour : MonoBehaviour
 {
-    public Transform shadowTrans;
+    public RectTransform shadowTrans;
     public Vector2 shadowPos;
+    public Animator anim;
 
-	void Start ()
+    void Start()
     {
         shadowPos = shadowTrans.position;
-	}
-	
-	void Update ()
+        anim = GetComponent<Animator>();
+    }
+
+    void Update()
     {
-        if(Time.timeScale == 1)
+        if (Time.timeScale == 1)
         {
             shadowPos.x += 0.025f;
             shadowTrans.position = shadowPos;
+            anim.SetBool("loseAnim", true);
         }
     }
 }
+    
