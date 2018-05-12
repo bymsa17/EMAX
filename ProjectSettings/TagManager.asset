@@ -49,13 +49,13 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: fondo
+  - name: FondoTile
     uniqueID: 1483905581
     locked: 0
-  - name: fondosotano
+  - name: ObjFondo
     uniqueID: 2501591339
     locked: 0
-  - name: fondoencimasotano
+  - name: PropFondo
     uniqueID: 3726409779
     locked: 0
   - name: platafroma
@@ -82,7 +82,7 @@ TagManager:
   - name: Player
     uniqueID: 4190683827
     locked: 0
-  - name: pareddelante
+  - name: Cables
     uniqueID: 1556668197
     locked: 0
   - name: Shadow
