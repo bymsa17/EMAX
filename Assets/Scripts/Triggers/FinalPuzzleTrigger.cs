@@ -7,6 +7,7 @@ public class FinalPuzzleTrigger : MonoBehaviour
     public FinalPuzzleBehaviour puzzle;
     public bool isActive;
     public int buttonNumber;
+    public Animator anim;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class FinalPuzzleTrigger : MonoBehaviour
             Debug.Log("PuzzleTrigger");
             isActive = true;
             puzzle.TouchedButton(buttonNumber);
-            //puzzle.active = true;
+            anim.SetTrigger("ButtonTrigger");
         }
     }
 }

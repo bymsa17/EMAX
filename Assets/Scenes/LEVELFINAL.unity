@@ -3037,22 +3037,22 @@ Prefab:
     - target: {fileID: 224939957785659880, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -200
+      value: -3.199996
       objectReference: {fileID: 0}
     - target: {fileID: 224939957785659880, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.7000003
+      value: 4.299999
       objectReference: {fileID: 0}
     - target: {fileID: 224168636784209364, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -200
+      value: -73.2
       objectReference: {fileID: 0}
     - target: {fileID: 224168636784209364, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.299999
+      value: 1.7000008
       objectReference: {fileID: 0}
     - target: {fileID: 1033746719153342, guid: ab9634519ce46634989dd91b5343da5a, type: 2}
       propertyPath: m_Name
@@ -3973,7 +3973,7 @@ Prefab:
     - target: {fileID: 61761513000979610, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61768491478079918, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -3983,7 +3983,7 @@ Prefab:
     - target: {fileID: 61383682006316450, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61099322196086618, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -4094,7 +4094,7 @@ Prefab:
     - target: {fileID: 61060743008246970, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61060743008246970, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -4119,7 +4119,7 @@ Prefab:
     - target: {fileID: 61378041460211966, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61378041460211966, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -4159,7 +4159,7 @@ Prefab:
     - target: {fileID: 61244944166318570, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61244944166318570, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -4179,7 +4179,7 @@ Prefab:
     - target: {fileID: 61783780128761610, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.15
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 61783780128761610, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
@@ -4207,6 +4207,26 @@ Prefab:
       propertyPath: m_Name
       value: YellowButton
       objectReference: {fileID: 0}
+    - target: {fileID: 114889515102154962, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1134538871}
+    - target: {fileID: 114847163684862740, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 93813676}
+    - target: {fileID: 114685177865440584, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1500200053}
+    - target: {fileID: 114014014605495354, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1124588482}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 393366defa72b2043ac00714299d7fae, type: 2}
   m_IsPrefabParent: 0
