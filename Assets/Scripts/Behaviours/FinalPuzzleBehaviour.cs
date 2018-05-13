@@ -27,20 +27,23 @@ public class FinalPuzzleBehaviour : MonoBehaviour
     {
         if(button == counter)
         {
+            if(button == 1) animButton01.SetBool("Pressed", true);
+            else if(button == 2) animButton02.SetBool("Pressed", true);
+            else if(button == 3) animButton03.SetBool("Pressed", true);
             if(button == 4)
             {
+                animButton04.SetBool("Pressed", true);
                 door.active = true;
             }
-            else
-            {
-                counter++;
-                animButton02.SetBool("Pressed", true);
-            }
+            else counter++;
         }
         else
         {
             counter = 1;
+            animButton01.SetBool("Pressed", false);
             animButton02.SetBool("Pressed", false);
+            animButton03.SetBool("Pressed", false);
+            animButton04.SetBool("Pressed", false);
         }
     }
 }
