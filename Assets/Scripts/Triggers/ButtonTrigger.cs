@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonTrigger : MonoBehaviour
 {
     public bool isActive;
+    public Animator anim;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,6 +13,7 @@ public class ButtonTrigger : MonoBehaviour
         {
             Debug.Log("ButtonTrigger");
             isActive = true;
+            anim.SetTrigger("ButtonTrigger");
         }
     }
 }

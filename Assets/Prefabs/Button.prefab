@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61609247958563412}
   - component: {fileID: 61474234432057540}
   - component: {fileID: 114995514057302272}
+  - component: {fileID: 95857892505269830}
   m_Layer: 10
   m_Name: Button
   m_TagString: Untagged
@@ -36,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017079826794808}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -360.56, y: -17.02, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: -241.97, y: -2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!61 &61474234432057540
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -58,7 +59,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.33}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.15}
     oldSize: {x: 1.61, y: 0.86}
     newSize: {x: 1.61, y: 0.86}
     adaptiveTilingThreshold: 0.5
@@ -83,7 +84,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.15}
     oldSize: {x: 1.61, y: 0.86}
     newSize: {x: 1.61, y: 0.86}
     adaptiveTilingThreshold: 0.5
@@ -93,6 +94,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.16, y: 0.72}
   m_EdgeRadius: 0
+--- !u!95 &95857892505269830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017079826794808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76e05dc386816314aae594aa666ca91e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114995514057302272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
+  anim: {fileID: 95857892505269830}
 --- !u!212 &212492146920728692
 SpriteRenderer:
   m_ObjectHideFlags: 1
