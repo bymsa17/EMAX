@@ -58,7 +58,7 @@ TagManager:
   - name: PropFondo
     uniqueID: 3726409779
     locked: 0
-  - name: platafroma
+  - name: Nivel
     uniqueID: 30758377
     locked: 0
   - name: Easing
@@ -70,7 +70,7 @@ TagManager:
   - name: Ground
     uniqueID: 3507950147
     locked: 0
-  - name: sotano
+  - name: PropNivel
     uniqueID: 67770033
     locked: 0
   - name: props
