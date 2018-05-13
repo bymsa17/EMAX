@@ -4649,22 +4649,22 @@ Prefab:
     - target: {fileID: 224939957785659880, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.199996
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 224939957785659880, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.299999
+      value: -5.7000003
       objectReference: {fileID: 0}
     - target: {fileID: 224168636784209364, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -73.2
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 224168636784209364, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.7000008
+      value: -8.299999
       objectReference: {fileID: 0}
     - target: {fileID: 1033746719153342, guid: ab9634519ce46634989dd91b5343da5a, type: 2}
       propertyPath: m_Name
@@ -4683,12 +4683,12 @@ Prefab:
     - target: {fileID: 224075154306086540, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 318.52124
+      value: 267.02124
       objectReference: {fileID: 0}
     - target: {fileID: 224075154306086540, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 180.62723
+      value: 132.12721
       objectReference: {fileID: 0}
     - target: {fileID: 114931754072071760, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
@@ -6060,6 +6060,26 @@ Prefab:
     - target: {fileID: 114014014605495354, guid: 393366defa72b2043ac00714299d7fae,
         type: 2}
       propertyPath: anim
+      value: 
+      objectReference: {fileID: 1124588487}
+    - target: {fileID: 114052554983340654, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: animButton01
+      value: 
+      objectReference: {fileID: 1134538871}
+    - target: {fileID: 114052554983340654, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: animButton02
+      value: 
+      objectReference: {fileID: 93813676}
+    - target: {fileID: 114052554983340654, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: animButton03
+      value: 
+      objectReference: {fileID: 1500200058}
+    - target: {fileID: 114052554983340654, guid: 393366defa72b2043ac00714299d7fae,
+        type: 2}
+      propertyPath: animButton04
       value: 
       objectReference: {fileID: 1124588487}
     m_RemovedComponents: []
@@ -50783,7 +50803,7 @@ Tilemap:
       m_TileIndex: 4
       m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 6
+      m_TileColorIndex: 8
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 3
       m_ColliderType: 1
@@ -77652,12 +77672,12 @@ Tilemap:
     m_Data: {r: 0.7546305, g: 0.33413264, b: 0.44553146, a: 1}
   - m_RefCount: 18
     m_Data: {r: 0.85443175, g: 0.59385127, b: 0.6793923, a: 1}
-  - m_RefCount: 1
-    m_Data: {r: 0.8370088, g: 0.46785688, b: 0.520736, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 1.5037714e-34, g: 0, b: 21.407335, a: 1e-45}
   - m_RefCount: 16
     m_Data: {r: 0.8447127, g: 0.4051438, b: 0.46441108, a: 1}
-  - m_RefCount: 0
-    m_Data: {r: 4.25e-43, g: 8.3964e-41, b: 2.5329435, a: 1e-45}
+  - m_RefCount: 1
+    m_Data: {r: 0.8370088, g: 0.46785688, b: 0.520736, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -9, y: -5, z: 0}

@@ -12,6 +12,10 @@ public class FinalPuzzleBehaviour : MonoBehaviour
     public FinalPuzzleTrigger buttonPressed02;
     public FinalPuzzleTrigger buttonPressed03;
     public FinalPuzzleTrigger buttonPressed04;
+    public Animator animButton01;
+    public Animator animButton02;
+    public Animator animButton03;
+    public Animator animButton04;
 
     void Start ()
     {
@@ -27,9 +31,16 @@ public class FinalPuzzleBehaviour : MonoBehaviour
             {
                 door.active = true;
             }
-            else counter++;
+            else
+            {
+                counter++;
+                animButton02.SetBool("Pressed", true);
+            }
         }
-        else counter = 1;
-
+        else
+        {
+            counter = 1;
+            animButton02.SetBool("Pressed", false);
+        }
     }
 }
