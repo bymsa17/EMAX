@@ -58,6 +58,9 @@ TagManager:
   - name: PropFondo
     uniqueID: 3726409779
     locked: 0
+  - name: Blur
+    uniqueID: 2363717481
+    locked: 0
   - name: Nivel
     uniqueID: 30758377
     locked: 0
