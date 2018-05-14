@@ -62,6 +62,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int numResults = 0;
     public float abilityForce = 5;
     public float timeCounter;
+    public float activePieces;
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
@@ -368,7 +369,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     else if(results[i].gameObject.tag == "WoodBox")
                     {
                         results[i].GetComponent<BoxSwitcher>().Switch();
-                        audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));  
+                        audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
                     }
                     /*
                     else if(results[i].gameObject.tag == "CrashedWoodBox")

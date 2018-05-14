@@ -10,6 +10,7 @@ public class BoxSwitcher : MonoBehaviour
     public GameObject pieza2;
     public GameObject pieza3;
     public GameObject player;
+    public int timeCounter;
 
     void Start ()
     {
@@ -28,5 +29,11 @@ public class BoxSwitcher : MonoBehaviour
         pieza2.GetComponent<Rigidbody2D>().AddForce(dir * 1000, ForceMode2D.Impulse);
         pieza3.GetComponent<Rigidbody2D>().AddForce(dir * 1000, ForceMode2D.Impulse);
 
+        if(timeCounter >= 5)
+        {
+            pieza1.SetActive(false);
+            pieza2.SetActive(false);
+            pieza3.SetActive(false);
+        }
     }
 }
