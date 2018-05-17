@@ -62,7 +62,6 @@ public class PlayerBehaviour : MonoBehaviour {
     public int numResults = 0;
     public float abilityForce = 5;
     public float timeCounter;
-    public float activePieces;
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
