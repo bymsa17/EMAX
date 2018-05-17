@@ -19,6 +19,7 @@ public class ShadowBehaviour : MonoBehaviour
         if (Time.timeScale == 1)
         {
             shadowPos.x += 0.025f;
+            shadowPos.y += 0.0025f;
             shadowTrans.position = shadowPos;
             anim.SetBool("loseAnim", true);
         }
