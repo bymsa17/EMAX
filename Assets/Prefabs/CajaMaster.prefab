@@ -35,7 +35,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4952219745798282}
-  - component: {fileID: 61365369787411108}
   m_Layer: 11
   m_Name: CajaRota
   m_TagString: WoodBox
@@ -54,7 +53,7 @@ GameObject:
   - component: {fileID: 212995875453819862}
   - component: {fileID: 60333195733633760}
   - component: {fileID: 50706430978664744}
-  - component: {fileID: 61119158412650934}
+  - component: {fileID: 95408517173357500}
   m_Layer: 11
   m_Name: wood_box_crashed_2
   m_TagString: WoodBox
@@ -91,7 +90,7 @@ GameObject:
   - component: {fileID: 212925997787739502}
   - component: {fileID: 60040135933504114}
   - component: {fileID: 50628470140674548}
-  - component: {fileID: 61842271771666672}
+  - component: {fileID: 95182373098703446}
   m_Layer: 11
   m_Name: wood_box_crashed_1
   m_TagString: WoodBox
@@ -110,7 +109,7 @@ GameObject:
   - component: {fileID: 212020068223825078}
   - component: {fileID: 60232404845186976}
   - component: {fileID: 50095090610826532}
-  - component: {fileID: 61086679637119322}
+  - component: {fileID: 95690594357443328}
   m_Layer: 11
   m_Name: wood_box_crashed_3
   m_TagString: WoodBox
@@ -193,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000275173271450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.97, y: -1.118, z: 0.17931406}
+  m_LocalPosition: {x: -321.41153, y: -10.964733, z: 0.17931406}
   m_LocalScale: {x: 0.29, y: 0.29, z: 0.29}
   m_Children:
   - {fileID: 4952219745798282}
@@ -474,106 +473,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 2.5}
   m_EdgeRadius: 0
---- !u!61 &61086679637119322
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1955032942405534}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.85, y: 0.44}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.73, y: 2.63}
-    newSize: {x: 2.73, y: 2.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.04, y: 1.69}
-  m_EdgeRadius: 0
---- !u!61 &61119158412650934
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1531806214457486}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.52, y: 0.41}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.73, y: 2.63}
-    newSize: {x: 2.73, y: 2.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.57, y: 1.64}
-  m_EdgeRadius: 0
---- !u!61 &61365369787411108
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172408066294182}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.73, y: 2.63}
-    newSize: {x: 3.2, y: 3.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6, y: 2.56}
-  m_EdgeRadius: 0
---- !u!61 &61842271771666672
-BoxCollider2D:
+--- !u!95 &95182373098703446
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648902014296616}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.89}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.73, y: 2.63}
-    newSize: {x: 2.73, y: 2.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.73, y: 0.86}
-  m_EdgeRadius: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ecb59b628f6efe4e9e6854c83fe569a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95408517173357500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531806214457486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5155b86277030643b56006599ae5ed8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95690594357443328
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955032942405534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf460f0c89691814395b570ac073173d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114248365850028902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -588,8 +538,11 @@ MonoBehaviour:
   unloadBox: {fileID: 1587394780477120}
   loadBox: {fileID: 1172408066294182}
   pieza1: {fileID: 1648902014296616}
+  anim1: {fileID: 95182373098703446}
   pieza2: {fileID: 1531806214457486}
+  anim2: {fileID: 95408517173357500}
   pieza3: {fileID: 1955032942405534}
+  anim3: {fileID: 95690594357443328}
   player: {fileID: 0}
 --- !u!212 &212020068223825078
 SpriteRenderer:
