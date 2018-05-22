@@ -34,6 +34,6 @@ public class BoxSwitcher : MonoBehaviour
         anim1.SetTrigger("DestroyPiece");
         anim2.SetTrigger("DestroyPiece");
         anim3.SetTrigger("DestroyPiece");
-        Destroy(loadBox, 2);
+        Destroy(loadBox, 1);
     }
 }

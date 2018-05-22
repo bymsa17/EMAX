@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321704900642392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 203.4531, y: 10.427873, z: 0.19352183}
+  m_LocalPosition: {x: -153.3633, y: -6.85, z: 0.19352183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4053169277742142}
@@ -104,7 +104,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321704900642392}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243820115120409942, guid: 16f4d623befd5c24eba51d2a0f615b91,
     type: 2}
@@ -118,10 +118,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 2.4
+  MinDistance: 2
+  MaxDistance: 3.8
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -148,7 +148,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -160,7 +160,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.33333334
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3511,8 +3511,8 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0476b1aeea884784097fbe5e741ffe2f, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 3ae703e51a0367849a205f49f23726af, type: 2}
+  - {fileID: 2100000, guid: 3ae703e51a0367849a205f49f23726af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
