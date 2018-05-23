@@ -4526,6 +4526,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 61995420437275758, guid: 77fa7070cb4850c41837bbd4a5154ed4,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77fa7070cb4850c41837bbd4a5154ed4, type: 2}
   m_IsPrefabParent: 0
@@ -5062,12 +5067,12 @@ Prefab:
     - target: {fileID: 224075154306086540, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 127.52124
+      value: 156.52124
       objectReference: {fileID: 0}
     - target: {fileID: 224075154306086540, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 53.627213
+      value: 70.12721
       objectReference: {fileID: 0}
     - target: {fileID: 114931754072071760, guid: ab9634519ce46634989dd91b5343da5a,
         type: 2}
@@ -79139,11 +79144,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4253099186966142, guid: 4895d87b11a949c49b65ade36654ffc2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: 68.33
       objectReference: {fileID: 0}
     - target: {fileID: 4253099186966142, guid: 4895d87b11a949c49b65ade36654ffc2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 7.3
       objectReference: {fileID: 0}
     - target: {fileID: 4253099186966142, guid: 4895d87b11a949c49b65ade36654ffc2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -79195,6 +79200,11 @@ Prefab:
     - target: {fileID: 1751200914882886, guid: 4895d87b11a949c49b65ade36654ffc2, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61256877478469746, guid: 4895d87b11a949c49b65ade36654ffc2,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4895d87b11a949c49b65ade36654ffc2, type: 2}
