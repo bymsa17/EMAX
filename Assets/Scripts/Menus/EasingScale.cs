@@ -41,10 +41,11 @@ public class EasingScale : MonoBehaviour
             if(transform.localScale.x < 0.5)
             {
                 transform.localScale = new Vector3(0.5f, 0.5f, 1);
-                iniValue = transform.localScale;
+                iniValue = new Vector3(0.5f, 0.5f, 1);
                 finalValue = new Vector3(0.4f, 0.4f, 1);
             }
             currentTime = 0;
+            deltaValue = finalValue - iniValue;
         }
     }
 
