@@ -73,6 +73,12 @@ TagManager:
   - name: Ground
     uniqueID: 3507950147
     locked: 0
+  - name: tubos
+    uniqueID: 360749093
+    locked: 0
+  - name: sombra
+    uniqueID: 711977841
+    locked: 0
   - name: PropNivel
     uniqueID: 67770033
     locked: 0
