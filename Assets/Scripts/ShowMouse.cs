@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowMouse : MonoBehaviour
 {
-	void Start ()
+	void Update ()
     {
         Show();
 	}

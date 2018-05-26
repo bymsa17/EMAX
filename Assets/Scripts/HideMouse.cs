@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HideMouse : MonoBehaviour
 {
-    void Start()
+    void Update()
     {
         Hide();
     }
