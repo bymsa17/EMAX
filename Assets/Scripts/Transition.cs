@@ -36,11 +36,12 @@ public class Transition : MonoBehaviour
 
     void FadeIn()
     {
-        animScreen.SetBool("Transition", true);
+        //animScreen.SetBool("In", true);
+        animScreen.SetTrigger("in0");
     }
     void FadeOut()
     {
-        //animScreen.SetTrigger("Transition");
+        animScreen.SetBool("Out", true);
         fadeOut = true;
     }
 

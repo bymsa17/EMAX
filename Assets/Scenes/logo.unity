@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 456452469}
   - component: {fileID: 456452468}
   m_Layer: 5
-  m_Name: PruebaLoading
+  m_Name: TransitionLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
