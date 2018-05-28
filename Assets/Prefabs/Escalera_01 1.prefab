@@ -164,7 +164,7 @@ SpriteRenderer:
   m_Size: {x: 0.69, y: 4.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212964835321106198
 SpriteRenderer:
@@ -208,5 +208,5 @@ SpriteRenderer:
   m_Size: {x: 0.69, y: 4.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

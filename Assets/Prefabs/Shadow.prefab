@@ -81,6 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shadowTrans: {fileID: 4746814061632572}
   shadowPos: {x: 0, y: 0}
+  anim: {fileID: 0}
 --- !u!114 &114702880420702688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,5 +135,5 @@ SpriteRenderer:
   m_Size: {x: 29.73, y: 33.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
