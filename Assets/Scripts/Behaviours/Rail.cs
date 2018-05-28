@@ -2,36 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rail : MonoBehaviour {
+public class Rail : MonoBehaviour
+{
+	public Transform[] waypoints;
 
-	[SerializeField]
-	Transform[] waypoints;
-
-	[SerializeField]
-	float moveSpeed = 0.025f;
+	public float moveSpeed = 2f;
 
 	int waypointIndex = 0;
 
-	void Start () {
-		transform.position = waypoints [waypointIndex].transform.position;
-	}
+	void Start ()
+    {
+		transform.localPosition = waypoints [waypointIndex].transform.localPosition;
+    }
 
-	void Update () {
-		Move ();
+	void Update ()
+    {
+		Move();
 	}
 
 	void Move()
 	{
-		transform.position = Vector2.MoveTowards (transform.position,
-												waypoints[waypointIndex].transform.position,
-												moveSpeed * Time.deltaTime);
+		transform.localPosition = Vector2.MoveTowards (transform.localPosition, waypoints[waypointIndex].transform.localPosition, moveSpeed * Time.deltaTime);
 
-		if (transform.position == waypoints [waypointIndex].transform.position) {
+		if (transform.localPosition == waypoints [waypointIndex].transform.localPosition)
+        {
 			waypointIndex += 1;
 		}
 				
-		if (waypointIndex == waypoints.Length)
-			waypointIndex = 0;
+		if (waypointIndex == waypoints.Length) waypointIndex = 0;
 	}
 
 }
