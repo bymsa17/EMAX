@@ -37,13 +37,13 @@ public class CameraBehaviour : MonoBehaviour
     {
         smoothTime -= 0.01f;
         if (smoothTime <= 0.20f) smoothTime = 0.20f;
-        smoothOffset -= 0.01f;
+        smoothOffset -= 0.025f;
         if (smoothOffset <= 0) smoothOffset = 0;
         Camera.main.orthographicSize += smoothTime;
         offset.y += smoothOffset;
-        if (Camera.main.orthographicSize >= 9.5f)
+        if (Camera.main.orthographicSize >= 6)
         {
-            Camera.main.orthographicSize = 9.5f;
+            Camera.main.orthographicSize = 6;
         }
     }
 }
