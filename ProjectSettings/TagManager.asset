@@ -97,3 +97,6 @@ TagManager:
   - name: Shadow
     uniqueID: 3799125723
     locked: 0
+  - name: Fade
+    uniqueID: 3725977403
+    locked: 0
