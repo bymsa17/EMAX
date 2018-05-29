@@ -1117,8 +1117,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344520242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305, y: 171.5, z: 0}
-  m_LocalScale: {x: 0.4765625, y: 0.4765625, z: 0.4765625}
+  m_LocalPosition: {x: 282.5, y: 159, z: 0}
+  m_LocalScale: {x: 0.44140625, y: 0.44140625, z: 0.44140625}
   m_Children:
   - {fileID: 1177822767}
   m_Father: {fileID: 0}
@@ -3571,7 +3571,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1177822766}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 3d84a2d3cbe1ff64b916907b4120f6be, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 571cb2615adfa034ca8f9bee1b8e6e30, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera: {fileID: 231714307}
   m_TargetTexture: {fileID: 0}
@@ -4068,8 +4068,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305, y: 171.5, z: 0}
-  m_LocalScale: {x: 0.4765625, y: 0.4765625, z: 0.4765625}
+  m_LocalPosition: {x: 282.5, y: 159, z: 0}
+  m_LocalScale: {x: 0.44140625, y: 0.44140625, z: 0.44140625}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1947714099}
@@ -6575,12 +6575,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 305
+      value: 282.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 171.5
+      value: 159
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
