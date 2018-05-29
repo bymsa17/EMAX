@@ -52,6 +52,9 @@ TagManager:
   - name: FondoTile
     uniqueID: 1483905581
     locked: 0
+  - name: Pared
+    uniqueID: 2169633643
+    locked: 0
   - name: ObjFondo
     uniqueID: 2501591339
     locked: 0
@@ -93,9 +96,6 @@ TagManager:
     locked: 0
   - name: Cables
     uniqueID: 1556668197
-    locked: 0
-  - name: pared
-    uniqueID: 2169633643
     locked: 0
   - name: Shadow
     uniqueID: 3799125723
