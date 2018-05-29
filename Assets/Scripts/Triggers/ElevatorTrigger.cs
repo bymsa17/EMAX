@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ElevatorTrigger : MonoBehaviour
 {
-    public ElevatorBehaviour elevator;
+    public DoorElevatorBehaviour door;
     public Animator animElevator;
     public Animator animDoorL;
     public Animator animDoorR;
@@ -15,6 +15,7 @@ public class ElevatorTrigger : MonoBehaviour
         {
             Debug.Log("ElevatorTrigger");
             //elevator.activeDown = true;
+            door.isActive = true;
             animElevator.SetTrigger("UpElevator");
             animDoorL.SetBool("OpenDoor", true);
             animDoorR.SetBool("OpenDoor", true);
