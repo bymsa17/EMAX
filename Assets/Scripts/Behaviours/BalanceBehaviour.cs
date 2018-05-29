@@ -10,6 +10,8 @@ public class BalanceBehaviour : MonoBehaviour
     //public Collider2D izquierda;
     //public Collider2D derecha;
 
+    public Animator animBalance;
+
     public int weight;
     public float maxDistance;
 
@@ -35,6 +37,8 @@ public class BalanceBehaviour : MonoBehaviour
         if(((platoIzquierdo.gameObject.transform.localPosition.y > -maxDistance) && (weight > 0)) || ((platoIzquierdo.gameObject.transform.localPosition.y < maxDistance) && (weight < 0)))
         {
             platoIzquierdo.gameObject.transform.position -= new Vector3(0, weight, 0) * Time.deltaTime / 2;
+            //animBalance.SetBool("Izq", true);
+            //animBalance.SetBool("Der", true);
         }
 
         platoDerecho.gameObject.transform.localPosition = new Vector3(platoDerecho.gameObject.transform.localPosition.x, -platoIzquierdo.gameObject.transform.localPosition.y, platoDerecho.gameObject.transform.localPosition.z);

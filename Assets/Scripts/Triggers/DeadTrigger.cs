@@ -10,7 +10,7 @@ public class DeadTrigger : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("KillPlayer");
-            SceneManager.LoadScene(5); 
+            SceneManager.LoadScene(6); 
         }
     }
 }
