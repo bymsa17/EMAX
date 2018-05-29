@@ -438,8 +438,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279140555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 313.5, y: 176.5, z: 0}
-  m_LocalScale: {x: 0.48984376, y: 0.48984376, z: 0.48984376}
+  m_LocalPosition: {x: 291, y: 163.5, z: 0}
+  m_LocalScale: {x: 0.4546875, y: 0.4546875, z: 0.4546875}
   m_Children:
   - {fileID: 84784653}
   - {fileID: 1289914678}
@@ -702,6 +702,7 @@ GameObject:
   - component: {fileID: 831851702}
   - component: {fileID: 831851701}
   - component: {fileID: 831851704}
+  - component: {fileID: 831851705}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -830,6 +831,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &831851705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831851699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  iniValue: {x: 1, y: 1, z: 0}
+  finalValue: {x: 0.75, y: 0.75, z: 0}
+  currentTime: 0
+  timeDuration: 1
+  isActive: 0
 --- !u!1 &934555620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1095,7 @@ GameObject:
   - component: {fileID: 1046929884}
   - component: {fileID: 1046929883}
   - component: {fileID: 1046929886}
+  - component: {fileID: 1046929887}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -1205,6 +1224,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1046929887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046929881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89893f464a2981c428fd19b266684b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  iniValue: {x: 1, y: 1, z: 0}
+  finalValue: {x: 0.75, y: 0.75, z: 0}
+  currentTime: 0
+  timeDuration: 1
+  isActive: 0
 --- !u!1 &1201787674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,12 +1854,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 313.5
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 176.5
+      value: 163.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
