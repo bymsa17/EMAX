@@ -1117,8 +1117,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344520242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 282.5, y: 159, z: 0}
-  m_LocalScale: {x: 0.44140625, y: 0.44140625, z: 0.44140625}
+  m_LocalPosition: {x: 313.5, y: 176.5, z: 0}
+  m_LocalScale: {x: 0.48984376, y: 0.48984376, z: 0.48984376}
   m_Children:
   - {fileID: 1177822767}
   m_Father: {fileID: 0}
@@ -1220,7 +1220,7 @@ GameObject:
   - component: {fileID: 416036432}
   - component: {fileID: 416036433}
   m_Layer: 5
-  m_Name: Lenguage
+  m_Name: Language
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2174,7 +2174,7 @@ GameObject:
   - component: {fileID: 604468830}
   - component: {fileID: 604468829}
   m_Layer: 5
-  m_Name: FullScrn/Lenguage
+  m_Name: Language
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2419,7 +2419,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ff17bc255191f784f92c8fc46379fd59, type: 3}
-    m_FontSize: 18
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2430,7 +2430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: exit
+  m_Text: return
 --- !u!222 &772259350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2448,7 +2448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: exit
+  key: return
 --- !u!1 &800291022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,8 +4068,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 282.5, y: 159, z: 0}
-  m_LocalScale: {x: 0.44140625, y: 0.44140625, z: 0.44140625}
+  m_LocalPosition: {x: 313.5, y: 176.5, z: 0}
+  m_LocalScale: {x: 0.48984376, y: 0.48984376, z: 0.48984376}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1947714099}
@@ -4782,7 +4782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: quality
+  key: effects
 --- !u!114 &1500880032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4928,6 +4928,7 @@ GameObject:
   - component: {fileID: 1632435632}
   - component: {fileID: 1632435634}
   - component: {fileID: 1632435633}
+  - component: {fileID: 1632435635}
   m_Layer: 5
   m_Name: Title_Sett
   m_TagString: Untagged
@@ -4992,6 +4993,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1632435631}
+--- !u!114 &1632435635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1632435631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: settings
 --- !u!1 &1636656994
 GameObject:
   m_ObjectHideFlags: 0
@@ -5470,7 +5483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: fantastic
+  key: great
 --- !u!1 &1714837465
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,7 +5531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: quality
+  key: master
 --- !u!114 &1714837468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5874,7 +5887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: options
+  key: settings
 --- !u!1 &1831854373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,7 +5974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: volum
+  key: volume
 --- !u!1 &1836746617
 GameObject:
   m_ObjectHideFlags: 0
@@ -6021,7 +6034,7 @@ GameObject:
   - component: {fileID: 1869884252}
   - component: {fileID: 1869884251}
   m_Layer: 5
-  m_Name: Fantastic
+  m_Name: Great
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6575,12 +6588,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 282.5
+      value: 313.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 159
+      value: 176.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
