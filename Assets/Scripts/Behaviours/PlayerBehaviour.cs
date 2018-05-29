@@ -12,6 +12,9 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public Animator anim;
     public Animator animHUD;
+    public Animator animHeart1;
+    public Animator animHeart2;
+    public Animator animHeart3;
     private AudioPlayer audioPlayer;
     public float lowVolume;
 
@@ -389,12 +392,16 @@ public class PlayerBehaviour : MonoBehaviour {
     public void ReceiveDamage()
     {
         anim.SetTrigger("damage");
+        animHeart1.SetBool("Damage", true);
+
         life -= damage;
+        if(life == 1) animHeart2.SetBool("Damage", true);
 
         if (life <= 0)
         {
             life = 0;
 			anim.SetBool("dead", true);
+            animHeart3.SetBool("Damage", true);
             state = State.Dead;
         }
         
