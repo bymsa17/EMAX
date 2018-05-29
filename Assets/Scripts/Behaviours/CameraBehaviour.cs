@@ -56,8 +56,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         smoothTime -= 0.01f;
         if(smoothTime <= 0.20f) smoothTime = 0.20f;
-        //smoothOffset -= 0.025f;
-        //if(smoothOffset <= 0) smoothOffset = 0;
+        smoothOffset -= 0.025f;
+        if(smoothOffset <= 0) smoothOffset = 0;
         Camera.main.orthographicSize += smoothTime;
         //offset.y += smoothOffset;
         if(Camera.main.orthographicSize >= 5)
@@ -70,8 +70,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         smoothTime -= 0.01f;
         if(smoothTime <= 0.25f) smoothTime = 0.25f;
-        //smoothOffset -= 0.025f;
-        //if(smoothOffset <= 0) smoothOffset = 0;
+        smoothOffset += 0.025f;
+        if(smoothOffset >= 0.35f) smoothOffset = 0.35f;
         Camera.main.orthographicSize += smoothTime;
         //offset.y += smoothOffset;
         if(Camera.main.orthographicSize >= 3.5f)
