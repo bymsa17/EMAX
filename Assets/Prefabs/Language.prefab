@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 224048106933679666}
   - component: {fileID: 114414465065043198}
   m_Layer: 5
-  m_Name: Lenguage
+  m_Name: Language
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

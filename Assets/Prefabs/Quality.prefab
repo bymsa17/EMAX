@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 114483284670557110}
   - component: {fileID: 114681779598856922}
   m_Layer: 5
-  m_Name: Fantastic
+  m_Name: Great
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: fantastic
+  key: great
 --- !u!114 &114644042293425926
 MonoBehaviour:
   m_ObjectHideFlags: 1
