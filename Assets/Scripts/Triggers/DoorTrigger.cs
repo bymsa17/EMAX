@@ -13,7 +13,7 @@ public class DoorTrigger : MonoBehaviour
         {
             Debug.Log("DoorTrigger");
             door.active = true;
-            mainCamera.isActive = true;
+            mainCamera.puzzleActive = true;
         }
     }
 }
