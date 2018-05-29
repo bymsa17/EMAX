@@ -20,6 +20,7 @@ public class BalanceTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("BalanceTrigger");
+            mainCamera.balanceInActive = false;
             mainCamera.balanceOutActive = true;
         }
     }
