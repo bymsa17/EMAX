@@ -94,6 +94,9 @@ TagManager:
   - name: Cables
     uniqueID: 1556668197
     locked: 0
+  - name: pared
+    uniqueID: 2169633643
+    locked: 0
   - name: Shadow
     uniqueID: 3799125723
     locked: 0
