@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 128430878}
   - component: {fileID: 128430880}
   - component: {fileID: 128430879}
+  - component: {fileID: 128430881}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -255,6 +256,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 128430877}
+--- !u!114 &128430881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 128430877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: time
 --- !u!1 &220064042
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +278,7 @@ GameObject:
   - component: {fileID: 220064043}
   - component: {fileID: 220064045}
   - component: {fileID: 220064044}
+  - component: {fileID: 220064046}
   m_Layer: 5
   m_Name: Deaths
   m_TagString: Untagged
@@ -330,6 +344,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 220064042}
+--- !u!114 &220064046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 220064042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: deaths
 --- !u!1 &279140555
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +530,7 @@ GameObject:
   - component: {fileID: 682254219}
   - component: {fileID: 682254221}
   - component: {fileID: 682254220}
+  - component: {fileID: 682254222}
   m_Layer: 5
   m_Name: PortalPiece
   m_TagString: Untagged
@@ -563,6 +590,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682254218}
+--- !u!114 &682254222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682254218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: portal piece
 --- !u!1 &690510304
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +612,7 @@ GameObject:
   - component: {fileID: 690510305}
   - component: {fileID: 690510307}
   - component: {fileID: 690510306}
+  - component: {fileID: 690510308}
   m_Layer: 5
   m_Name: Ability uses
   m_TagString: Untagged
@@ -638,6 +678,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 690510304}
+--- !u!114 &690510308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690510304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ability uses
 --- !u!1 &831851699
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +840,7 @@ GameObject:
   - component: {fileID: 934555621}
   - component: {fileID: 934555623}
   - component: {fileID: 934555622}
+  - component: {fileID: 934555624}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -852,6 +905,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 934555620}
+--- !u!114 &934555624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934555620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: next
 --- !u!1 &963319687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1295,7 @@ GameObject:
   - component: {fileID: 1289914678}
   - component: {fileID: 1289914680}
   - component: {fileID: 1289914679}
+  - component: {fileID: 1289914681}
   m_Layer: 5
   m_Name: PointsTitle
   m_TagString: Untagged
@@ -1294,6 +1360,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1289914677}
+--- !u!114 &1289914681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289914677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: score
 --- !u!1 &1456444713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1652,7 @@ GameObject:
   - component: {fileID: 1985172050}
   - component: {fileID: 1985172052}
   - component: {fileID: 1985172051}
+  - component: {fileID: 1985172053}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1638,6 +1717,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1985172049}
+--- !u!114 &1985172053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985172049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: restart
 --- !u!1 &1999748681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,12 +1818,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 282.5
+      value: 313.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 159
+      value: 176.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
@@ -1831,7 +1922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1086427155736206, guid: 36adb7c9d15a4da488b3eb5b73238f60, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36adb7c9d15a4da488b3eb5b73238f60, type: 2}
