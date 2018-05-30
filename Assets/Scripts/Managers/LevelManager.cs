@@ -10,9 +10,8 @@ public class LevelManager : MonoBehaviour
     public int backScene;
     public int currentScene;
     public int nextScene;
-    public int managerScene = 0;
-    public int logoScene = 1;
-    public int titleScene = 2;
+    public int logoScene = 0;
+    public int titleScene = 1;
     public int sceneCountInBuildSettings;
     [Header("Load parameters")]
     AsyncOperation loadAsync = null;
@@ -22,18 +21,26 @@ public class LevelManager : MonoBehaviour
     [Header("UI")]
     public Image blackScreen;
     float fadeTime = 2.0f;
+    public Animator anim;
 
 
     private void Start()
-    {
+    {   
+        if(GameObject.FindGameObjectsWithTag("GameController").Length > 1)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(this.gameObject);
+
+        AudioManager.Initialize();
+
         blackScreen.color = Color.black;
         FadeIn();
 
         if(SceneManager.sceneCount >= 2) SceneManager.SetActiveScene(SceneManager.GetSceneAt(1));
 
         UpdateSceneState();
-
-        LoadNext();
     }
     void UpdateSceneState()
     {
@@ -41,10 +48,10 @@ public class LevelManager : MonoBehaviour
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
         
-        if(currentScene - 1 <= managerScene) backScene = sceneCountInBuildSettings - 1;
+        if(currentScene - 1 <= logoScene) backScene = sceneCountInBuildSettings - 1;
         else backScene = currentScene - 1;
 
-        if(currentScene + 1 >= sceneCountInBuildSettings) nextScene = managerScene + 1;
+        if(currentScene + 1 >= sceneCountInBuildSettings) nextScene = logoScene + 1;
         else nextScene = currentScene + 1;
         
     }
@@ -63,7 +70,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNext() { StartLoad(nextScene); }
 
-    void StartLoad(int index)
+    public void StartLoad(int index)
     {
         if(isLoading)
         {
@@ -78,8 +85,8 @@ public class LevelManager : MonoBehaviour
     }
     void LoadLevel()
     {
-        if(currentScene != managerScene) unloadAsync = SceneManager.UnloadSceneAsync(currentScene);
-        loadAsync = SceneManager.LoadSceneAsync(loadingSceneIndex, LoadSceneMode.Additive);
+        //unloadAsync = SceneManager.UnloadSceneAsync(currentScene);
+        loadAsync = SceneManager.LoadSceneAsync(loadingSceneIndex, LoadSceneMode.Single);
 
         StartCoroutine(Loading());
     }
@@ -87,6 +94,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(fadeTime);
+        if(Time.timeScale == 0) Time.timeScale = 1;
         LoadLevel();
     }
     IEnumerator Loading()
@@ -104,6 +112,7 @@ public class LevelManager : MonoBehaviour
                 FadeIn();
 
                 isLoading = false;
+               
                 break;
             }
 
@@ -113,11 +122,17 @@ public class LevelManager : MonoBehaviour
 
     void FadeIn()
     {
-        blackScreen.CrossFadeAlpha(0, fadeTime, true);
+        //blackScreen.CrossFadeAlpha(0, fadeTime, true);
+        anim.Play("fadeIn");
+        fadeTime = 1.0f;
+
     }
     void FadeOut()
     {
-        blackScreen.CrossFadeAlpha(1, fadeTime, true);
+        //blackScreen.CrossFadeAlpha(1, fadeTime, true);
+
+        anim.Play("fadeOut");
+        fadeTime = 1.0f;
         StartCoroutine(WaitForFade());
     }
 }

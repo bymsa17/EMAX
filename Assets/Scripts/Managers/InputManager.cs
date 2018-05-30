@@ -23,7 +23,7 @@ public class InputManager : MonoBehaviour
     */
     void Start ()
     {
-        AudioManager.Initialize();
+        //AudioManager.Initialize();
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
 
