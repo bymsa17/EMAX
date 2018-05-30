@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
     public Animator anim;
 
 
-    private void Start()
+    private void Awake()
     {   
         if(GameObject.FindGameObjectsWithTag("GameController").Length > 1)
         {
@@ -34,6 +34,7 @@ public class LevelManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         AudioManager.Initialize();
+        TextData.Initialize();
 
         blackScreen.color = Color.black;
         FadeIn();
