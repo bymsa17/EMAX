@@ -2290,6 +2290,7 @@ GameObject:
   - component: {fileID: 1357147467}
   - component: {fileID: 1357147466}
   - component: {fileID: 1357147465}
+  - component: {fileID: 1357147469}
   m_Layer: 5
   m_Name: Canvas Intro
   m_TagString: Untagged
@@ -2361,8 +2362,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 284.5, y: 160, z: 0}
-  m_LocalScale: {x: 0.4445313, y: 0.4445313, z: 0.4445313}
+  m_LocalPosition: {x: 287.5, y: 161.5, z: 0}
+  m_LocalScale: {x: 0.44921875, y: 0.44921875, z: 0.44921875}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1947714099}
@@ -2376,6 +2377,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1357147469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357147464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d525c54ff9730b4ab2e27b8b72be228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1401308267
 Prefab:
   m_ObjectHideFlags: 0
@@ -2982,12 +2994,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 284.5
+      value: 287.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 160
+      value: 161.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}

@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 279140558}
   - component: {fileID: 279140557}
   - component: {fileID: 279140556}
+  - component: {fileID: 279140560}
   m_Layer: 5
   m_Name: PantallaWin
   m_TagString: Untagged
@@ -438,8 +439,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279140555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 291, y: 163.5, z: 0}
-  m_LocalScale: {x: 0.4546875, y: 0.4546875, z: 0.4546875}
+  m_LocalPosition: {x: 287.5, y: 161.5, z: 0}
+  m_LocalScale: {x: 0.44921875, y: 0.44921875, z: 0.44921875}
   m_Children:
   - {fileID: 84784653}
   - {fileID: 1289914678}
@@ -458,6 +459,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &279140560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279140555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d525c54ff9730b4ab2e27b8b72be228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &420981458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,12 +1866,12 @@ Prefab:
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 291
+      value: 287.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 163.5
+      value: 161.5
       objectReference: {fileID: 0}
     - target: {fileID: 224277488805189768, guid: 36adb7c9d15a4da488b3eb5b73238f60,
         type: 2}
