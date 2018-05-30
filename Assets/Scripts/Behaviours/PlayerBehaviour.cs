@@ -20,7 +20,8 @@ public class PlayerBehaviour : MonoBehaviour {
 
     //private Transform position;
     public Vector3 testPos;
-    public int score;
+    public float score;
+    public float timeCounter;
     public int life;
     public int damage = 1;
 
@@ -64,7 +65,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int maxColliders = 2;
     public int numResults = 0;
     public float abilityForce = 5;
-    public float timeCounter;
+    public float abilityCounter;
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
@@ -78,12 +79,12 @@ public class PlayerBehaviour : MonoBehaviour {
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        timeCounter = 400;
+        abilityCounter = 400;
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
-
-        /*GameData.LoadGame(1);
+        /*
+        GameData.LoadGame(1);
 
         score = GameData.gameState.score;
         testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
@@ -100,8 +101,10 @@ public class PlayerBehaviour : MonoBehaviour {
             case State.Default:
                 DefaultUpdate();
                 if (lostSpeed == true) LostSpeed();
-                timeCounter--;
+                abilityCounter--;
+                timeCounter += Time.deltaTime;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
+                if(timeCounter == 60) score += Time.deltaTime;
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -129,13 +132,12 @@ public class PlayerBehaviour : MonoBehaviour {
             anim.SetBool("isGrounded", collisions.isGrounded);
         }
 
-        //if(timeCounter <= 0) animHUD.SetTrigger("load");
-        if(timeCounter <= 0)
+        if(abilityCounter <= 0)
         {
             animHUD.SetBool("Active", true);
             //audioPlayer.PlaySFX(6, 1, Random.Range(0.9f, 1.1f));
         }
-        if(timeCounter == 0)
+        if(abilityCounter == 0)
         {
             audioPlayer.PlaySFX(6, 1, Random.Range(0.9f, 1.1f));
         }
@@ -349,7 +351,7 @@ public class PlayerBehaviour : MonoBehaviour {
     }*/
     public void Ability()
     {
-        if(timeCounter <= 0)
+        if(abilityCounter <= 0)
         {
             anim.SetTrigger("ability");
             animHUD.SetTrigger("Entrada");
@@ -383,7 +385,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     }
                     */
                 }
-                timeCounter = 400;
+                abilityCounter = 400;
                 animHUD.SetBool("Active", false);
             }
         }
