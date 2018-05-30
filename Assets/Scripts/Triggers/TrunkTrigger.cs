@@ -26,12 +26,12 @@ public class TrunkTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("TrunkTrigger");
-			audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
+
             trunk01.active = true;
             trunk02.active = true;
             animLight.SetTrigger("LightTrigger");
             animButton.SetTrigger("ButtonTrigger");
-
+			audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
 
         }
     }
