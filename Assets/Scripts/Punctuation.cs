@@ -42,24 +42,20 @@ public class Punctuation : MonoBehaviour
 
         if(deaths == 0)
         {
-            score += 20;
+            score += 225;
         }
         else if(deaths == 1)
         {
-            score += 15;
+            score += 150;
         }
         else if(deaths == 2)
         {
-            score += 10;
+            score += 75;
         }
-        else if(deaths == 3)
-        {
-            score += 0;
-        }
-
+        
         if(piece == true)
         {
-            score += 40;
+            score += 150;
         }
         else score += 0;
 
