@@ -542,7 +542,6 @@ GameObject:
   - component: {fileID: 682254219}
   - component: {fileID: 682254221}
   - component: {fileID: 682254220}
-  - component: {fileID: 682254222}
   m_Layer: 5
   m_Name: PortalPiece
   m_TagString: Untagged
@@ -602,18 +601,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682254218}
---- !u!114 &682254222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 682254218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: portal piece
 --- !u!1 &690510304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1000,7 @@ GameObject:
   - component: {fileID: 979539068}
   - component: {fileID: 979539070}
   - component: {fileID: 979539069}
+  - component: {fileID: 979539071}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1051,7 +1039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1077,6 +1065,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979539067}
+--- !u!114 &979539071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979539067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c3b5c1ea1c78b46b846d55a897815f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: piece
 --- !u!1 &1046929881
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,10 +22,11 @@ tutorial6	Este líquido es pegajoso, puede quitarte velocidad	This liquid is sti
 effects	Efectos	Effects
 master	General	Master
 resume	Continuar	Resume
-pause	Pausa	Pause
-defeat	Derrota	Defeat
-score	Puntos	Score
+pause	PAUSA	PAUSE
+defeat	DERROTA	DEFEAT
+score	PUNTOS	SCORE
 time	Tiempo	Time
 deaths	Muertes	Deaths
 ability uses	Usos de Habilidad	Ability Uses
 piece	Pieza del Portal	Portal Piece
+sett title	OPCIONES	SETTINGS
