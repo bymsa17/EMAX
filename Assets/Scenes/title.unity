@@ -1387,45 +1387,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1066879462828164, guid: caba0c51cdbcbfd4fabc181988508a24, type: 2}
-      propertyPath: m_Name
-      value: Volume Effects
-      objectReference: {fileID: 0}
-    - target: {fileID: 224879458668051916, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224473993096549278, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114458859454038928, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_MinValue
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114458859454038928, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_MaxValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114458859454038928, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114458859454038928, guid: caba0c51cdbcbfd4fabc181988508a24,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 465330945}
-    - target: {fileID: 114458859454038928, guid: caba0c51cdbcbfd4fabc181988508a24,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnValueChanged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caba0c51cdbcbfd4fabc181988508a24, type: 2}
   m_IsPrefabParent: 0
@@ -1533,12 +1499,12 @@ Prefab:
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 308.5
+      value: 410
       objectReference: {fileID: 0}
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 173.5
+      value: 230.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7640b0affbb1e4142b68396e725fcd2f, type: 2}
@@ -1956,8 +1922,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357147464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 308.5, y: 173.5, z: 0}
-  m_LocalScale: {x: 0.48203126, y: 0.48203126, z: 0.48203126}
+  m_LocalPosition: {x: 410, y: 230.5, z: 0}
+  m_LocalScale: {x: 0.640625, y: 0.640625, z: 0.640625}
   m_Children:
   - {fileID: 740924720}
   - {fileID: 1947714099}
@@ -2188,45 +2154,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224363216579124190, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1846862512080902, guid: 29c965842b30da640bd7ac1f646e011e, type: 2}
-      propertyPath: m_Name
-      value: Volume Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 224523026263382044, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114692666161497608, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_MinValue
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114692666161497608, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_MaxValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114692666161497608, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114692666161497608, guid: 29c965842b30da640bd7ac1f646e011e,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 465330945}
-    - target: {fileID: 114692666161497608, guid: 29c965842b30da640bd7ac1f646e011e,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnValueChanged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29c965842b30da640bd7ac1f646e011e, type: 2}
   m_IsPrefabParent: 0
