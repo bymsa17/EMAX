@@ -132,7 +132,7 @@ public class PlayerBehaviour : MonoBehaviour {
         //if(timeCounter <= 0) animHUD.SetTrigger("load");
         if(timeCounter <= 0)
         {
-            animHUD.SetBool("ability1", true);
+            animHUD.SetBool("Active", true);
             //audioPlayer.PlaySFX(6, 1, Random.Range(0.9f, 1.1f));
         }
         if(timeCounter == 0)
