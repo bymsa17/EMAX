@@ -352,7 +352,7 @@ public class PlayerBehaviour : MonoBehaviour {
         if(timeCounter <= 0)
         {
             anim.SetTrigger("ability");
-            animHUD.SetTrigger("ability1");
+            animHUD.SetTrigger("Entrada");
             audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
             //if(doAbility) return;
             if (numResults > 0)
@@ -384,7 +384,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     */
                 }
                 timeCounter = 400;
-                animHUD.SetBool("ability1", false);
+                animHUD.SetBool("Active", false);
             }
         }
     }
@@ -393,6 +393,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         anim.SetTrigger("damage");
         animHeart1.SetBool("Damage", true);
+        audioPlayer.PlaySFX(19, 1, Random.Range(0.9f, 1.1f));
 
         life -= damage;
         if(life == 1) animHeart2.SetBool("Damage", true);

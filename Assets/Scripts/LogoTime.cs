@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class LogoTime : MonoBehaviour
 {
-    public SceneTransition transition;
+    private LevelManager levelManager;
     float currentTime;
     float timeDuration;
+    int buildIndex;
 
     void Start ()
     {
         timeDuration = 5;
+        buildIndex = 1;
     }
 
     void Update()
@@ -19,7 +21,7 @@ public class LogoTime : MonoBehaviour
 
         if (currentTime >= timeDuration)
         {
-            transition.LoadScene(2);
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<LevelManager>().StartLoad(buildIndex);
         }
     }
 }
