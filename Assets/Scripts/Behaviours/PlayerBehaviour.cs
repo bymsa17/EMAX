@@ -412,6 +412,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LiquidPositive()
     {
+		audioPlayer.PlaySFX(20, 1, Random.Range(0.9f, 1.1f));
         anim.SetTrigger("oilwalk");
         walkSpeed = 10;
         runSpeed = 14;
