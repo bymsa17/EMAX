@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class CinematicTime : MonoBehaviour
 {
-    public SceneTransition transition;
+    private LevelManager levelManager;
     public GameObject text;
     float currentTime;
     float timeDuration;
+    int buildIndex;
 
     void Start()
     {
         timeDuration = 5;
+        buildIndex = 3;
     }
 
     void Update()
@@ -25,7 +27,7 @@ public class CinematicTime : MonoBehaviour
 
         if((Input.GetKeyDown(KeyCode.Return)) && (currentTime >= timeDuration))
         {
-            transition.LoadScene(4);
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<LevelManager>().StartLoad(buildIndex);
         }
     }
 }
