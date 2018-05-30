@@ -29,9 +29,11 @@ public class LevelManager : MonoBehaviour
         blackScreen.color = Color.black;
         FadeIn();
 
-        //if(SceneManager.sceneCount >= 2) SceneManager.SetActiveScene(SceneManager.GetSceneAt(1));
+        if(SceneManager.sceneCount >= 2) SceneManager.SetActiveScene(SceneManager.GetSceneAt(1));
 
         UpdateSceneState();
+
+        LoadNext();
     }
     void UpdateSceneState()
     {
