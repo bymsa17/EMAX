@@ -5,12 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class DeadTrigger : MonoBehaviour
 {
+    private LevelManager levelManager;
+    int buildIndex;
+
+    void Start()
+    {
+        buildIndex = 5;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             Debug.Log("KillPlayer");
-            SceneManager.LoadScene(6); 
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<LevelManager>().StartLoad(buildIndex);
         }
     }
 }
