@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndingConditions : MonoBehaviour {
-
+public class EndingConditions : MonoBehaviour
+{
+    private LevelManager levelManager;
     public PlayerBehaviour player;
     public float timeCounter;
+    int buildIndex;
 
     // Use this for initialization
     void Start()
@@ -23,7 +25,7 @@ public class EndingConditions : MonoBehaviour {
             timeCounter--;
             if(timeCounter <= 0)
             {
-                ReloadLevel(6);
+                ReloadLevel(5);
             }
         }
     }
@@ -39,7 +41,7 @@ public class EndingConditions : MonoBehaviour {
 
     public void ReloadLevel(int buildIndex)
     {
-        SceneManager.LoadScene(buildIndex);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<LevelManager>().StartLoad(buildIndex);
         //player.Reset();
     }
 }

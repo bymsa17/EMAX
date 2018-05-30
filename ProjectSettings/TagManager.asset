@@ -70,11 +70,20 @@ TagManager:
   - name: Easing
     uniqueID: 2061796429
     locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 4190683827
+    locked: 0
   - name: Liquid
     uniqueID: 4056267229
     locked: 0
   - name: Ground
     uniqueID: 3507950147
+    locked: 0
+  - name: Cables
+    uniqueID: 1556668197
     locked: 0
   - name: tubos
     uniqueID: 360749093
@@ -87,15 +96,6 @@ TagManager:
     locked: 0
   - name: props
     uniqueID: 933355293
-    locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: Player
-    uniqueID: 4190683827
-    locked: 0
-  - name: Cables
-    uniqueID: 1556668197
     locked: 0
   - name: Shadow
     uniqueID: 3799125723
