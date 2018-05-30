@@ -1,14 +1,31 @@
 id	spanish	english
-start	Empezar	Start
-options	Opciones	Options
+start	Empezar	Play
+settings	Opciones	Settings
 exit	Salir	Exit
 title	Título	Title
 language	Idioma	Language
-volum	Volumen	Volume
+volume	Volumen	Volume
 quality	Calidad	Quality
 resolution	Resolución	Resolution
-fast	Rápidos	Fast
-good	Buenos	Good
-fantastic	Fantásticos	Fantastic
+fast	Rápida	Fast
+good	Buena	Good
+great	Genial	Great
 ultra	Ultra	Ultra
-fullscreen	Pantalla completa	Full screen
+fullscreen	Pantalla completa	Fullscreen
+return	Volver	Return
+tutorial1	Pulsa "ESPACIO" para saltar	Press "SPACE" to jump
+tutorial2	Evita las burbujas tòxicas	Avoid toxic bubbles
+tutorial3	Pulsa "E" para activar tu habilidad	Press "E" to activate your skill
+tutorial4	Evita los líquidos tòxicos	Avoid toxic liquids
+tutorial5	Este líquido es resbaladizo, puede proporcionarte velocidad	This liquid is slippery, can provide you with speed
+tutorial6	Este líquido es pegajoso, puede quitarte velocidad	This liquid is sticky, it can take away your speed
+effects	Efectos	Effects
+master	General	Master
+resume	Continuar	Resume
+pause	Pausa	Pause
+defeat	Derrota	Defeat
+score	Puntos	Score
+time	Tiempo	Time
+deaths	Muertes	Deaths
+ability uses	Usos de Habilidad	Ability Uses
+piece	Pieza del Portal	Portal Piece
