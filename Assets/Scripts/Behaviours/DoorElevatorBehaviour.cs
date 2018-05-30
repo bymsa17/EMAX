@@ -28,5 +28,16 @@ public class DoorElevatorBehaviour : MonoBehaviour
             animDoorL.SetBool("CloseDoor", true);
             animDoorR.SetBool("CloseDoor", true);
         }
+
+        if(timeCounter >= 280)
+        {
+            secDoorL.SetActive(false);
+            secDoorR.SetActive(false);
+            iniDoorL.SetActive(true);
+            iniDoorR.SetActive(true);
+
+            //animDoorL.SetBool("OpenDoor", true);
+            //animDoorR.SetBool("OpenDoor", true);
+        }
 	}
 }
