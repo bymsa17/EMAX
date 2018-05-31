@@ -439,6 +439,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void LiquidNegative()
     {
+		audioPlayer.PlaySFX(22, 1, Random.Range(0.9f, 1.1f));
         anim.SetTrigger("petrolwalk");
         walkSpeed = walkSpeed/2;
         runSpeed = runSpeed/2;
