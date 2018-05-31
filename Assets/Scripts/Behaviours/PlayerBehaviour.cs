@@ -75,6 +75,14 @@ public class PlayerBehaviour : MonoBehaviour {
 
     [Header("Pause")]
     public Rail shadow;
+    public PatrolBehaviour platform01;
+    public PatrolBehaviour platform02;
+    public PatrolBehaviour platform03;
+    public PatrolBehaviour platform04;
+    public GearBehaviour gear;
+    public BalanceBehaviour balance;
+    public Animator elevator;
+    public DoorElevatorBehaviour doorElevator;
 
     void Start()
     {
@@ -261,6 +269,14 @@ public class PlayerBehaviour : MonoBehaviour {
             animHUD.enabled = false;
             animHUDPiece.enabled = false;
             shadow.enabled = false;
+            platform01.enabled = false;
+            platform02.enabled = false;
+            platform03.enabled = false;
+            platform04.enabled = false;
+            gear.enabled = false;
+            balance.enabled = false;
+            elevator.enabled = false;
+            doorElevator.enabled = false;
             //AudioManager.SetMasterVolume(lowVolume);
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(1);
@@ -277,6 +293,14 @@ public class PlayerBehaviour : MonoBehaviour {
             animHUD.enabled = true;
             animHUDPiece.enabled = true;
             shadow.enabled = true;
+            platform01.enabled = true;
+            platform02.enabled = true;
+            platform03.enabled = true;
+            platform04.enabled = true;
+            gear.enabled = true;
+            balance.enabled = true;
+            elevator.enabled = true;
+            doorElevator.enabled = true;
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(0);
         }
