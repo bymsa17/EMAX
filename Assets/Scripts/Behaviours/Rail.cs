@@ -32,4 +32,9 @@ public class Rail : MonoBehaviour
 		if (waypointIndex == waypoints.Length) waypointIndex = 0;
 	}
 
+    public void PauseShadow()
+    {
+        moveSpeed = 0;
+    }
+
 }

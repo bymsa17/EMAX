@@ -70,7 +70,10 @@ public class PlayerBehaviour : MonoBehaviour {
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
-    public GameObject canvasGameplay;
+    //public GameObject canvasGameplay;
+
+    [Header("Pause")]
+    public Rail shadow;
 
     void Start()
     {
@@ -248,9 +251,11 @@ public class PlayerBehaviour : MonoBehaviour {
         if(canvasPause.activeInHierarchy == false)
         {
             canvasPause.SetActive(true);
-            canvasGameplay.SetActive(false);
+            //canvasGameplay.SetActive(false);
             //LowVolume();
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            animHUD.enabled = false;
+            shadow.enabled = false;
             //AudioManager.SetMasterVolume(lowVolume);
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(1);
@@ -258,8 +263,10 @@ public class PlayerBehaviour : MonoBehaviour {
         else
         {
             canvasPause.SetActive(false);
-            canvasGameplay.SetActive(true);
-            Time.timeScale = 1;
+            //canvasGameplay.SetActive(true);
+            //Time.timeScale = 1;
+            animHUD.enabled = true;
+            shadow.enabled = true;
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(0);
         }
