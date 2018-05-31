@@ -75,6 +75,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     [Header("Pause")]
     public Rail shadow;
+    public PieceBehaviour piece;
     public PatrolBehaviour platform01;
     public PatrolBehaviour platform02;
     public PatrolBehaviour platform03;
@@ -269,6 +270,7 @@ public class PlayerBehaviour : MonoBehaviour {
             animHUD.enabled = false;
             animHUDPiece.enabled = false;
             shadow.enabled = false;
+            piece.enabled = false;
             platform01.enabled = false;
             platform02.enabled = false;
             platform03.enabled = false;
@@ -293,6 +295,7 @@ public class PlayerBehaviour : MonoBehaviour {
             animHUD.enabled = true;
             animHUDPiece.enabled = true;
             shadow.enabled = true;
+            piece.enabled = true;
             platform01.enabled = true;
             platform02.enabled = true;
             platform03.enabled = true;
@@ -404,16 +407,16 @@ public class PlayerBehaviour : MonoBehaviour {
             {
                 Debug.Log("Ability");
                 //doAbility = true;
-                for(int i = 0; i < numResults; i++)
+                for (int i = 0; i < numResults; i++)
                 {
-                    if(results[i].gameObject.tag == "MetalBox")
+                    if (results[i].gameObject.tag == "MetalBox")
                     {
                         Vector2 dir = results[i].transform.position - this.transform.position;
                         dir.Normalize();
                         results[i].GetComponent<Rigidbody2D>().AddForce(dir * abilityForce, ForceMode2D.Impulse);
                         audioPlayer.PlaySFX(2, 1, Random.Range(0.9f, 1.1f));
                     }
-                    else if(results[i].gameObject.tag == "WoodBox")
+                    else if (results[i].gameObject.tag == "WoodBox")
                     {
                         results[i].GetComponent<BoxSwitcher>().Switch();
                         audioPlayer.PlaySFX(0, 1, Random.Range(0.9f, 1.1f));
