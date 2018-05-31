@@ -8,11 +8,16 @@ public class DoorElevatorBehaviour : MonoBehaviour
     public GameObject iniDoorR;
     public GameObject secDoorL;
     public GameObject secDoorR;
+    public GameObject finalDoorL;
+    public GameObject finalDoorR;
+
     public float timeCounter;
     public bool isActive;
 
-    public Animator animDoorL;
-    public Animator animDoorR;
+    public Animator animSecDoorL;
+    public Animator animSecDoorR;
+    public Animator animFinalDoorL;
+    public Animator animFinalDoorR;
 
     void Update ()
     {
@@ -24,20 +29,20 @@ public class DoorElevatorBehaviour : MonoBehaviour
             iniDoorR.SetActive(false);
             secDoorL.SetActive(true);
             secDoorR.SetActive(true);
-
-            animDoorL.SetBool("CloseDoor", true);
-            animDoorR.SetBool("CloseDoor", true);
+            
+            animSecDoorL.SetBool("CloseDoor", true);
+            animSecDoorR.SetBool("CloseDoor", true);
         }
 
         if(timeCounter >= 280)
         {
+            animSecDoorL.SetBool("OpenDoor", true);
+            animSecDoorR.SetBool("OpenDoor", true);
+
             secDoorL.SetActive(false);
             secDoorR.SetActive(false);
-            iniDoorL.SetActive(true);
-            iniDoorR.SetActive(true);
-
-            //animDoorL.SetBool("OpenDoor", true);
-            //animDoorR.SetBool("OpenDoor", true);
+            finalDoorL.SetActive(true);
+            finalDoorR.SetActive(true);
         }
 	}
 }
