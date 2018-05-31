@@ -12,6 +12,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public Animator anim;
     public Animator animHUD;
+    public Animator animHUDPiece;
     public Animator animHeart1;
     public Animator animHeart2;
     public Animator animHeart3;
@@ -70,7 +71,7 @@ public class PlayerBehaviour : MonoBehaviour {
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
-    //public GameObject canvasGameplay;
+    public GameObject canvasGameplay;
 
     [Header("Pause")]
     public Rail shadow;
@@ -197,7 +198,6 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             if ((isFacingRight && axis.x > 0.1f) || (!isFacingRight && axis.x < -0.1f))
             {
-                
                 horizontalSpeed = 0;
                 return;
             }
@@ -238,7 +238,7 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         isJumping = true;
     }
-
+    
     void Flip()
     {
         rend.flipX = !rend.flipX;
@@ -252,9 +252,14 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             canvasPause.SetActive(true);
             //canvasGameplay.SetActive(false);
+            canvasGameplay.GetComponent<HideMouse>().enabled = false;
+            audioPlayer.PlaySFX(23, 1, Random.Range(0.9f, 1.1f));
             //LowVolume();
             //Time.timeScale = 0;
+            canMove = false;
+            canJump = false;
             animHUD.enabled = false;
+            animHUDPiece.enabled = false;
             shadow.enabled = false;
             //AudioManager.SetMasterVolume(lowVolume);
             //audioPlayer.StopMusic();
@@ -264,8 +269,13 @@ public class PlayerBehaviour : MonoBehaviour {
         {
             canvasPause.SetActive(false);
             //canvasGameplay.SetActive(true);
+            canvasGameplay.GetComponent<HideMouse>().enabled = true;
+            audioPlayer.PlaySFX(23, 1, Random.Range(0.9f, 1.1f));
             //Time.timeScale = 1;
+            canMove = true;
+            canJump = true;
             animHUD.enabled = true;
+            animHUDPiece.enabled = true;
             shadow.enabled = true;
             //audioPlayer.StopMusic();
             audioPlayer.PlayMusic(0);

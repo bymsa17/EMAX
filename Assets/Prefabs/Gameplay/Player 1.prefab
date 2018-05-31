@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1417119915369432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -125.86, y: -0.07, z: -0.004331827}
+  m_LocalPosition: {x: 216.2, y: 13.5, z: -0.004331827}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4845237643999508}
@@ -331,6 +331,8 @@ MonoBehaviour:
   lowVolume: 0
   testPos: {x: 0, y: 0, z: 0}
   score: 0
+  timeCounter: 0
+  coolDown: 3
   life: 3
   damage: 1
   canMove: 1
@@ -372,9 +374,10 @@ MonoBehaviour:
   maxColliders: 30
   numResults: 0
   abilityForce: 600
-  timeCounter: 0
+  abilityCounter: 0
   canvasPause: {fileID: 0}
   canvasGameplay: {fileID: 0}
+  shadow: {fileID: 0}
 --- !u!114 &114386297181838572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -396,12 +399,29 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0246da557438973438038dba37601b9e, type: 3}
   - {fileID: 8300000, guid: 309f9851755958f45b97848793a37fb0, type: 3}
   - {fileID: 8300000, guid: 754214d481b0d5141bf0a63fc5d247ab, type: 3}
+  - {fileID: 8300000, guid: 12d69bb620011e247acb8583d3eabf70, type: 3}
+  - {fileID: 8300000, guid: f16682ec3c3ba70428356ce8ae715831, type: 3}
+  - {fileID: 8300000, guid: 240b31596f4c5674f9b25f4530ea2125, type: 3}
+  - {fileID: 8300000, guid: 198202191d396954898af27aed2807b5, type: 3}
+  - {fileID: 8300000, guid: 5c6c69118f053ba438541c9e55424c79, type: 3}
+  - {fileID: 8300000, guid: d2b363f9faa361c418b730ba11b4e9c0, type: 3}
+  - {fileID: 8300000, guid: 3bd22369575f1d4439b4596f39a470ca, type: 3}
+  - {fileID: 8300000, guid: 5e5587c53dbbbbc4b8bc543fbe406cec, type: 3}
+  - {fileID: 8300000, guid: e15c6b004105bd04c99cab23316cf2cc, type: 3}
+  - {fileID: 8300000, guid: d65113d0ad6c0fa43a179fa67505a8da, type: 3}
+  - {fileID: 8300000, guid: bc23563680d3de049a7bfd79cde68853, type: 3}
+  - {fileID: 8300000, guid: 52a48ac37529fa24da61840871c7f31e, type: 3}
+  - {fileID: 8300000, guid: fc9987da82ac46a4595edb90cee52afe, type: 3}
+  - {fileID: 8300000, guid: b285db8c692023d4493278d3c7b4a948, type: 3}
+  - {fileID: 8300000, guid: 413b8d35c937589498b183f32d86622d, type: 3}
+  - {fileID: 8300000, guid: b0ac527205d7cec4fbed6d31872a2eac, type: 3}
   ambientClips:
   - {fileID: 8300000, guid: 6c5147239b3fc1346b2b8f497b75036a, type: 3}
   musicClips:
-  - {fileID: 8300000, guid: e2519988c91eb234b94897f1e3921d89, type: 3}
-  - {fileID: 8300000, guid: 79811a4d2d6f2af40bc03d3d3a652c6a, type: 3}
+  - {fileID: 8300000, guid: c792dc8c8449841449a5728f0da3ef8a, type: 3}
+  - {fileID: 8300000, guid: c33ba0041567ca44c8ecf911b44dbed1, type: 3}
   - {fileID: 8300000, guid: c30c0b61ef86c5c47b49534211c141f3, type: 3}
+  - {fileID: 8300000, guid: b66f9de9396bbdb47915e35e10f98bd6, type: 3}
 --- !u!212 &212630823368032330
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -434,7 +454,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104283469
-  m_SortingLayer: 1
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8e2bb0f37c1f36408f7078742537da1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
