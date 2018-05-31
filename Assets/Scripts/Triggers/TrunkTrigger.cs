@@ -10,20 +10,12 @@ public class TrunkTrigger : MonoBehaviour
     public Animator animLight;
     public Animator animButton;
 
-	//public float lowVolume;
-	private AudioPlayer audioPlayer;
+	//private AudioPlayer audioPlayer;
 
 	void Start()
 	{
-		audioPlayer = GetComponentInChildren<AudioPlayer> ();
-		audioPlayer.PlayMusic (0);
-	}
-
-	/*public void LowVolume()
-	{
-		lowVolume -= 1;
-		if(lowVolume >= -10) lowVolume = -10;
-	}*/
+        //audioPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioPlayer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,8 +27,7 @@ public class TrunkTrigger : MonoBehaviour
             trunk02.active = true;
             animLight.SetTrigger("LightTrigger");
             animButton.SetTrigger("ButtonTrigger");
-			audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
-
+			//audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
         }
     }
 }

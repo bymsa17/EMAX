@@ -9,22 +9,12 @@ public class ElevatorTrigger : MonoBehaviour
     public Animator animDoorL;
     public Animator animDoorR;
 
-
-	//public float lowVolume;
-	private AudioPlayer audioPlayer;
+	//private AudioPlayer audioPlayer;
 
 	void Start()
 	{
-		audioPlayer = GetComponentInChildren<AudioPlayer> ();
-		audioPlayer.PlayMusic (0);
-	}
-
-	/*public void LowVolume()
-	{
-		lowVolume -= 1;
-		if(lowVolume >= -10) lowVolume = -10;
-	}*/
-
+		//audioPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioPlayer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,7 +28,7 @@ public class ElevatorTrigger : MonoBehaviour
             animElevator.SetTrigger("UpElevator");
             animDoorL.SetBool("OpenDoor", true);
             animDoorR.SetBool("OpenDoor", true);
-			audioPlayer.PlaySFX(10, 1, Random.Range(0.9f, 1.1f));
+			//audioPlayer.PlaySFX(10, 1, Random.Range(0.9f, 1.1f));
         }
     }
 }
