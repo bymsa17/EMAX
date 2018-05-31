@@ -97,6 +97,9 @@ TagManager:
   - name: props
     uniqueID: 933355293
     locked: 0
+  - name: Tutorial
+    uniqueID: 2247097471
+    locked: 0
   - name: Shadow
     uniqueID: 3799125723
     locked: 0

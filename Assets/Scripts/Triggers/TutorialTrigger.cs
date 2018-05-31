@@ -6,13 +6,18 @@ public class TutorialTrigger : MonoBehaviour
 {
     public GameObject Text;
 
+    private void Start()
+    {
+        Text.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Text.SetActive(true);
+        if(collision.tag == "Player") Text.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Text.SetActive(false);
+        if(collision.tag == "Player") Text.SetActive(false);
     }
 }
