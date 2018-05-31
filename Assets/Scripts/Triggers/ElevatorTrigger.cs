@@ -9,6 +9,7 @@ public class ElevatorTrigger : MonoBehaviour
     public Animator animDoorL;
     public Animator animDoorR;
 
+	public AudioPlayer audioPlayer;
 	//private AudioPlayer audioPlayer;
 
 	void Start()
@@ -28,7 +29,7 @@ public class ElevatorTrigger : MonoBehaviour
             animElevator.SetTrigger("UpElevator");
             animDoorL.SetBool("OpenDoor", true);
             animDoorR.SetBool("OpenDoor", true);
-			//audioPlayer.PlaySFX(10, 1, Random.Range(0.9f, 1.1f));
+			audioPlayer.PlaySFX(10, 1, Random.Range(0.9f, 1.1f));
         }
     }
 }
