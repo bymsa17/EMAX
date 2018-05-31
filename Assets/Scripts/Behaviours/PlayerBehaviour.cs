@@ -22,6 +22,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public Vector3 testPos;
     public float score;
     public float timeCounter;
+    public float coolDown = 3;
     public int life;
     public int damage = 1;
 
@@ -102,6 +103,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 DefaultUpdate();
                 if (lostSpeed == true) LostSpeed();
                 abilityCounter--;
+                coolDown -= Time.deltaTime;
                 timeCounter += Time.deltaTime;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 if(timeCounter == 60) score += Time.deltaTime;
@@ -393,23 +395,27 @@ public class PlayerBehaviour : MonoBehaviour {
 
     public void ReceiveDamage()
     {
-        anim.SetTrigger("damage");
-        animHeart1.SetBool("Damage", true);
-        audioPlayer.PlaySFX(19, 1, Random.Range(0.9f, 1.1f));
-
-        life -= damage;
-        if(life == 1) animHeart2.SetBool("Damage", true);
-
-        if (life <= 0)
+        if(coolDown <= 0)
         {
-            life = 0;
-			anim.SetBool("dead", true);
-            animHeart3.SetBool("Damage", true);
-            state = State.Dead;
-        }
-        
-    }
+            anim.SetTrigger("damage");
+            animHeart1.SetBool("Damage", true);
+            audioPlayer.PlaySFX(19, 1, Random.Range(0.9f, 1.1f));
 
+            coolDown = 3;
+
+            life -= damage;
+            if (life == 1) animHeart2.SetBool("Damage", true);
+
+            if (life <= 0)
+            {
+                life = 0;
+                anim.SetBool("dead", true);
+                animHeart3.SetBool("Damage", true);
+                state = State.Dead;
+            }
+        }
+    }
+    
     public void LiquidPositive()
     {
 		audioPlayer.PlaySFX(20, 1, Random.Range(0.9f, 1.1f));
