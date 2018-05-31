@@ -10,16 +10,20 @@ public class TrunkTrigger : MonoBehaviour
     public Animator animLight;
     public Animator animButton;
 
-
+	//public float lowVolume;
 	private AudioPlayer audioPlayer;
 
-	/*void Start()
+	void Start()
 	{
 		audioPlayer = GetComponentInChildren<AudioPlayer> ();
 		audioPlayer.PlayMusic (0);
+	}
+
+	/*public void LowVolume()
+	{
+		lowVolume -= 1;
+		if(lowVolume >= -10) lowVolume = -10;
 	}*/
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
