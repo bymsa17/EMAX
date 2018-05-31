@@ -145,6 +145,7 @@ public class PlayerBehaviour : MonoBehaviour {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetBool("isGrounded", collisions.isGrounded);
+            audioPlayer.PlaySFX(7, 1, Random.Range(0.9f, 1.1f));
         }
 
         if(abilityCounter <= 0)
@@ -232,7 +233,6 @@ public class PlayerBehaviour : MonoBehaviour {
         }
        
         horizontalSpeed = movementSpeed * axis.x;
-        
     }
 
     void VerticalMovement()

@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1417119915369432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 180.34, y: 18.18, z: -0.004331827}
+  m_LocalPosition: {x: 125.54, y: 12.5, z: -0.004331827}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4845237643999508}
@@ -403,7 +403,7 @@ MonoBehaviour:
   sfxClips:
   - {fileID: 8300000, guid: 16e8ac7ba244f29409094cd0ab61caf6, type: 3}
   - {fileID: 8300000, guid: 7024da2650d9e374a8021bf2535cf3ba, type: 3}
-  - {fileID: 8300000, guid: 17a3245ad11d7424e83da3db0cadee78, type: 3}
+  - {fileID: 8300000, guid: 7002e1044934aa143aab6aec91875e37, type: 3}
   - {fileID: 8300000, guid: a14b4176988b93f43827ef198a04beee, type: 3}
   - {fileID: 8300000, guid: d8e933443065c904e9b8f7d24f470617, type: 3}
   - {fileID: 8300000, guid: 0246da557438973438038dba37601b9e, type: 3}
@@ -424,13 +424,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fc9987da82ac46a4595edb90cee52afe, type: 3}
   - {fileID: 8300000, guid: b285db8c692023d4493278d3c7b4a948, type: 3}
   - {fileID: 8300000, guid: 413b8d35c937589498b183f32d86622d, type: 3}
-  - {fileID: 8300000, guid: b0ac527205d7cec4fbed6d31872a2eac, type: 3}
+  - {fileID: 8300000, guid: d5a68217b093a1a4ab9b7a29e5aa531a, type: 3}
   ambientClips:
   - {fileID: 8300000, guid: 6c5147239b3fc1346b2b8f497b75036a, type: 3}
   musicClips:
-  - {fileID: 8300000, guid: c792dc8c8449841449a5728f0da3ef8a, type: 3}
-  - {fileID: 8300000, guid: c33ba0041567ca44c8ecf911b44dbed1, type: 3}
-  - {fileID: 8300000, guid: c30c0b61ef86c5c47b49534211c141f3, type: 3}
+  - {fileID: 8300000, guid: 130c245b387f72642b90d6f5a3bacb37, type: 3}
+  - {fileID: 8300000, guid: c38b11f3643664d40838bef28361e552, type: 3}
+  - {fileID: 8300000, guid: e30f3d47e4d3d734e84158b1630855c5, type: 3}
   - {fileID: 8300000, guid: b66f9de9396bbdb47915e35e10f98bd6, type: 3}
 --- !u!212 &212630823368032330
 SpriteRenderer:

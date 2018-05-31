@@ -17,6 +17,8 @@ public class FinalPuzzleBehaviour : MonoBehaviour
     public Animator animButton03;
     public Animator animButton04;
 
+    public AudioPlayer audioPlayer;
+
     void Start ()
     {
         active = false;
@@ -27,7 +29,8 @@ public class FinalPuzzleBehaviour : MonoBehaviour
     {
         if(button == counter)
         {
-            if(button == 1) animButton01.SetBool("Pressed", true);
+            audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
+            if (button == 1) animButton01.SetBool("Pressed", true);
             else if(button == 2) animButton02.SetBool("Pressed", true);
             else if(button == 3) animButton03.SetBool("Pressed", true);
             if(button == 4)
@@ -39,6 +42,7 @@ public class FinalPuzzleBehaviour : MonoBehaviour
         }
         else
         {
+            audioPlayer.PlaySFX(8, 1, Random.Range(0.9f, 1.1f));
             counter = 1;
             animButton01.SetBool("Pressed", false);
             animButton02.SetBool("Pressed", false);
