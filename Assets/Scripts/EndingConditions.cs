@@ -35,7 +35,7 @@ public class EndingConditions : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("COLLISION");
-            ReloadLevel(5);
+            ReloadLevel(4);
         }
     }
 
