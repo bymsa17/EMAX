@@ -30,3 +30,5 @@ deaths	Muertes	Deaths
 ability uses	Usos de Habilidad	Ability Uses
 piece	Pieza del Portal	Portal Piece
 sett title	OPCIONES	SETTINGS
+next	Siguiente	Next
+restart	Reiniciar	Restart
