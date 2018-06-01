@@ -33,3 +33,4 @@ piece	Pieza del Portal	Portal Piece
 sett title	OPCIONES	SETTINGS
 next	Siguiente	Next
 restart	Reiniciar	Restart
+press	Presione ENTER para comenzar	Press ENTER to start
