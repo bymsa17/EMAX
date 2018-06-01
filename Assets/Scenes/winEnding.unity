@@ -440,8 +440,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279140555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 290.5, y: 163.5, z: 0}
-  m_LocalScale: {x: 0.45390624, y: 0.45390624, z: 0.45390624}
+  m_LocalPosition: {x: 183.5, y: 103, z: 0}
+  m_LocalScale: {x: 0.28671876, y: 0.28671876, z: 0.28671876}
   m_Children:
   - {fileID: 84784653}
   - {fileID: 1289914678}
@@ -488,9 +488,11 @@ MonoBehaviour:
   scoreAbility: 0
   scoreLife: 0
   scorePiece: 0
-  score: 0
-  maxScore: 0
-  scoreText: {fileID: 1814761507}
+  totalScore: 0
+  scoreTimeText: {fileID: 1814761507}
+  scoreAbilityText: {fileID: 963319689}
+  scoreLifeText: {fileID: 1999748683}
+  scorePieceText: {fileID: 0}
 --- !u!1 &420981458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test
+  m_Text: 000
 --- !u!222 &963319690
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1701,7 +1703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test
+  m_Text: 000
 --- !u!222 &1814761508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1862,7 +1864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test
+  m_Text: 000
 --- !u!222 &1999748684
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1911,12 +1913,12 @@ Prefab:
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 290.5
+      value: 183.5
       objectReference: {fileID: 0}
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 163.5
+      value: 103
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7640b0affbb1e4142b68396e725fcd2f, type: 2}

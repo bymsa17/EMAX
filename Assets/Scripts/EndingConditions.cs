@@ -35,6 +35,11 @@ public class EndingConditions : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("COLLISION");
+            GameData.gameState.scoreTime = player.scoreTime;
+            GameData.gameState.scoreAbility = player.scoreAbility;
+            GameData.gameState.scoreLife = player.scoreLife;
+            GameData.gameState.scorePiece = player.scorePiece;
+            GameData.SaveGame(1);
             ReloadLevel(4);
         }
     }
