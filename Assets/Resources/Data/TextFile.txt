@@ -1,5 +1,5 @@
 id	spanish	english
-start	Empezar	Play
+start	Jugar	Play
 settings	Opciones	Settings
 exit	Salir	Exit
 title	Título	Title
