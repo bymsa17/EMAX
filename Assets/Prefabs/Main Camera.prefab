@@ -181,23 +181,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &1090933707617374
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4837432928991964}
-  - component: {fileID: 61117336480441400}
-  - component: {fileID: 114487487459777180}
-  m_Layer: 12
-  m_Name: LevelEndPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1099504543207282
 GameObject:
   m_ObjectHideFlags: 1
@@ -1142,21 +1125,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1743078166135284
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4559160851528368}
-  m_Layer: 12
-  m_Name: LevelStartPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1748413859618944
 GameObject:
   m_ObjectHideFlags: 1
@@ -1671,19 +1639,6 @@ Transform:
   m_Father: {fileID: 224428129347903362}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4559160851528368
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743078166135284}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -648.2, y: -359.04, z: -4.638445}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 224075154306086540}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4610350352347420
 Transform:
   m_ObjectHideFlags: 1
@@ -1729,19 +1684,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4841573865709758}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4837432928991964
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090933707617374}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 776.5, y: -293.8, z: 0}
-  m_LocalScale: {x: 3.176179, y: 4.11, z: 3.176179}
-  m_Children: []
-  m_Father: {fileID: 224075154306086540}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4841573865709758
 Transform:
@@ -1806,31 +1748,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!61 &61117336480441400
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090933707617374}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5, y: 6}
-  m_EdgeRadius: 0
 --- !u!82 &82291318877825176
 AudioSource:
   m_ObjectHideFlags: 1
@@ -2296,8 +2213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ded170937c875a4ea633cb2f49f1fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelStart: {fileID: 1743078166135284}
-  levelEnd: {fileID: 1090933707617374}
+  levelStart: {fileID: 0}
+  levelEnd: {fileID: 0}
   shadow: {fileID: 0}
   resta: 0
   canvasSize: 400
@@ -3968,19 +3885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGameplay: {fileID: 1633094477319100}
---- !u!114 &114487487459777180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090933707617374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc8735dde6caf334b9c3040ce4af4fff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  timeCounter: 0
 --- !u!114 &114491961717839268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4854,8 +4758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f177f62024c1df4b83b4b1e175d1166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelStart: {fileID: 1743078166135284}
-  levelEnd: {fileID: 1090933707617374}
+  levelStart: {fileID: 0}
+  levelEnd: {fileID: 0}
   player: {fileID: 0}
   resta: 0
   canvasSize: 400
@@ -6335,8 +6239,6 @@ RectTransform:
   m_LocalScale: {x: 0.509375, y: 0.509375, z: 0.509375}
   m_Children:
   - {fileID: 4652563221867832}
-  - {fileID: 4559160851528368}
-  - {fileID: 4837432928991964}
   m_Father: {fileID: 4610350352347420}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
