@@ -1,63 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Punctuation : MonoBehaviour
 {
-    public float time;
-    public int ability;
-    public int deaths;
-    public bool piece;
+    public PlayerBehaviour player;
+
+    public float scoreTime;
+    public int scoreAbility;
+    public int scoreLife;
+    public int scorePiece;
 
     public float score;
     public float maxScore;
 
-	void Start ()
+    public Text scoreText;
+
+    void Start ()
     {
         GameData.LoadGame(1);
-        score = GameData.gameState.score;
-        maxScore = 100;
+        scoreTime = GameData.gameState.scoreTime;
+        scoreAbility = GameData.gameState.scoreAbility;
+        scoreLife = GameData.gameState.scoreLife;
+        scorePiece = GameData.gameState.scorePiece;
+
+        maxScore = 1000;
 	}
 	
 
 	void Update ()
     {
-        if(time <= 60)
-        {
-            score += 20;
-        }
-
-        if(ability <= 8)
-        {
-            score += 20;
-        }
-        else if ((ability > 8) || (ability <= 10))
-        {
-            score += 10;
-        }
-        else if(ability > 10)
-        {
-            score += 0;
-        }
-
-        if(deaths == 0)
-        {
-            score += 225;
-        }
-        else if(deaths == 1)
-        {
-            score += 150;
-        }
-        else if(deaths == 2)
-        {
-            score += 75;
-        }
         
-        if(piece == true)
-        {
-            score += 150;
-        }
-        else score += 0;
-
+        if(Mathf.RoundToInt(scoreTime) < 10) scoreText.text = "00" + Mathf.RoundToInt(scoreTime).ToString();
+        else if(Mathf.RoundToInt(scoreTime) < 100) scoreText.text = "0" + Mathf.RoundToInt(scoreTime).ToString();
+        else scoreText.text = Mathf.RoundToInt(scoreTime).ToString();
 	}
 }

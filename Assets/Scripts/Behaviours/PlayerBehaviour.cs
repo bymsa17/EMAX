@@ -28,11 +28,11 @@ public class PlayerBehaviour : MonoBehaviour {
     public int damage = 1;
     [Header("Score")]
     public float scoreTime;
-    public float scoreAbility;
-    public float scoreLife = 225;
-    public float scorePiece;
+    public int scoreAbility = 300;
+    public int scoreLife = 225;
+    public int scorePiece;
     //public Text scoreText;
-
+    public bool takePiece;
     [Header("State")]
     public bool canMove = true;
     public bool canJump = true;
@@ -104,15 +104,19 @@ public class PlayerBehaviour : MonoBehaviour {
 
         audioPlayer = GetComponentInChildren<AudioPlayer>();
         audioPlayer.PlayMusic(0);
-        /*
-        GameData.LoadGame(1);
 
-        score = GameData.gameState.score;
-        testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
-        transform.position = testPos;*/
+        scoreTime = 325;
+        scoreAbility = 300;
+        scoreLife = 225;
+    /*
+    GameData.LoadGame(1);
 
-        //collisions.MyStart();
-    }
+    score = GameData.gameState.score;
+    testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
+    transform.position = testPos;*/
+
+    //collisions.MyStart();
+}
 
     // Update is called once per frame
     void Update()
@@ -126,7 +130,9 @@ public class PlayerBehaviour : MonoBehaviour {
                 coolDown -= Time.deltaTime;
                 timeCounter += Time.deltaTime;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
-                if(timeCounter >= 60) scoreTime += Time.deltaTime;
+                if(timeCounter >= 60) scoreTime -= Time.deltaTime;
+                if(takePiece == true) scorePiece = 150;
+                else scorePiece = 0;
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -414,6 +420,7 @@ public class PlayerBehaviour : MonoBehaviour {
             animHUD.SetTrigger("Entrada");
             audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
             useAbility += 1;
+            if(useAbility > 5) scoreAbility -= 50;
             //if(doAbility) return;
             if (numResults > 0)
             {
@@ -472,6 +479,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 anim.SetBool("dead", true);
                 animHeart3.SetBool("Damage", true);
                 state = State.Dead;
+                GameData.SaveGame(1);
             }
         }
     }

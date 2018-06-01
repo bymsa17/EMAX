@@ -63,7 +63,10 @@ public static class GameData
     [Serializable]
     public struct GameState
     {
-        public int score;
+        public float scoreTime;
+        public int scoreAbility;
+        public int scoreLife;
+        public int scorePiece;
         public float posX;
         public float posY;
         public float posZ;
@@ -82,7 +85,10 @@ public static class GameData
         gameState = new GameState();
         Debug.Log("New game");
 
-        gameState.score = 0;
+        gameState.scoreTime = 0;
+        gameState.scoreAbility = 0;
+        gameState.scoreLife = 0;
+        gameState.scorePiece = 0;
         gameState.posX = -125;
         gameState.posY = 0;
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PieceTrigger : MonoBehaviour
 {
+    public PlayerBehaviour player;
     public GameObject piece;
     public Animator animHUD;
     public AudioPlayer audioPlayer;
@@ -13,6 +14,7 @@ public class PieceTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             animHUD.SetBool("piece", true);
+            player.takePiece = true;
             audioPlayer.PlaySFX(7, 1, Random.Range(0.9f, 1.1f));
             piece.SetActive(false);
         }
