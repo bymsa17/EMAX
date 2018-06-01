@@ -16,9 +16,9 @@ return	Volver	Return
 tutorial0	¡Deprisa! El mundo está despareciendo y una sombra oscura te persigue.	Hurry! The world is disappearing and a dark shadow chases you.
 tutorial1	En este mundo hay obstáculos mayores que tu. Pulsa "ESPACIO" para saltar.	In this world there are obstacles bigger than you. Press "SPACE" to jump.
 tutorial2	Parece que hay material tóxico. Será mejor evitar el contacto con esas burbujas...	It seems that there is toxic material. It will be better to avoid contact with those bubbles...
-tutorial3	Te sientes atrapado sin poder seguir tu camino para escapar. Tus nervios han provocado la aparicion de una habilidad:  pulsa "E".	You feel trapped and not allowed to follow your way to escape. Your nerves have caused the appearance of a skill: press "E"
+tutorial3	Te sientes atrapado sin poder seguir tu camino para escapar. Tus nervios han provocado la aparicion de una habilidad: pulsa "E".	You feel trapped and not allowed to follow your way to escape. Your nerves have caused the appearance of a skill: press "E"
 tutorial4	Al igual que las burbujas, este líquido no tiene buena pinta...	Like the  previous bubbles, this liquid does not look good...
-tutorial5	Este líquido parece inofensivo. Siendo aceite lubricante, ¿que puede provocar?	This liquid seems harmless. Being lubricating oil, What can it cause?
+tutorial5	Este líquido parece inofensivo. Siendo aceite lubricante, ¿que puede provocar?	This liquid seems harmless. Being lubricating oil, What can it  cause?
 tutorial6	Al contrario que el anterior este parece mucho mas denso...	Unlike the previous one this seems much denser...
 effects	Efectos	Effects
 master	Música	Music
