@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour {
 
@@ -21,11 +22,16 @@ public class PlayerBehaviour : MonoBehaviour {
 
     //private Transform position;
     public Vector3 testPos;
-    public float score;
     public float timeCounter;
     public float coolDown = 3;
     public int life;
     public int damage = 1;
+    [Header("Score")]
+    public float scoreTime;
+    public float scoreAbility;
+    public float scoreLife = 225;
+    public float scorePiece;
+    //public Text scoreText;
 
     [Header("State")]
     public bool canMove = true;
@@ -68,6 +74,7 @@ public class PlayerBehaviour : MonoBehaviour {
     public int numResults = 0;
     public float abilityForce = 5;
     public float abilityCounter;
+    public int useAbility;
     //public bool doAbility = false;
     [Header("Canvas")]
     public GameObject canvasPause;
@@ -119,7 +126,7 @@ public class PlayerBehaviour : MonoBehaviour {
                 coolDown -= Time.deltaTime;
                 timeCounter += Time.deltaTime;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
-                if(timeCounter == 60) score += Time.deltaTime;
+                if(timeCounter >= 60) scoreTime += Time.deltaTime;
                 break;
             case State.Dead:
                 DeadUpdate();
@@ -130,6 +137,10 @@ public class PlayerBehaviour : MonoBehaviour {
             default:
                 break;
         }
+        /*
+        if(Mathf.RoundToInt(scoreTime) < 10) scoreText.text = "00" + Mathf.RoundToInt(scoreTime).ToString();
+        else if(Mathf.RoundToInt(scoreTime) < 100) scoreText.text = "0" + Mathf.RoundToInt(scoreTime).ToString();
+        else scoreText.text = Mathf.RoundToInt(scoreTime).ToString();*/
     }
 
     private void FixedUpdate()
@@ -402,6 +413,7 @@ public class PlayerBehaviour : MonoBehaviour {
             anim.SetTrigger("ability");
             animHUD.SetTrigger("Entrada");
             audioPlayer.PlaySFX(3, 1, Random.Range(0.9f, 1.1f));
+            useAbility += 1;
             //if(doAbility) return;
             if (numResults > 0)
             {
@@ -431,9 +443,9 @@ public class PlayerBehaviour : MonoBehaviour {
                     }
                     */
                 }
-                abilityCounter = 400;
-                animHUD.SetBool("Active", false);
             }
+            abilityCounter = 400;
+            animHUD.SetBool("Active", false);
         }
     }
 
@@ -444,11 +456,15 @@ public class PlayerBehaviour : MonoBehaviour {
             anim.SetTrigger("damage");
             animHeart1.SetBool("Damage", true);
             audioPlayer.PlaySFX(19, 1, Random.Range(0.9f, 1.1f));
-
+            scoreLife = 150;
             coolDown = 3;
 
             life -= damage;
-            if (life == 1) animHeart2.SetBool("Damage", true);
+            if(life == 1)
+            {
+                animHeart2.SetBool("Damage", true);
+                scoreLife = 75;
+            }
 
             if (life <= 0)
             {
