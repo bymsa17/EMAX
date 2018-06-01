@@ -7,8 +7,8 @@ public class InputManager : MonoBehaviour
 {
     //private LevelManager manager;
     private PlayerBehaviour player;
-    private BoxBehaviour metalBox;
-    private BoxBehaviour woodBox;
+    //private BoxBehaviour metalBox;
+    //private BoxBehaviour woodBox;
     public Transform canvasPause;
     public GameObject canvasGameplay;
 
