@@ -935,7 +935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1683512040542238
 GameObject:
   m_ObjectHideFlags: 1
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   target: {fileID: 0}
   smoothTime: 0.25
   smoothOffset: 0.35
-  offset: {x: 2, y: 1, z: -10}
+  offset: {x: 2, y: 1.2, z: -10}
   puzzleActive: 0
   balanceInActive: 0
   balanceOutActive: 0
@@ -6466,7 +6466,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 14.700279, y: -30.300983}
-  m_SizeDelta: {x: 171.25, y: 61.7}
+  m_SizeDelta: {x: 173.67, y: 61.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224168636784209364
 RectTransform:
