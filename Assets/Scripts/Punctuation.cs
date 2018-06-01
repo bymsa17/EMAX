@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Punctuation : MonoBehaviour
 {
     public PlayerBehaviour player;
+    public float timeCounter;
 
     public float scoreTime;
     public int scoreAbility;
@@ -20,6 +21,8 @@ public class Punctuation : MonoBehaviour
     public Text scorePieceText;
     public Text scoreTotalText;
 
+    public Animator animPiece;
+
     void Start ()
     {
         GameData.LoadGame(1);
@@ -32,6 +35,8 @@ public class Punctuation : MonoBehaviour
 
 	void Update ()
     {
+        timeCounter++;
+
         if(Mathf.RoundToInt(scoreTime) < 10) scoreTimeText.text = "+00" + Mathf.RoundToInt(scoreTime).ToString();
         else if(Mathf.RoundToInt(scoreTime) < 100) scoreTimeText.text = "+0" + Mathf.RoundToInt(scoreTime).ToString();
         else scoreTimeText.text = scoreTimeText.text = "+" + Mathf.RoundToInt(scoreTime).ToString();
@@ -43,11 +48,13 @@ public class Punctuation : MonoBehaviour
         if(Mathf.RoundToInt(scoreLife) < 10) scoreLifeText.text = "+00" + Mathf.RoundToInt(scoreLife).ToString();
         else if(Mathf.RoundToInt(scoreLife) < 100) scoreLifeText.text = "+0" + Mathf.RoundToInt(scoreLife).ToString();
         else scoreLifeText.text = scoreLifeText.text = "+" + Mathf.RoundToInt(scoreLife).ToString();
-        /*
+        
         if(Mathf.RoundToInt(scorePiece) < 10) scorePieceText.text = "+00" + Mathf.RoundToInt(scorePiece).ToString();
         else if(Mathf.RoundToInt(scorePiece) < 100) scorePieceText.text = "+0" + Mathf.RoundToInt(scorePiece).ToString();
         else scorePieceText.text = scorePieceText.text = "+" + Mathf.RoundToInt(scorePiece).ToString();
-        */
+
+        if((scorePiece > 0) && (timeCounter > 80)) animPiece.SetBool("Piece", true);
+
         totalScore = scoreTime + scoreAbility + scoreLife + scorePiece;
 
         scoreTotalText.text = Mathf.RoundToInt(totalScore).ToString();
