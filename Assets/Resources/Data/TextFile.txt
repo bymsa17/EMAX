@@ -13,14 +13,15 @@ great	Genial	Great
 ultra	Ultra	Ultra
 fullscreen	Pantalla completa	Fullscreen
 return	Volver	Return
-tutorial1	Pulsa "ESPACIO" para saltar	Press "SPACE" to jump
-tutorial2	Evita las burbujas tòxicas	Avoid toxic bubbles
-tutorial3	Pulsa "E" para activar tu habilidad	Press "E" to activate your skill
-tutorial4	Evita los líquidos tòxicos	Avoid toxic liquids
-tutorial5	Este líquido es resbaladizo, puede proporcionarte velocidad	This liquid is slippery, can provide you with speed
-tutorial6	Este líquido es pegajoso, puede quitarte velocidad	This liquid is sticky, it can take away your speed
+tutorial0	¡Deprisa! El mundo está despareciendo y una sombra oscura te persigue.	Hurry! The world is disappearing and a dark shadow chases you.
+tutorial1	En este mundo hay obstáculos mayores que tu. Pulsa "ESPACIO" para saltar.	In this world there are obstacles bigger than you. Press "SPACE" to jump.
+tutorial2	Parece que hay material tóxico. Será mejor evitar el contacto con esas burbujas...	It seems that there is toxic material. It will be better to avoid contact with those bubbles...
+tutorial3	Te sientes atrapado sin poder seguir tu camino para escapar. Tus nervios han provocado la aparicion de una habilidad:  pulsa "E".	You feel trapped and not allowed to follow your way to escape. Your nerves have caused the appearance of a skill: press "E"
+tutorial4	Al igual que las burbujas, este líquido no tiene buena pinta...	Like the  previous bubbles, this liquid does not look good...
+tutorial5	Este líquido parece inofensivo. Siendo aceite lubricante, ¿que puede provocar?	This liquid seems harmless. Being lubricating oil, What can it cause?
+tutorial6	Al contrario que el anterior este parece mucho mas denso...	Unlike the previous one this seems much denser...
 effects	Efectos	Effects
-master	General	Master
+master	Música	Music
 resume	Continuar	Resume
 pause	PAUSA	PAUSE
 defeat	DERROTA	DEFEAT
