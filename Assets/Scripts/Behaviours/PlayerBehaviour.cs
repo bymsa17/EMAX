@@ -31,7 +31,6 @@ public class PlayerBehaviour : MonoBehaviour {
     public int scoreAbility = 300;
     public int scoreLife = 225;
     public int scorePiece;
-    //public Text scoreText;
     public bool takePiece;
     [Header("State")]
     public bool canMove = true;
@@ -110,7 +109,7 @@ public class PlayerBehaviour : MonoBehaviour {
         scoreLife = 225;
     /*
     GameData.LoadGame(1);
-
+    /*
     score = GameData.gameState.score;
     testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
     transform.position = testPos;*/
@@ -143,10 +142,6 @@ public class PlayerBehaviour : MonoBehaviour {
             default:
                 break;
         }
-        /*
-        if(Mathf.RoundToInt(scoreTime) < 10) scoreText.text = "00" + Mathf.RoundToInt(scoreTime).ToString();
-        else if(Mathf.RoundToInt(scoreTime) < 100) scoreText.text = "0" + Mathf.RoundToInt(scoreTime).ToString();
-        else scoreText.text = Mathf.RoundToInt(scoreTime).ToString();*/
     }
 
     private void FixedUpdate()
@@ -199,6 +194,7 @@ public class PlayerBehaviour : MonoBehaviour {
     protected virtual void DeadUpdate()
     {
         horizontalSpeed = 0;
+        GameData.SaveGame(1);
         //Animation dead player
     }
 
@@ -479,7 +475,6 @@ public class PlayerBehaviour : MonoBehaviour {
                 anim.SetBool("dead", true);
                 animHeart3.SetBool("Damage", true);
                 state = State.Dead;
-                GameData.SaveGame(1);
             }
         }
     }

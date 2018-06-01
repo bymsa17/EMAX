@@ -12,8 +12,7 @@ public class Punctuation : MonoBehaviour
     public int scoreLife;
     public int scorePiece;
 
-    public float score;
-    public float maxScore;
+    public int totalScore;
 
     public Text scoreText;
 
@@ -24,8 +23,6 @@ public class Punctuation : MonoBehaviour
         scoreAbility = GameData.gameState.scoreAbility;
         scoreLife = GameData.gameState.scoreLife;
         scorePiece = GameData.gameState.scorePiece;
-
-        maxScore = 1000;
 	}
 	
 
