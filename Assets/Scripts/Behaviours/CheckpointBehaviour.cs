@@ -12,7 +12,7 @@ public class CheckpointBehaviour : MonoBehaviour
     {
         active = false;
         particles.Pause();
-        pos = new Vector3(61, -7, 0);
+        pos = new Vector3(198, 12, 0);
     }
 	
 	void Update ()

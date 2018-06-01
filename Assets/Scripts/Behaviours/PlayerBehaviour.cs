@@ -107,15 +107,14 @@ public class PlayerBehaviour : MonoBehaviour {
         scoreTime = 325;
         scoreAbility = 300;
         scoreLife = 225;
-    /*
-    GameData.LoadGame(1);
-    /*
-    score = GameData.gameState.score;
-    testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
-    transform.position = testPos;*/
+    
+        GameData.LoadGame(1);
+    
+        testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
+        transform.position = testPos;
 
-    //collisions.MyStart();
-}
+        //collisions.MyStart();
+    }
 
     // Update is called once per frame
     void Update()

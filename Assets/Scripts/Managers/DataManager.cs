@@ -89,7 +89,7 @@ public static class GameData
         gameState.scoreAbility = 0;
         gameState.scoreLife = 0;
         gameState.scorePiece = 0;
-        gameState.posX = -125;
+        gameState.posX = -2;
         gameState.posY = 0;
 
         SaveGame(slot);
