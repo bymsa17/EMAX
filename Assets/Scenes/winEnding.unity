@@ -440,8 +440,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279140555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 183.5, y: 103, z: 0}
-  m_LocalScale: {x: 0.28671876, y: 0.28671876, z: 0.28671876}
+  m_LocalPosition: {x: 397.5, y: 223.5, z: 0}
+  m_LocalScale: {x: 0.62109375, y: 0.62109375, z: 0.62109375}
   m_Children:
   - {fileID: 84784653}
   - {fileID: 1289914678}
@@ -493,6 +493,7 @@ MonoBehaviour:
   scoreAbilityText: {fileID: 963319689}
   scoreLifeText: {fileID: 1999748683}
   scorePieceText: {fileID: 0}
+  scoreTotalText: {fileID: 1729218679}
 --- !u!1 &420981458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test
+  m_Text: 0000
 --- !u!222 &1729218680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1913,12 +1914,12 @@ Prefab:
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 183.5
+      value: 397.5
       objectReference: {fileID: 0}
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 103
+      value: 223.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7640b0affbb1e4142b68396e725fcd2f, type: 2}

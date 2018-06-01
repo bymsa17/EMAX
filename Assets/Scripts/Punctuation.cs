@@ -18,6 +18,7 @@ public class Punctuation : MonoBehaviour
     public Text scoreAbilityText;
     public Text scoreLifeText;
     public Text scorePieceText;
+    public Text scoreTotalText;
 
     void Start ()
     {
@@ -42,13 +43,13 @@ public class Punctuation : MonoBehaviour
         if(Mathf.RoundToInt(scoreLife) < 10) scoreLifeText.text = "+00" + Mathf.RoundToInt(scoreLife).ToString();
         else if(Mathf.RoundToInt(scoreLife) < 100) scoreLifeText.text = "+0" + Mathf.RoundToInt(scoreLife).ToString();
         else scoreLifeText.text = scoreLifeText.text = "+" + Mathf.RoundToInt(scoreLife).ToString();
-
+        /*
         if(Mathf.RoundToInt(scorePiece) < 10) scorePieceText.text = "+00" + Mathf.RoundToInt(scorePiece).ToString();
         else if(Mathf.RoundToInt(scorePiece) < 100) scorePieceText.text = "+0" + Mathf.RoundToInt(scorePiece).ToString();
         else scorePieceText.text = scorePieceText.text = "+" + Mathf.RoundToInt(scorePiece).ToString();
-
+        */
         totalScore = scoreTime + scoreAbility + scoreLife + scorePiece;
 
-        scoreTimeText.text = Mathf.RoundToInt(totalScore).ToString();
+        scoreTotalText.text = Mathf.RoundToInt(totalScore).ToString();
     }
 }
