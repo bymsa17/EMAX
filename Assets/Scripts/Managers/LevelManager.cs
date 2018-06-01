@@ -22,7 +22,8 @@ public class LevelManager : MonoBehaviour
     public Image blackScreen;
     float fadeTime = 2.0f;
     public Animator anim;
-    public AudioSource audioSource;
+    public AudioSource audioIn;
+    public AudioSource audioOut;
 
     private void Awake()
     {   
@@ -125,7 +126,7 @@ public class LevelManager : MonoBehaviour
     {
         //blackScreen.CrossFadeAlpha(0, fadeTime, true);
         anim.Play("fadeIn");
-        audioSource.Play();
+        audioIn.Play();
         fadeTime = 1.0f;
 
     }
@@ -134,7 +135,7 @@ public class LevelManager : MonoBehaviour
         //blackScreen.CrossFadeAlpha(1, fadeTime, true);
 
         anim.Play("fadeOut");
-        audioSource.Play();
+        audioOut.Play();
         fadeTime = 1.0f;
         StartCoroutine(WaitForFade());
     }
