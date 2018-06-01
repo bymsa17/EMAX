@@ -6,6 +6,7 @@ public class DoorTrigger : MonoBehaviour
 {
     public DoorBehaviour door;
     public CameraBehaviour mainCamera;
+    public AudioPlayer audioPlayer;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +16,7 @@ public class DoorTrigger : MonoBehaviour
             door.active = true;
             mainCamera.balanceOutActive = false;
             mainCamera.puzzleActive = true;
+            audioPlayer.PlaySFX(25, 1, Random.Range(0.9f, 1.1f));
         }
     }
 }

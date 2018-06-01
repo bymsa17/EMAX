@@ -110,8 +110,8 @@ public class PlayerBehaviour : MonoBehaviour {
     
         GameData.LoadGame(1);
     
-        testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
-        transform.position = testPos;
+        //testPos = new Vector3(GameData.gameState.posX, GameData.gameState.posY, 0 );
+        //transform.position = testPos;
 
         //collisions.MyStart();
     }

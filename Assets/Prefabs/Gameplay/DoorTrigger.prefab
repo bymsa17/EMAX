@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1834059854924742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 2.42, z: 0}
+  m_LocalPosition: {x: -2.4, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4248681751392202}
@@ -65,8 +65,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555188373952152}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 213.65, y: -3.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.95, y: 3.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4242080344275594}
@@ -85,18 +85,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.74, y: 6.88}
+    oldSize: {x: 0.51, y: 3.65}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 6.72}
+  m_Size: {x: 0.26, y: 3.1}
   m_EdgeRadius: 0
 --- !u!61 &61327998330413954
 BoxCollider2D:
@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 114837094332164602}
   mainCamera: {fileID: 0}
+  audioPlayer: {fileID: 0}
 --- !u!114 &114837094332164602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +151,7 @@ MonoBehaviour:
   door: {fileID: 4242080344275594}
   active: 0
   iniPos: {x: 0, y: 0, z: 0}
-  finalPos: {x: 0, y: -1.15, z: 0}
+  finalPos: {x: 0, y: -1.73, z: 0}
   currentTime: 0
   timeDuration: 1
 --- !u!212 &212616172034020334
@@ -184,10 +185,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -787017149
-  m_SortingLayer: -5
+  m_SortingLayerID: 30758377
+  m_SortingLayer: -6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5b31685e1f7afdf43960725c0c338857, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 460586340bfb40e42a7ae914aab36043, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

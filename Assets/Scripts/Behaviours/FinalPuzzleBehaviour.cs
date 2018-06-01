@@ -37,6 +37,7 @@ public class FinalPuzzleBehaviour : MonoBehaviour
             {
                 animButton04.SetBool("Pressed", true);
                 door.active = true;
+                audioPlayer.PlaySFX(25, 1, Random.Range(0.9f, 1.1f));
             }
             else counter++;
         }
