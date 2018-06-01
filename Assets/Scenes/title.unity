@@ -545,7 +545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &465330944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -610,7 +610,7 @@ Prefab:
     - target: {fileID: 114369373711158498, guid: c2ef18d3903295949819d90ede443196,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224374654866978766, guid: c2ef18d3903295949819d90ede443196,
         type: 2}
@@ -716,7 +716,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 465330945}
+      objectReference: {fileID: 580419526}
     - target: {fileID: 114357938057299504, guid: c2ef18d3903295949819d90ede443196,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -831,6 +831,30 @@ Prefab:
         type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetFullScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526421529518078, guid: c2ef18d3903295949819d90ede443196, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114432424951886982, guid: c2ef18d3903295949819d90ede443196,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114432424951886982, guid: c2ef18d3903295949819d90ede443196,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114432424951886982, guid: c2ef18d3903295949819d90ede443196,
+        type: 2}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369373711158498, guid: c2ef18d3903295949819d90ede443196,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectSound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2ef18d3903295949819d90ede443196, type: 2}
