@@ -22,7 +22,7 @@ public class TrunkTrigger : MonoBehaviour
             trunk02.active = true;
             animLight.SetTrigger("LightTrigger");
             animButton.SetTrigger("ButtonTrigger");
-			audioPlayer.PlaySFX(8, 1, Random.Range(0.9f, 1.1f));
+			audioPlayer.PlaySFX(9, 1, Random.Range(0.9f, 1.1f));
         }
     }
 }
