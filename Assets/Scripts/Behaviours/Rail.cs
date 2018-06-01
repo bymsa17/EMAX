@@ -29,7 +29,7 @@ public class Rail : MonoBehaviour
 			waypointIndex += 1;
 		}
 				
-		if (waypointIndex == waypoints.Length) waypointIndex = 0;
+		//if (waypointIndex == waypoints.Length) waypointIndex = 0;
 	}
 
     public void PauseShadow()
