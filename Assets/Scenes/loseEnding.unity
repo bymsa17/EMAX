@@ -139,7 +139,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1521785397}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &209418187
 AudioSource:
@@ -477,6 +477,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 686306002}
+        m_MethodName: SelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &593987076
@@ -529,6 +540,59 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1001 &686306001
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1521785397}
+    m_Modifications:
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 95dbaa0deb4e54f419d397352e9cfdfc, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &686306002 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114919968851024288, guid: 95dbaa0deb4e54f419d397352e9cfdfc,
+    type: 2}
+  m_PrefabInternal: {fileID: 686306001}
+  m_Script: {fileID: 11500000, guid: 3f4f95d18b36acb479712590d023b9c2, type: 3}
+--- !u!4 &686306003 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4062230638642594, guid: 95dbaa0deb4e54f419d397352e9cfdfc,
+    type: 2}
+  m_PrefabInternal: {fileID: 686306001}
 --- !u!1 &839811680
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +681,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 686306002}
+        m_MethodName: SelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &839811683
@@ -699,7 +774,7 @@ RectTransform:
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 1521785397}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -744,7 +819,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -787017149
-  m_SortingLayer: -2
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -845,7 +920,7 @@ Transform:
   m_LocalScale: {x: 72, y: 72, z: 72}
   m_Children: []
   m_Father: {fileID: 1521785397}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1053057737
 Prefab:
@@ -889,12 +964,12 @@ Prefab:
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 277.5
+      value: 403.5
       objectReference: {fileID: 0}
     - target: {fileID: 224948384807747844, guid: 7640b0affbb1e4142b68396e725fcd2f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 173.5
+      value: 227
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7640b0affbb1e4142b68396e725fcd2f, type: 2}
@@ -928,7 +1003,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1521785397}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1070,8 +1145,9 @@ RectTransform:
   m_GameObject: {fileID: 1521785393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0125, y: 0.0125, z: 0.0125}
+  m_LocalScale: {x: 0.013888889, y: 0.013888889, z: 0.013888889}
   m_Children:
+  - {fileID: 686306003}
   - {fileID: 882676512}
   - {fileID: 878504089}
   - {fileID: 1464743180}
@@ -1213,7 +1289,7 @@ RectTransform:
   - {fileID: 839811681}
   - {fileID: 593987074}
   m_Father: {fileID: 1521785397}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
